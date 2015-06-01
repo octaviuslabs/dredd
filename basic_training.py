@@ -1,3 +1,8 @@
+# This script is the basic training system for Dredd.
+# It takes 2 data sets, one that is positive question examples and one that is negative.
+# It trains its self as to why some sentances are questions and others are not
+# The method that it uses and all artifacts are saved to the classified_output folder
+
 import re
 import random
 import nltk

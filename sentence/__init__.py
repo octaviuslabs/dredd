@@ -12,6 +12,7 @@ class Sentence(object):
         self.sentence = sentence
         self.tokenized = self.tokenizer(sentence)
 
+    # Below is the feature extractor that is used by the machine learning system to find ideal text
     def question_features(self):
         return {
                 'language_count': len(self.has_special_words()),

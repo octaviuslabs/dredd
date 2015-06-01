@@ -37,6 +37,7 @@ class EmailMessage(Base):
         self.storage_key = ":".join(["emails",  self.id_])
 
     def add_feature(self, key, value):
+        # It would be cooler if I could pass the classifier in here like ruby's rack
         self.features[key] = value
         return self.features
 

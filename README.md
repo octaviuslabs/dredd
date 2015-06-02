@@ -1,4 +1,4 @@
-[Dredd](http://www.advancedphotoshop.co.uk/users/18190/thm1024/judge_dredd__by_kash_.jpg)
+<img src="http://www.advancedphotoshop.co.uk/users/18190/thm1024/judge_dredd__by_kash_.jpg" alt="Dredd" style="width: 200px;"/>
 
 # Dredd The Judger Of Tasks
 Dredd is vespers eyes and ears, it is always watching, always judging.

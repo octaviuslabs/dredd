@@ -3,30 +3,41 @@ from request import Request
 import nltk
 import pickle
 from mem_store.email_message import EmailMessage
+from config import Configuration
+from retrying import retry
 
 import sys, time
 
 class Dredd:
-    def __init__(self, poll_interval):
+    def __init__(self, queue_endpoint, poll_interval):
+        self.endpoint = queue_endpoint
         self.poll_interval = poll_interval
-        self.endpoint = "the-endpoint"
 
     def run(self):
-        print "Running"
+        self._log("Running...")
         request = Request(self.endpoint)
         while True:
-            res = request.poll()
-            email = self.build_email(res)
-            email.processed_text.classify_questions(self.classifier())
-            email.add_feature('question_count', len(email.processed_text.questions))
-            email.add_feature('non_question_count',  len(email.processed_text.non_questions))
-            email.calculate_score()
+            email = self._get_email(request)
+            email = self._score_email(email)
             email.save()
-            print email.to_json()
+            self._log("Saved " + str(email.id_) + " with a score of " + str(email.score))
             time.sleep(self.poll_interval)
 
-    def build_email(self, attrs):
-        return EmailMessage(attrs)
+    @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000)
+    def _get_email(self, request):
+        response = request.poll()
+        if not bool(response):
+            message = self._log("No Email Found")
+            raise Exception(message)
+        email = EmailMessage(response)
+        return email
+
+    def _score_email(self, email):
+        email.processed_text.classify_questions(self.classifier())
+        email.add_feature('question_count', len(email.processed_text.questions))
+        email.add_feature('non_question_count',  len(email.processed_text.non_questions))
+        email.calculate_score()
+        return email
 
     def classifier(self):
         try:
@@ -37,7 +48,10 @@ class Dredd:
             file.close()
             return self.classifier_
 
+    def _log(self, message):
+        print str(int(time.time())) + " " + message
 
 if __name__ == "__main__":
-    daemon = Dredd(10)
+    config = Configuration()
+    daemon = Dredd(config.queue_endpoint, config.poll_interval)
     daemon.run()

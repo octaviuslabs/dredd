@@ -9,9 +9,16 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - Redis
 - Mongo Database w/ Enron Email Corpus Loaded (http://mongodb-enron-email.s3-website-us-east-1.amazonaws.com/) --if you are building a classifier
 
+## Environment Variables
+- MEM_STORE_HOST = Obvious
+- MEM_STORE_PORT = Obvious
+- MEM_STORE_DB = Obvious
+- MEM_STORE_TYPE = Obvious
+- POLL_INTERVAL = Interval To Poll The Server
+
 ## Setup
   ```
-    pip install -r requirements.txt
+    pip install -r ./requirements.txt
   ```
 
 ## Building A Question Classifier

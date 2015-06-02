@@ -52,7 +52,7 @@ class EmailMessage(Base):
         return self.score
 
     def save(self):
-        if self.committed:
+        if self.is_valid() or self.committed:
             #raise if score is a problem
             return self
         # Store the recommendation
@@ -102,3 +102,18 @@ class EmailMessage(Base):
 
     def to_json(self):
         return json.dumps(self.to_dict())
+
+    def is_valid(self):
+        try:
+            self.id_
+            self.account_id
+            self.thread.id_
+            self.sent_at.to_s()
+            self.url
+            self.from_.id_
+            self.to
+            self.subject
+            self.body
+            return True
+        except AttributeError:
+            return False

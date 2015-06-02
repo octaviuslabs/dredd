@@ -2,3 +2,4 @@ nose
 nltk
 pymongo
 redis
+retrying

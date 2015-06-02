@@ -1,6 +1,8 @@
 import redis
 import json
-store = redis.StrictRedis(host='localhost', port=6379, db=0)
+from config import Configuration
+mem_store_config = Configuration()
+store = redis.StrictRedis(host=mem_store_config.mem_store_host, port=mem_store_config.mem_store_port, db=mem_store_config.mem_store_database)
 
 class Base(object):
     def __init__(self):

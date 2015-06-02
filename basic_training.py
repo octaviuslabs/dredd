@@ -57,6 +57,7 @@ def load_live_data(sample_size):
     return emails
 
 def classify_live_emails(emails):
+    print "Classifying Emails"
     questions = 0
     for email in emails:
         email.processed_text.classify_questions(classifier)
@@ -113,27 +114,27 @@ def save_classifer(classifier):
     pickle.dump(classifier, f)
     f.close()
 
+if __name__ == "__main__":
+    max_set_size = 5000
+    print "Training with a max of " + str(max_set_size) + " samples"
+    questions = load_non_questions("./training_data/question_training_set.txt")
+    nonquestions = load_questions("./training_data/obama_speeches_set.txt")
+    labeled_questions = ([(sentance, 'question') for sentance in questions[max_set_size:]] +
+                      [(sentance, 'non-question') for sentance in nonquestions[max_set_size:]])
+    random.shuffle(labeled_questions)
+    featuresets  = [(i.question_features(), sentance_type) for (i, sentance_type) in labeled_questions]
+    train_set = featuresets[3000:]
+    dev_set = featuresets[3000:6000]
+    test_set = featuresets[6000:9000]
+    classifier = train_classifier(train_set)
+    test_classifier(classifier, test_set)
 
-max_set_size = 5000
-print "Training with a max of " + str(max_set_size) + " samples"
-questions = load_non_questions("./training_data/question_training_set.txt")
-nonquestions = load_questions("./training_data/obama_speeches_set.txt")
-labeled_questions = ([(sentance, 'question') for sentance in questions[max_set_size:]] +
-                  [(sentance, 'non-question') for sentance in nonquestions[max_set_size:]])
-random.shuffle(labeled_questions)
-featuresets  = [(i.question_features(), sentance_type) for (i, sentance_type) in labeled_questions]
-train_set = featuresets[3000:]
-dev_set = featuresets[3000:6000]
-test_set = featuresets[6000:9000]
-classifier = train_classifier(train_set)
-test_classifier(classifier, test_set)
-
-#Testing Classifier On Live Data
-samples = 7000
-print "Testing On " + str(samples) + " Emails From The Enron Corpus"
-print "Output will be loctated in ./classified_output"
-emails = load_live_data(samples)
-classify_live_emails(emails)
-save_sentances(emails)
-save_scored_emails(emails)
-save_classifer(classifier)
+    #Testing Classifier On Live Data
+    samples = 7000
+    print "Testing On " + str(samples) + " Emails From The Enron Corpus"
+    print "Output will be loctated in ./classified_output"
+    emails = load_live_data(samples)
+    classify_live_emails(emails)
+    save_sentances(emails)
+    save_scored_emails(emails)
+    save_classifer(classifier)

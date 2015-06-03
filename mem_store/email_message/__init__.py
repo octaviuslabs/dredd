@@ -5,6 +5,7 @@ from mem_store.email_thread import EmailThread
 from mem_store.contact import Contact
 from mem_store.recommendation import Recommendation
 from text_set.message_body import MessageBody
+import logging
 
 class EmailMessage(Base):
     DEFAULT_EMAIL_THREAD_ID='threadless'
@@ -52,7 +53,7 @@ class EmailMessage(Base):
         return self.score
 
     def save(self):
-        if self.is_valid() or self.committed:
+        if not self.is_valid() or self.committed:
             #raise if score is a problem
             return self
         # Store the recommendation
@@ -66,6 +67,7 @@ class EmailMessage(Base):
         # Push the email onto its thread
         self.thread.push(self)
         # Store the email its self
+        logging.info("Saving Email" + str(self.id_) )
         self.store().getset(self.storage_key, self.to_json())
         return True
         # Error state???

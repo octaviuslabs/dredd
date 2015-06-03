@@ -1,5 +1,6 @@
 import redis
 import json
+import logging
 from config import Configuration
 mem_store_config = Configuration()
 store = redis.StrictRedis(host=mem_store_config.mem_store_host, port=mem_store_config.mem_store_port, db=mem_store_config.mem_store_database)

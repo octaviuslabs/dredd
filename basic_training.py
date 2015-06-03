@@ -110,7 +110,9 @@ def save_scored_emails(emails):
 
 def save_classifer(classifier):
     timestamp = str(int(time.time()))
-    f = open('./classified_output/naivebays_' + timestamp + '.pickle', 'wb')
+    filename = 'naivebays_' + timestamp + '.pickle'
+    print "Saving classifier as " + filename
+    f = open('./classified_output/' + filename, 'wb')
     pickle.dump(classifier, f)
     f.close()
 

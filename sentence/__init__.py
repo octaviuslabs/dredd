@@ -51,5 +51,8 @@ class Sentence(object):
         return tokenizer.tokenize(text)
 
     def _load_file(self, file_path):
-        text = os.path.join(os.path.dirname(__file__), file_path)
+        file_path = os.path.join(os.path.dirname(__file__), file_path)
+        file = open(file_path)
+        text = " ".join(file.readlines())
+        file.close()
         return text.decode('utf-8').lower()

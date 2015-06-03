@@ -1,4 +1,5 @@
 from mem_store.base import Base
+import logging
 
 class Question(Base):
     def __init__(self, email_id):

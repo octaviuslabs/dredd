@@ -14,7 +14,7 @@ class Configuration:
 
 
         #self._locate_value('AWS_SECRET_ACCESS_KEY', attrs) #Move to env var
-        self.q_name = "dev_dredd-dev_message_bodies" #"dev_dredd-dev_message_bodies"
+        self.q_name = "staging_dredd-staging_message_bodies" #"dev_dredd-dev_message_bodies"
         self.q_region = "us-east-1"
 
 

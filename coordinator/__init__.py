@@ -24,12 +24,14 @@ class Coordinator(object):
     def get_task(self):
         messages = self.q().fetch_messages()
         if len(messages) <= 0:
+            logging.info("No messages found")
             return None
         self.message = messages[0]
         self.task = self._fetch_task_data(self.message.parsed_message())
         return self.task
 
     def clean(self):
+        logging.info("Cleaning Message")
         return self.q().q().delete_message(self.message)
 
     def _fetch_task_data(self, message):
@@ -55,6 +57,7 @@ class Coordinator(object):
             email_data = message["email"]
             lts_data = json.loads(raw_data)
             email_data.update(lts_data["email"])
+            logging.info("EmailMessage built")
             return EmailMessage(email_data)
         logging.warn(task_type + " is not currently supported")
         return None

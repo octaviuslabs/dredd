@@ -7,7 +7,7 @@ import sys
 def main():
     logging.info("Loading Service")
     configuration = Configuration()
-    daemon = Dredd(configuration.queue_endpoint, (1/100))
+    daemon = Dredd(configuration.queue_endpoint, 3)
     if len(sys.argv) == 2:
     	if 'start' == sys.argv[1]:
     		daemon.start()

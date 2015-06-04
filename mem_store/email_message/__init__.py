@@ -11,28 +11,33 @@ class EmailMessage(Base):
     DEFAULT_EMAIL_THREAD_ID='threadless'
 
     def __init__(self, attrs):
-        self.id_ = attrs.get("id", "")
-        if attrs.get("sent_at", None):
-            self.sent_at = VesperTime(attrs.get("sent_at"))
-        self.url = attrs.get("url")
-        self.account_id = attrs.get("account_id")
-        if attrs.get("thread_id", None):
-            self.thread = EmailThread(attrs.get("thread_id"), self.account_id)
-        self.raw_body = attrs.get("body")
-        if attrs.get("from_id", None):
-            self.from_ = Contact(attrs.get("from_id"))
-        self.to = [Contact(i) for i in attrs.get("to_ids", list())]
-        self.cc = [Contact(i) for i in attrs.get("cc_ids", list())]
-        self.bcc = [Contact(i) for i in attrs.get("bcc_ids", list())]
-        self.subject = attrs.get("subject")
-        if attrs.get("body", None):
-            self.body = MessageBody(attrs.get("body"))
-        self.processed_text = self.body
-        self.features = {}
-        self.score = float(0)
-        self.score_calculated = False
-        self.committed = False
-        self.storage_key = ":".join(["emails",  self.id_])
+        try:
+            self.id_ = attrs.get("id", "")
+            if attrs.get("sent_at", False):
+                self.sent_at = VesperTime(attrs.get("sent_at"))
+            self.url = attrs.get("url")
+            self.account_id = attrs.get("account_id")
+            if attrs.get("thread_id", False):
+                self.thread = EmailThread(attrs.get("thread_id"), self.account_id)
+            self.raw_body = attrs.get("body")
+            if attrs.get("from_id", False):
+                self.from_ = Contact(attrs.get("from_id"))
+            self.to = [Contact(i) for i in attrs.get("to_ids", list())]
+            self.cc = [Contact(i) for i in attrs.get("cc_ids", list())]
+            self.bcc = [Contact(i) for i in attrs.get("bcc_ids", list())]
+            self.subject = attrs.get("subject")
+            if attrs.get("body", False):
+                self.body = MessageBody(attrs.get("body"))
+            self.processed_text = self.body
+            self.features = {}
+            self.score = float(0)
+            self.score_calculated = False
+            self.committed = False
+            self.storage_key = ":".join(["emails",  self.id_])
+            logging.info("Built email " + "::".join([self.account_id, self.id_]))
+        except Exception as e:
+            logging.critical(e)
+            return None
 
     def add_feature(self, key, value):
         # It would be cooler if I could pass the classifier in here like ruby's rack
@@ -52,34 +57,26 @@ class EmailMessage(Base):
     def save(self):
         if not self.is_valid() or self.committed:
             #raise if score is a problem
-            return self
+            logging.warn("Email is not valid or committed")
+            return False
         # Store the recommendation
-        recommendation = Recommendation(self.account_id)
-        recommendation_listing = {
-            "type": "email_thread",
-            "id": self.thread.id_,
-            "score": self.score
-        }
-        recommendation.push(self.score, recommendation_listing)
-        # Push the email onto its thread
-        self.thread.push(self)
-        # Store the email its self
-        logging.info("Saving Email" + str(self.id_) )
-        self.store().getset(self.storage_key, self.to_json())
-        return True
-        # Error state???
-
-    def _recommendation_listing(self):
-        value = {
-            "type": "email_thread",
-            "id": self.thread.id_,
-            "score": self.score
-        }
-        output = {
-            "score": self.score,
-            "value": value
-        }
-        return output
+        try:
+            recommendation = Recommendation(self.account_id)
+            recommendation_listing = {
+                "type": "email_thread",
+                "id": self.thread.id_,
+                "score": self.score
+            }
+            recommendation.push(self.score, recommendation_listing)
+            # Push the email onto its thread
+            self.thread.push(self)
+            # Store the email its self
+            logging.info("Saving Email" + str(self.id_) )
+            self.store().getset(self.storage_key, self.to_json())
+            return True
+        except Exception as e:
+            logging.critical(e)
+            return False
 
     def to_dict(self):
         to = list()
@@ -114,5 +111,6 @@ class EmailMessage(Base):
             self.subject
             self.body
             return True
-        except AttributeError:
+        except AttributeError as e:
+            logging.critical(e)
             return False

@@ -3,3 +3,5 @@ nltk
 pymongo
 redis
 retrying
+boto
+beautifulsoup4

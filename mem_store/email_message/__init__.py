@@ -21,12 +21,9 @@ class EmailMessage(Base):
         self.raw_body = attrs.get("body")
         if attrs.get("from_id", None):
             self.from_ = Contact(attrs.get("from_id"))
-        if attrs.get("to_ids", None):
-            self.to = [Contact(i) for i in attrs.get("to_ids")]
-        if attrs.get("cc_ids", None):
-            self.cc = [Contact(i) for i in attrs.get("cc_ids")]
-        if attrs.get("bcc_ids", None):
-            self.bcc = [Contact(i) for i in attrs.get("bcc_ids")]
+        self.to = [Contact(i) for i in attrs.get("to_ids", list())]
+        self.cc = [Contact(i) for i in attrs.get("cc_ids", list())]
+        self.bcc = [Contact(i) for i in attrs.get("bcc_ids", list())]
         self.subject = attrs.get("subject")
         if attrs.get("body", None):
             self.body = MessageBody(attrs.get("body"))

@@ -9,6 +9,14 @@ class Configuration:
         self.poll_interval = float(self._locate_value('POLL_INTERVAL', attrs))
         self.queue_endpoint = self._locate_value('QUEUE_ENDPOINT', attrs)
 
+        self.aws_access_key = self._locate_value('AWS_ACCESS_KEY_ID', attrs)
+        self.aws_secret_access_key = self._locate_value('AWS_SECRET_ACCESS_KEY', attrs)
+
+
+        #self._locate_value('AWS_SECRET_ACCESS_KEY', attrs) #Move to env var
+        self.q_name = "dev_dredd-dev_message_bodies" #"dev_dredd-dev_message_bodies"
+        self.q_region = "us-east-1"
+
 
     def _locate_value(self, key, attrs):
         try:

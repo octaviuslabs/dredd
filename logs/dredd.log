@@ -1,556 +1,934 @@
-INFO 2015-06-03 01:00:52,465: Loading Service
-INFO 2015-06-03 01:00:52,466: Starting Dredd
-INFO 2015-06-03 01:01:51,193: Loading Service
-INFO 2015-06-03 01:01:51,193: Dredd is running...
-INFO 2015-06-03 01:01:51,193: Starting Dredd
-INFO 2015-06-03 01:04:43,694: Loading Service
-INFO 2015-06-03 01:04:43,695: Dredd is running...
-INFO 2015-06-03 01:04:49,607: Loading Service
-INFO 2015-06-03 01:04:49,608: Dredd is running...
-INFO 2015-06-03 01:04:49,608: Stopping Dredd
-INFO 2015-06-03 01:04:58,739: Loading Service
-INFO 2015-06-03 01:04:58,739: Dredd is running...
-INFO 2015-06-03 01:05:10,904: Loading Service
-INFO 2015-06-03 01:05:10,905: Dredd is running...
-INFO 2015-06-03 01:05:10,905: Starting Dredd
-INFO 2015-06-03 01:05:31,752: Loading Service
-INFO 2015-06-03 01:05:31,752: Dredd is running...
-INFO 2015-06-03 01:05:31,752: Starting Dredd
-INFO 2015-06-03 01:05:31,753: Polling Queue
-INFO 2015-06-03 01:05:33,755: Polling Queue
-INFO 2015-06-03 01:05:37,761: Polling Queue
-INFO 2015-06-03 01:05:45,770: Polling Queue
-INFO 2015-06-03 01:05:55,781: Polling Queue
-INFO 2015-06-03 01:06:05,782: Polling Queue
-INFO 2015-06-03 01:06:15,783: Polling Queue
-INFO 2015-06-03 01:06:25,792: Polling Queue
-INFO 2015-06-03 01:06:35,798: Polling Queue
-INFO 2015-06-03 01:06:38,280: Loading Service
-INFO 2015-06-03 01:06:38,280: Dredd is running...
-INFO 2015-06-03 01:06:38,280: Starting Dredd
-INFO 2015-06-03 01:06:38,281: Polling Queue
-INFO 2015-06-03 01:06:40,284: Polling Queue
-INFO 2015-06-03 01:06:44,288: Polling Queue
-INFO 2015-06-03 01:06:52,291: Polling Queue
-INFO 2015-06-03 01:07:02,297: Polling Queue
-INFO 2015-06-03 01:07:12,307: Polling Queue
-INFO 2015-06-03 01:07:22,310: Polling Queue
-INFO 2015-06-03 01:07:32,320: Polling Queue
-INFO 2015-06-03 01:07:42,330: Polling Queue
-INFO 2015-06-03 01:07:52,335: Polling Queue
-INFO 2015-06-03 01:08:02,336: Polling Queue
-INFO 2015-06-03 01:08:12,343: Polling Queue
-INFO 2015-06-03 01:08:32,102: Loading Service
-INFO 2015-06-03 01:08:32,102: Dredd is running...
-INFO 2015-06-03 01:08:32,102: Starting Dredd
-INFO 2015-06-03 01:08:32,102: Polling Queue
-INFO 2015-06-03 01:08:34,105: Polling Queue
-INFO 2015-06-03 01:08:38,110: Polling Queue
-INFO 2015-06-03 01:08:46,115: Polling Queue
-INFO 2015-06-03 01:08:56,119: Polling Queue
-INFO 2015-06-03 01:09:01,020: Loading Service
-INFO 2015-06-03 01:09:01,020: Dredd is running...
-INFO 2015-06-03 01:09:01,020: Starting Dredd
-INFO 2015-06-03 01:09:01,020: Polling Queue
-INFO 2015-06-03 01:09:01,021: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:01,021: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:03,024: Polling Queue
-INFO 2015-06-03 01:09:03,024: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:03,025: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:07,028: Polling Queue
-INFO 2015-06-03 01:09:07,028: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:07,028: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:15,030: Polling Queue
-INFO 2015-06-03 01:09:15,031: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:15,031: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:25,033: Polling Queue
-INFO 2015-06-03 01:09:25,033: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:25,033: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:33,505: Loading Service
-INFO 2015-06-03 01:09:33,505: Dredd is running...
-INFO 2015-06-03 01:09:33,505: Starting Dredd
-INFO 2015-06-03 01:09:33,506: Polling Queue
-INFO 2015-06-03 01:09:33,506: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:33,506: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:35,509: Polling Queue
-INFO 2015-06-03 01:09:35,509: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:35,509: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:39,511: Polling Queue
-INFO 2015-06-03 01:09:39,511: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:39,511: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:09:47,513: Polling Queue
-INFO 2015-06-03 01:09:47,513: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:09:47,514: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:10:06,211: Loading Service
-INFO 2015-06-03 01:10:06,211: Dredd is running...
-INFO 2015-06-03 01:10:06,212: Starting Dredd
-INFO 2015-06-03 01:10:06,212: Polling Queue
-INFO 2015-06-03 01:10:06,212: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:10:08,563: Polling Queue
-INFO 2015-06-03 01:10:08,563: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:10:12,891: Polling Queue
-INFO 2015-06-03 01:10:12,891: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:10:21,209: Polling Queue
-INFO 2015-06-03 01:10:21,209: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:10:31,530: Polling Queue
-INFO 2015-06-03 01:10:31,531: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:10:41,896: Polling Queue
-INFO 2015-06-03 01:10:41,897: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:10:52,224: Polling Queue
-INFO 2015-06-03 01:10:52,225: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:11:02,697: Polling Queue
-INFO 2015-06-03 01:11:02,698: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:11:13,053: Polling Queue
-INFO 2015-06-03 01:11:13,053: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:11:23,362: Polling Queue
-INFO 2015-06-03 01:11:23,363: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:11:33,687: Polling Queue
-INFO 2015-06-03 01:11:33,687: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:11:44,068: Polling Queue
-INFO 2015-06-03 01:11:44,068: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:11:54,383: Polling Queue
-INFO 2015-06-03 01:11:54,384: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:12:04,717: Polling Queue
-INFO 2015-06-03 01:12:04,717: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:12:15,032: Polling Queue
-INFO 2015-06-03 01:12:15,033: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:12:25,352: Polling Queue
-INFO 2015-06-03 01:12:25,352: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:12:35,689: Polling Queue
-INFO 2015-06-03 01:12:35,690: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:12:46,008: Polling Queue
-INFO 2015-06-03 01:12:46,008: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:12:56,330: Polling Queue
-INFO 2015-06-03 01:12:56,331: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:13:06,644: Polling Queue
-INFO 2015-06-03 01:13:06,644: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:13:16,961: Polling Queue
-INFO 2015-06-03 01:13:16,962: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:13:27,527: Polling Queue
-INFO 2015-06-03 01:13:27,527: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:13:37,887: Polling Queue
-INFO 2015-06-03 01:13:37,888: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:13:48,209: Polling Queue
-INFO 2015-06-03 01:13:48,209: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:13:58,576: Polling Queue
-INFO 2015-06-03 01:13:58,577: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:14:08,900: Polling Queue
-INFO 2015-06-03 01:14:08,901: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:14:19,218: Polling Queue
-INFO 2015-06-03 01:14:19,219: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:14:29,533: Polling Queue
-INFO 2015-06-03 01:14:29,534: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:14:39,849: Polling Queue
-INFO 2015-06-03 01:14:39,849: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:14:50,159: Polling Queue
-INFO 2015-06-03 01:14:50,160: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:15:00,511: Polling Queue
-INFO 2015-06-03 01:15:00,511: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:15:10,825: Polling Queue
-INFO 2015-06-03 01:15:10,825: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:15:21,175: Polling Queue
-INFO 2015-06-03 01:15:21,175: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:15:31,479: Polling Queue
-INFO 2015-06-03 01:15:31,479: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:15:41,803: Polling Queue
-INFO 2015-06-03 01:15:41,803: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:15:52,135: Polling Queue
-INFO 2015-06-03 01:15:52,135: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:16:02,532: Polling Queue
-INFO 2015-06-03 01:16:02,532: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:16:12,858: Polling Queue
-INFO 2015-06-03 01:16:12,859: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:16:23,174: Polling Queue
-INFO 2015-06-03 01:16:23,175: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:16:33,512: Polling Queue
-INFO 2015-06-03 01:16:33,512: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:02,563: Loading Service
-INFO 2015-06-03 01:17:02,565: Dredd is running...
-INFO 2015-06-03 01:17:02,565: Starting Dredd
-INFO 2015-06-03 01:17:02,565: Polling Queue
-INFO 2015-06-03 01:17:02,566: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:04,923: Polling Queue
-INFO 2015-06-03 01:17:04,923: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:09,315: Polling Queue
-INFO 2015-06-03 01:17:09,315: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:17,732: Polling Queue
-INFO 2015-06-03 01:17:17,732: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:28,069: Polling Queue
-INFO 2015-06-03 01:17:28,070: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:38,399: Polling Queue
-INFO 2015-06-03 01:17:38,399: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:48,826: Polling Queue
-INFO 2015-06-03 01:17:48,826: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:17:59,138: Polling Queue
-INFO 2015-06-03 01:17:59,139: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:18:09,454: Polling Queue
-INFO 2015-06-03 01:18:09,454: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:18:19,780: Polling Queue
-INFO 2015-06-03 01:18:19,780: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:18:30,116: Polling Queue
-INFO 2015-06-03 01:18:30,116: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:18:40,448: Polling Queue
-INFO 2015-06-03 01:18:40,449: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:18:50,777: Polling Queue
-INFO 2015-06-03 01:18:50,777: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:01,089: Polling Queue
-INFO 2015-06-03 01:19:01,090: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:11,668: Loading Service
-INFO 2015-06-03 01:19:11,669: Dredd is running...
-INFO 2015-06-03 01:19:11,669: Starting Dredd
-INFO 2015-06-03 01:19:11,669: Polling Queue
-INFO 2015-06-03 01:19:11,669: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:13,969: Polling Queue
-INFO 2015-06-03 01:19:13,969: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:18,368: Polling Queue
-INFO 2015-06-03 01:19:18,369: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:26,711: Polling Queue
-INFO 2015-06-03 01:19:26,711: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:37,037: Polling Queue
-INFO 2015-06-03 01:19:37,038: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:47,352: Polling Queue
-INFO 2015-06-03 01:19:47,353: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:19:57,676: Polling Queue
-INFO 2015-06-03 01:19:57,677: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:20:08,000: Polling Queue
-INFO 2015-06-03 01:20:08,001: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:20:18,340: Polling Queue
-INFO 2015-06-03 01:20:18,340: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:20:28,673: Polling Queue
-INFO 2015-06-03 01:20:28,673: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:20:38,986: Polling Queue
-INFO 2015-06-03 01:20:38,987: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:20:49,374: Polling Queue
-INFO 2015-06-03 01:20:49,375: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:20:59,686: Polling Queue
-INFO 2015-06-03 01:20:59,686: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:21:10,009: Polling Queue
-INFO 2015-06-03 01:21:10,009: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:21:20,380: Polling Queue
-INFO 2015-06-03 01:21:20,381: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:21:30,725: Polling Queue
-INFO 2015-06-03 01:21:30,725: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:21:41,056: Polling Queue
-INFO 2015-06-03 01:21:41,057: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:21:44,474: Loading Service
-INFO 2015-06-03 01:21:44,475: Dredd is running...
-INFO 2015-06-03 01:21:44,475: Starting Dredd
-INFO 2015-06-03 01:21:44,476: Polling Queue
-INFO 2015-06-03 01:21:44,476: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:21:46,805: Polling Queue
-INFO 2015-06-03 01:21:46,806: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:22:04,445: Loading Service
-INFO 2015-06-03 01:22:04,446: Dredd is running...
-INFO 2015-06-03 01:22:04,446: Starting Dredd
-INFO 2015-06-03 01:22:04,446: Polling Queue
-INFO 2015-06-03 01:22:04,446: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:22:06,752: Polling Queue
-INFO 2015-06-03 01:22:06,753: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:22:40,215: Loading Service
-INFO 2015-06-03 01:22:40,215: Dredd is running...
-INFO 2015-06-03 01:22:40,215: Starting Dredd
-INFO 2015-06-03 01:22:40,216: Polling Queue
-INFO 2015-06-03 01:22:40,216: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:22:40,585: Scoring Email this-be-my-id
-INFO 2015-06-03 01:23:01,543: Loading Service
-INFO 2015-06-03 01:23:01,543: Dredd is running...
-INFO 2015-06-03 01:23:01,544: Starting Dredd
-INFO 2015-06-03 01:23:01,544: Polling Queue
-INFO 2015-06-03 01:23:01,544: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:23:01,908: Scoring Email this-be-my-id
-INFO 2015-06-03 01:27:19,878: Loading Service
-INFO 2015-06-03 01:27:19,879: Dredd is running...
-INFO 2015-06-03 01:27:19,879: Starting Dredd
-INFO 2015-06-03 01:27:19,879: Polling Queue
-INFO 2015-06-03 01:27:19,880: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:27:20,390: Scoring Email this-be-my-id
-INFO 2015-06-03 01:27:29,589: Loading Service
-INFO 2015-06-03 01:27:29,590: Dredd is running...
-INFO 2015-06-03 01:27:29,590: Starting Dredd
-INFO 2015-06-03 01:27:29,590: Polling Queue
-INFO 2015-06-03 01:27:29,591: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:27:29,972: Scoring Email this-be-my-id
-INFO 2015-06-03 01:29:57,111: Loading Service
-INFO 2015-06-03 01:29:57,111: Dredd is running...
-INFO 2015-06-03 01:29:57,111: Starting Dredd
-INFO 2015-06-03 01:29:57,111: Polling Queue
-INFO 2015-06-03 01:29:57,112: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:29:57,486: Scoring Email this-be-my-id
-INFO 2015-06-03 01:30:05,239: Loading Service
-INFO 2015-06-03 01:30:05,239: Dredd is running...
-INFO 2015-06-03 01:30:05,239: Starting Dredd
-INFO 2015-06-03 01:30:05,240: Polling Queue
-INFO 2015-06-03 01:30:05,240: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:30:05,653: Scoring Email this-be-my-id
-INFO 2015-06-03 01:30:44,876: Loading Service
-INFO 2015-06-03 01:30:44,876: Dredd is running...
-INFO 2015-06-03 01:30:44,876: Starting Dredd
-INFO 2015-06-03 01:30:44,876: Polling Queue
-INFO 2015-06-03 01:30:44,876: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:30:45,275: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:23,269: Loading Service
-INFO 2015-06-03 01:31:23,269: Dredd is running...
-INFO 2015-06-03 01:31:23,269: Starting Dredd
-INFO 2015-06-03 01:31:23,270: Polling Queue
-INFO 2015-06-03 01:31:23,270: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:23,662: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:23,709: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:40,161: Loading Service
-INFO 2015-06-03 01:31:40,162: Dredd is running...
-INFO 2015-06-03 01:31:40,162: Starting Dredd
-INFO 2015-06-03 01:31:40,162: Polling Queue
-INFO 2015-06-03 01:31:40,162: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:40,560: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:40,602: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:40,603: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:40,603: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:41,604: Polling Queue
-INFO 2015-06-03 01:31:41,605: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:42,075: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:42,077: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:42,077: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:42,079: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:43,082: Polling Queue
-INFO 2015-06-03 01:31:43,083: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:43,392: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:43,393: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:43,394: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:43,395: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:44,397: Polling Queue
-INFO 2015-06-03 01:31:44,398: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:44,734: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:44,735: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:44,736: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:44,737: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:45,739: Polling Queue
-INFO 2015-06-03 01:31:45,740: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:46,058: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:46,059: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:46,059: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:46,059: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:47,062: Polling Queue
-INFO 2015-06-03 01:31:47,062: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:47,502: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:47,502: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:47,503: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:47,504: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:48,505: Polling Queue
-INFO 2015-06-03 01:31:48,506: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:48,813: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:48,814: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:48,815: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:48,815: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:49,817: Polling Queue
-INFO 2015-06-03 01:31:49,817: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:50,146: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:50,147: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:50,148: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:50,148: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:51,150: Polling Queue
-INFO 2015-06-03 01:31:51,150: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:51,460: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:51,461: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:51,461: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:51,461: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:52,463: Polling Queue
-INFO 2015-06-03 01:31:52,463: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:52,769: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:52,770: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:52,770: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:52,771: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:53,772: Polling Queue
-INFO 2015-06-03 01:31:53,773: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:54,090: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:54,091: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:54,091: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:54,092: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:55,094: Polling Queue
-INFO 2015-06-03 01:31:55,094: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:55,407: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:55,409: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:55,409: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:55,410: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:56,412: Polling Queue
-INFO 2015-06-03 01:31:56,413: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:56,731: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:56,732: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:56,733: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:56,733: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:57,735: Polling Queue
-INFO 2015-06-03 01:31:57,736: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:58,076: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:58,077: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:58,077: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:58,078: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:31:59,080: Polling Queue
-INFO 2015-06-03 01:31:59,081: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:31:59,408: Scoring Email this-be-my-id
-INFO 2015-06-03 01:31:59,409: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:31:59,409: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:31:59,410: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:00,412: Polling Queue
-INFO 2015-06-03 01:32:00,412: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:00,726: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:00,728: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:00,728: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:00,729: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:01,730: Polling Queue
-INFO 2015-06-03 01:32:01,731: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:02,226: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:02,226: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:02,227: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:02,227: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:03,229: Polling Queue
-INFO 2015-06-03 01:32:03,229: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:03,877: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:03,879: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:03,879: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:03,880: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:04,883: Polling Queue
-INFO 2015-06-03 01:32:04,883: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:05,541: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:05,542: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:05,542: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:05,542: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:06,544: Polling Queue
-INFO 2015-06-03 01:32:06,545: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:07,224: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:07,225: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:07,226: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:07,226: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:08,228: Polling Queue
-INFO 2015-06-03 01:32:08,228: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:08,886: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:08,887: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:08,887: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:08,888: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:09,890: Polling Queue
-INFO 2015-06-03 01:32:09,890: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:10,570: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:10,571: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:10,571: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:10,572: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:11,573: Polling Queue
-INFO 2015-06-03 01:32:11,573: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:12,108: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:12,109: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:12,110: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:12,110: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:13,112: Polling Queue
-INFO 2015-06-03 01:32:13,113: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:13,821: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:13,821: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:13,822: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:13,822: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:14,823: Polling Queue
-INFO 2015-06-03 01:32:14,824: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:15,472: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:15,473: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:15,473: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:15,473: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:16,476: Polling Queue
-INFO 2015-06-03 01:32:16,477: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:16,789: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:16,790: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:16,790: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:16,791: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:17,794: Polling Queue
-INFO 2015-06-03 01:32:17,795: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:18,144: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:18,145: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:18,145: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:18,146: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:19,147: Polling Queue
-INFO 2015-06-03 01:32:19,147: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:19,456: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:19,457: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:19,458: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:19,458: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:20,461: Polling Queue
-INFO 2015-06-03 01:32:20,461: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:20,774: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:20,775: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:20,776: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:20,777: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:21,780: Polling Queue
-INFO 2015-06-03 01:32:21,781: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:22,160: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:22,161: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:22,161: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:22,161: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:24,245: Loading Service
-INFO 2015-06-03 01:32:24,245: Dredd is running...
-INFO 2015-06-03 01:32:24,245: Starting Dredd
-INFO 2015-06-03 01:32:24,245: Polling Queue
-INFO 2015-06-03 01:32:24,246: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:24,617: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:24,656: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:24,656: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:24,657: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:25,658: Polling Queue
-INFO 2015-06-03 01:32:25,659: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:25,971: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:25,972: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:25,973: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:25,973: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:26,975: Polling Queue
-INFO 2015-06-03 01:32:26,975: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:27,267: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:27,268: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:27,268: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:27,269: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:32:28,270: Polling Queue
-INFO 2015-06-03 01:32:28,271: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:32:28,587: Scoring Email this-be-my-id
-INFO 2015-06-03 01:32:28,588: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:32:28,589: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:32:28,589: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:58:37,481: Loading Service
-INFO 2015-06-03 01:58:37,482: Dredd is running...
-INFO 2015-06-03 01:58:37,482: Starting Dredd
-INFO 2015-06-03 01:58:37,482: Polling Queue
-INFO 2015-06-03 01:58:37,483: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:37,878: Scoring Email this-be-my-id
-INFO 2015-06-03 01:58:37,924: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:58:37,928: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:58:37,928: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:58:38,929: Polling Queue
-INFO 2015-06-03 01:58:38,930: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:39,309: Scoring Email this-be-my-id
-INFO 2015-06-03 01:58:39,311: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:58:39,312: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:58:39,312: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:58:40,314: Polling Queue
-INFO 2015-06-03 01:58:40,314: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:40,617: Scoring Email this-be-my-id
-INFO 2015-06-03 01:58:40,620: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:58:40,621: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:58:40,622: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:58:41,623: Polling Queue
-INFO 2015-06-03 01:58:41,624: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:41,967: Scoring Email this-be-my-id
-INFO 2015-06-03 01:58:41,970: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:58:41,970: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:58:41,971: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:58:42,972: Polling Queue
-INFO 2015-06-03 01:58:42,973: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:43,298: Scoring Email this-be-my-id
-INFO 2015-06-03 01:58:43,300: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:58:43,300: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:58:43,300: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:58:44,303: Polling Queue
-INFO 2015-06-03 01:58:44,303: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:44,933: Scoring Email this-be-my-id
-INFO 2015-06-03 01:58:44,936: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:58:44,937: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:58:44,937: Saving Emailthis-be-my-id
-INFO 2015-06-03 01:58:45,941: Polling Queue
-INFO 2015-06-03 01:58:45,941: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-WARNING 2015-06-03 01:58:45,993: There was an error pulling email data fromhttps://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:45,994: No Email Found
-INFO 2015-06-03 01:58:47,996: Polling Queue
-INFO 2015-06-03 01:58:47,997: Getting email from: https://s3.amazonaws.com/vesper-stubs/email_object.json
-INFO 2015-06-03 01:58:48,327: Scoring Email this-be-my-id
-INFO 2015-06-03 01:58:48,330: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'a-thread-of-email'}
-INFO 2015-06-03 01:58:48,331: Pushing this-be-my-id onto email thread a-thread-of-email
-INFO 2015-06-03 01:58:48,331: Saving Emailthis-be-my-id
+INFO 2015-06-04 02:35:35,410: Loading Service
+INFO 2015-06-04 02:35:35,410: Dredd is running...
+INFO 2015-06-04 02:35:35,410: Starting Dredd
+WARNING 2015-06-04 02:35:35,920: Unable to decode message
+INFO 2015-06-04 02:35:35,921: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d/emails/3fd999b1-e01b-4744-8bb4-e80edf9bcc37.json
+INFO 2015-06-04 02:35:36,455: Scoring Task 3fd999b1-e01b-4744-8bb4-e80edf9bcc37
+INFO 2015-06-04 02:35:36,499: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d'}
+INFO 2015-06-04 02:35:36,500: Pushing 3fd999b1-e01b-4744-8bb4-e80edf9bcc37 onto email thread 94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d
+INFO 2015-06-04 02:35:36,500: Saving Email3fd999b1-e01b-4744-8bb4-e80edf9bcc37
+INFO 2015-06-04 02:36:02,880: Loading Service
+INFO 2015-06-04 02:36:02,881: Dredd is running...
+INFO 2015-06-04 02:36:02,881: Starting Dredd
+WARNING 2015-06-04 02:36:03,438: Unable to decode message
+WARNING 2015-06-04 02:36:03,986: Unable to decode message
+WARNING 2015-06-04 02:36:04,548: Unable to decode message
+INFO 2015-06-04 02:36:04,549: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/39853dce-ddc2-4162-8d0b-6cfd7eec2a94/emails/413d6051-d0cf-4b59-904a-721d48d9672d.json
+INFO 2015-06-04 02:36:05,083: Scoring Task 413d6051-d0cf-4b59-904a-721d48d9672d
+INFO 2015-06-04 02:36:05,143: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'39853dce-ddc2-4162-8d0b-6cfd7eec2a94'}
+INFO 2015-06-04 02:36:05,144: Pushing 413d6051-d0cf-4b59-904a-721d48d9672d onto email thread 39853dce-ddc2-4162-8d0b-6cfd7eec2a94
+INFO 2015-06-04 02:36:05,144: Saving Email413d6051-d0cf-4b59-904a-721d48d9672d
+WARNING 2015-06-04 02:36:05,816: Unable to decode message
+WARNING 2015-06-04 02:36:06,293: Unable to decode message
+INFO 2015-06-04 02:36:06,293: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77/emails/760ffe5a-9bc5-4a82-a6c8-7d0b7fb6c87d.json
+INFO 2015-06-04 02:36:06,785: Scoring Task 760ffe5a-9bc5-4a82-a6c8-7d0b7fb6c87d
+INFO 2015-06-04 02:36:06,794: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77'}
+INFO 2015-06-04 02:36:06,794: Pushing 760ffe5a-9bc5-4a82-a6c8-7d0b7fb6c87d onto email thread 31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77
+INFO 2015-06-04 02:36:06,795: Saving Email760ffe5a-9bc5-4a82-a6c8-7d0b7fb6c87d
+WARNING 2015-06-04 02:36:07,452: Unable to decode message
+INFO 2015-06-04 02:36:07,452: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/3882f864-291d-4cee-95ec-fe10518bd3fa.json
+INFO 2015-06-04 02:36:07,953: Scoring Task 3882f864-291d-4cee-95ec-fe10518bd3fa
+INFO 2015-06-04 02:36:07,969: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:07,969: Pushing 3882f864-291d-4cee-95ec-fe10518bd3fa onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:07,970: Saving Email3882f864-291d-4cee-95ec-fe10518bd3fa
+WARNING 2015-06-04 02:36:08,634: Unable to decode message
+WARNING 2015-06-04 02:36:09,099: Unable to decode message
+INFO 2015-06-04 02:36:09,099: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/b7e79954-3877-4f44-ac35-9adf4d3675ca/emails/db8aad08-1a1a-4cea-be8a-e1e3c06549fa.json
+INFO 2015-06-04 02:36:09,581: Scoring Task db8aad08-1a1a-4cea-be8a-e1e3c06549fa
+WARNING 2015-06-04 02:36:10,327: Unable to decode message
+INFO 2015-06-04 02:36:10,327: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/a710e275-3b5d-4163-81e4-a807e8736b66.json
+INFO 2015-06-04 02:36:10,783: Scoring Task a710e275-3b5d-4163-81e4-a807e8736b66
+INFO 2015-06-04 02:36:10,795: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:10,795: Pushing a710e275-3b5d-4163-81e4-a807e8736b66 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:10,796: Saving Emaila710e275-3b5d-4163-81e4-a807e8736b66
+WARNING 2015-06-04 02:36:11,444: Unable to decode message
+INFO 2015-06-04 02:36:11,445: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/d2fcefab-6bd1-4138-864d-6b045b85063c/emails/f6015837-6def-4b1c-8d6b-ce91b0bc97b4.json
+INFO 2015-06-04 02:36:12,202: Scoring Task f6015837-6def-4b1c-8d6b-ce91b0bc97b4
+INFO 2015-06-04 02:36:12,259: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'd2fcefab-6bd1-4138-864d-6b045b85063c'}
+INFO 2015-06-04 02:36:12,260: Pushing f6015837-6def-4b1c-8d6b-ce91b0bc97b4 onto email thread d2fcefab-6bd1-4138-864d-6b045b85063c
+INFO 2015-06-04 02:36:12,260: Saving Emailf6015837-6def-4b1c-8d6b-ce91b0bc97b4
+WARNING 2015-06-04 02:36:12,925: Unable to decode message
+INFO 2015-06-04 02:36:12,925: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/866864a0-7046-4d56-b4dc-392716e7c75c/emails/6190d6ba-84c4-41a0-a70c-4e4a74b0fff3.json
+INFO 2015-06-04 02:36:13,583: Scoring Task 6190d6ba-84c4-41a0-a70c-4e4a74b0fff3
+WARNING 2015-06-04 02:36:14,235: Unable to decode message
+INFO 2015-06-04 02:36:14,236: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/e1c8547b-ec09-4773-b5d0-ff98fe9fd57f/emails/044cc2ac-a042-4881-82bb-42f7db1ab9cf.json
+INFO 2015-06-04 02:36:14,812: Scoring Task 044cc2ac-a042-4881-82bb-42f7db1ab9cf
+INFO 2015-06-04 02:36:14,819: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'e1c8547b-ec09-4773-b5d0-ff98fe9fd57f'}
+INFO 2015-06-04 02:36:14,819: Pushing 044cc2ac-a042-4881-82bb-42f7db1ab9cf onto email thread e1c8547b-ec09-4773-b5d0-ff98fe9fd57f
+INFO 2015-06-04 02:36:14,819: Saving Email044cc2ac-a042-4881-82bb-42f7db1ab9cf
+WARNING 2015-06-04 02:36:15,457: Unable to decode message
+INFO 2015-06-04 02:36:15,457: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/36fe3e10-6826-4e91-9328-b1de4675a396/emails/d70ef20e-07c8-40ca-83c9-eae810854040.json
+INFO 2015-06-04 02:36:15,935: Scoring Task d70ef20e-07c8-40ca-83c9-eae810854040
+INFO 2015-06-04 02:36:15,940: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'36fe3e10-6826-4e91-9328-b1de4675a396'}
+INFO 2015-06-04 02:36:15,941: Pushing d70ef20e-07c8-40ca-83c9-eae810854040 onto email thread 36fe3e10-6826-4e91-9328-b1de4675a396
+INFO 2015-06-04 02:36:15,941: Saving Emaild70ef20e-07c8-40ca-83c9-eae810854040
+WARNING 2015-06-04 02:36:16,487: Unable to decode message
+INFO 2015-06-04 02:36:16,488: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/aa629275-a77f-4130-81a7-87cc8c8bfabc/emails/5cc2b2dc-e8fc-4a75-a487-d6ebb73bf827.json
+INFO 2015-06-04 02:36:17,054: Scoring Task 5cc2b2dc-e8fc-4a75-a487-d6ebb73bf827
+WARNING 2015-06-04 02:36:17,633: Unable to decode message
+INFO 2015-06-04 02:36:17,634: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/e212bdb8-66a1-4619-a273-ee09671df6b3/emails/085a3b2a-201c-4bce-a1e9-a04ae1cc8e90.json
+INFO 2015-06-04 02:36:18,273: Scoring Task 085a3b2a-201c-4bce-a1e9-a04ae1cc8e90
+WARNING 2015-06-04 02:36:18,963: Unable to decode message
+INFO 2015-06-04 02:36:18,963: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/273c2e69-0a30-4e78-85b9-c3821df407d1.json
+INFO 2015-06-04 02:36:19,594: Scoring Task 273c2e69-0a30-4e78-85b9-c3821df407d1
+INFO 2015-06-04 02:36:19,643: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:19,644: Pushing 273c2e69-0a30-4e78-85b9-c3821df407d1 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:19,644: Saving Email273c2e69-0a30-4e78-85b9-c3821df407d1
+WARNING 2015-06-04 02:36:20,198: Unable to decode message
+WARNING 2015-06-04 02:36:20,662: Unable to decode message
+INFO 2015-06-04 02:36:20,663: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/36fe3e10-6826-4e91-9328-b1de4675a396/emails/e359d254-f1d9-4dcd-bfce-0a046ff3e11b.json
+INFO 2015-06-04 02:36:21,155: Scoring Task e359d254-f1d9-4dcd-bfce-0a046ff3e11b
+INFO 2015-06-04 02:36:21,165: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'36fe3e10-6826-4e91-9328-b1de4675a396'}
+INFO 2015-06-04 02:36:21,165: Pushing e359d254-f1d9-4dcd-bfce-0a046ff3e11b onto email thread 36fe3e10-6826-4e91-9328-b1de4675a396
+INFO 2015-06-04 02:36:21,165: Saving Emaile359d254-f1d9-4dcd-bfce-0a046ff3e11b
+WARNING 2015-06-04 02:36:21,796: Unable to decode message
+INFO 2015-06-04 02:36:21,797: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/01fb5c88-db1a-46eb-8d57-f5ce155185d4/emails/fc9a6d45-1e67-4c1d-82f8-5dcf6b9b9903.json
+INFO 2015-06-04 02:36:22,272: Scoring Task fc9a6d45-1e67-4c1d-82f8-5dcf6b9b9903
+INFO 2015-06-04 02:36:22,275: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'01fb5c88-db1a-46eb-8d57-f5ce155185d4'}
+INFO 2015-06-04 02:36:22,275: Pushing fc9a6d45-1e67-4c1d-82f8-5dcf6b9b9903 onto email thread 01fb5c88-db1a-46eb-8d57-f5ce155185d4
+INFO 2015-06-04 02:36:22,276: Saving Emailfc9a6d45-1e67-4c1d-82f8-5dcf6b9b9903
+WARNING 2015-06-04 02:36:22,810: Unable to decode message
+WARNING 2015-06-04 02:36:23,361: Unable to decode message
+INFO 2015-06-04 02:36:23,361: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/4ff3ee82-faa4-4b99-9d0e-d0d813f511f8/emails/2d10fa9f-9844-4579-94f7-eaa0faffd4dc.json
+INFO 2015-06-04 02:36:23,968: Scoring Task 2d10fa9f-9844-4579-94f7-eaa0faffd4dc
+WARNING 2015-06-04 02:36:24,531: Unable to decode message
+INFO 2015-06-04 02:36:24,531: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/42ebd615-5bb2-4c23-8cc3-8f84faa23a92.json
+INFO 2015-06-04 02:36:25,026: Scoring Task 42ebd615-5bb2-4c23-8cc3-8f84faa23a92
+INFO 2015-06-04 02:36:25,048: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:25,049: Pushing 42ebd615-5bb2-4c23-8cc3-8f84faa23a92 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:25,049: Saving Email42ebd615-5bb2-4c23-8cc3-8f84faa23a92
+WARNING 2015-06-04 02:36:25,618: Unable to decode message
+INFO 2015-06-04 02:36:25,618: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/da9648d3-883a-41fa-9fa8-aaaebe542fd6.json
+INFO 2015-06-04 02:36:26,114: Scoring Task da9648d3-883a-41fa-9fa8-aaaebe542fd6
+INFO 2015-06-04 02:36:26,150: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:26,150: Pushing da9648d3-883a-41fa-9fa8-aaaebe542fd6 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:26,151: Saving Emailda9648d3-883a-41fa-9fa8-aaaebe542fd6
+WARNING 2015-06-04 02:36:26,796: Unable to decode message
+INFO 2015-06-04 02:36:26,797: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d/emails/6c7e835c-900b-42af-85a7-d909600b6d4a.json
+INFO 2015-06-04 02:36:27,269: Scoring Task 6c7e835c-900b-42af-85a7-d909600b6d4a
+INFO 2015-06-04 02:36:27,276: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d'}
+INFO 2015-06-04 02:36:27,277: Pushing 6c7e835c-900b-42af-85a7-d909600b6d4a onto email thread 94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d
+INFO 2015-06-04 02:36:27,277: Saving Email6c7e835c-900b-42af-85a7-d909600b6d4a
+WARNING 2015-06-04 02:36:27,835: Unable to decode message
+INFO 2015-06-04 02:36:27,835: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/5317a851-13de-4b40-9eb4-01ef8c738d70/emails/57dcd080-222c-4bdf-aa02-bc4982d373b5.json
+INFO 2015-06-04 02:36:28,686: Scoring Task 57dcd080-222c-4bdf-aa02-bc4982d373b5
+WARNING 2015-06-04 02:36:29,302: Unable to decode message
+INFO 2015-06-04 02:36:29,303: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/e93641ac-9503-42e8-9d8d-548dcb7c0d63/emails/0dff75ba-1241-47a1-ac82-5fe3dd25c1f2.json
+INFO 2015-06-04 02:36:29,868: Scoring Task 0dff75ba-1241-47a1-ac82-5fe3dd25c1f2
+WARNING 2015-06-04 02:36:30,430: Unable to decode message
+WARNING 2015-06-04 02:36:30,971: Unable to decode message
+INFO 2015-06-04 02:36:30,972: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/4ff3ee82-faa4-4b99-9d0e-d0d813f511f8/emails/145f19fa-0c69-4311-834e-bb415a89c14a.json
+INFO 2015-06-04 02:36:31,527: Scoring Task 145f19fa-0c69-4311-834e-bb415a89c14a
+WARNING 2015-06-04 02:36:32,085: Unable to decode message
+INFO 2015-06-04 02:36:32,086: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/d8ad6bf9-b1d3-4898-8a65-5eaa20643360.json
+INFO 2015-06-04 02:36:32,553: Scoring Task d8ad6bf9-b1d3-4898-8a65-5eaa20643360
+INFO 2015-06-04 02:36:32,573: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:32,573: Pushing d8ad6bf9-b1d3-4898-8a65-5eaa20643360 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:32,573: Saving Emaild8ad6bf9-b1d3-4898-8a65-5eaa20643360
+WARNING 2015-06-04 02:36:33,342: Unable to decode message
+WARNING 2015-06-04 02:36:33,831: Unable to decode message
+INFO 2015-06-04 02:36:33,832: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/0f33642c-5848-4de6-bea2-532a52be377c/emails/53e4a397-d88f-4450-a508-c2c751098d9c.json
+INFO 2015-06-04 02:36:34,301: Scoring Task 53e4a397-d88f-4450-a508-c2c751098d9c
+INFO 2015-06-04 02:36:34,332: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'0f33642c-5848-4de6-bea2-532a52be377c'}
+INFO 2015-06-04 02:36:34,332: Pushing 53e4a397-d88f-4450-a508-c2c751098d9c onto email thread 0f33642c-5848-4de6-bea2-532a52be377c
+INFO 2015-06-04 02:36:34,333: Saving Email53e4a397-d88f-4450-a508-c2c751098d9c
+WARNING 2015-06-04 02:36:34,967: Unable to decode message
+WARNING 2015-06-04 02:36:35,530: Unable to decode message
+INFO 2015-06-04 02:36:35,531: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/19e471bf-6603-450d-8f56-62d87d4746e7/emails/c346f09c-5e1a-43ca-abc2-a2aad500a4de.json
+INFO 2015-06-04 02:36:36,094: Scoring Task c346f09c-5e1a-43ca-abc2-a2aad500a4de
+INFO 2015-06-04 02:36:36,107: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'19e471bf-6603-450d-8f56-62d87d4746e7'}
+INFO 2015-06-04 02:36:36,108: Pushing c346f09c-5e1a-43ca-abc2-a2aad500a4de onto email thread 19e471bf-6603-450d-8f56-62d87d4746e7
+INFO 2015-06-04 02:36:36,108: Saving Emailc346f09c-5e1a-43ca-abc2-a2aad500a4de
+WARNING 2015-06-04 02:36:36,660: Unable to decode message
+WARNING 2015-06-04 02:36:37,238: Unable to decode message
+WARNING 2015-06-04 02:36:37,783: Unable to decode message
+INFO 2015-06-04 02:36:37,784: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/8d8b3a11-2f53-4f0c-a1f3-8cd63ac76509/emails/c3342d24-137c-48ac-ab6c-15b2a61b7994.json
+INFO 2015-06-04 02:36:38,344: Scoring Task c3342d24-137c-48ac-ab6c-15b2a61b7994
+INFO 2015-06-04 02:36:38,365: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'8d8b3a11-2f53-4f0c-a1f3-8cd63ac76509'}
+INFO 2015-06-04 02:36:38,366: Pushing c3342d24-137c-48ac-ab6c-15b2a61b7994 onto email thread 8d8b3a11-2f53-4f0c-a1f3-8cd63ac76509
+INFO 2015-06-04 02:36:38,367: Saving Emailc3342d24-137c-48ac-ab6c-15b2a61b7994
+WARNING 2015-06-04 02:36:38,941: Unable to decode message
+WARNING 2015-06-04 02:36:39,491: Unable to decode message
+WARNING 2015-06-04 02:36:40,045: Unable to decode message
+WARNING 2015-06-04 02:36:40,608: Unable to decode message
+WARNING 2015-06-04 02:36:41,152: Unable to decode message
+INFO 2015-06-04 02:36:41,152: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/da9648d3-883a-41fa-9fa8-aaaebe542fd6.json
+INFO 2015-06-04 02:36:41,616: Scoring Task da9648d3-883a-41fa-9fa8-aaaebe542fd6
+INFO 2015-06-04 02:36:41,635: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:41,635: Pushing da9648d3-883a-41fa-9fa8-aaaebe542fd6 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:41,635: Saving Emailda9648d3-883a-41fa-9fa8-aaaebe542fd6
+WARNING 2015-06-04 02:36:42,275: Unable to decode message
+INFO 2015-06-04 02:36:42,276: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/933d99f8-0a3c-478d-8548-d0b63052cbc3/emails/381827e4-e410-48db-96dc-25e659f9612f.json
+INFO 2015-06-04 02:36:42,757: Scoring Task 381827e4-e410-48db-96dc-25e659f9612f
+INFO 2015-06-04 02:36:42,765: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'933d99f8-0a3c-478d-8548-d0b63052cbc3'}
+INFO 2015-06-04 02:36:42,766: Pushing 381827e4-e410-48db-96dc-25e659f9612f onto email thread 933d99f8-0a3c-478d-8548-d0b63052cbc3
+INFO 2015-06-04 02:36:42,766: Saving Email381827e4-e410-48db-96dc-25e659f9612f
+WARNING 2015-06-04 02:36:43,393: Unable to decode message
+INFO 2015-06-04 02:36:43,393: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/ab332159-dc25-4d5f-9937-dc92edc779fa/emails/bf75a7be-dfc7-4a9e-b729-8bcbd967a177.json
+INFO 2015-06-04 02:36:43,864: Scoring Task bf75a7be-dfc7-4a9e-b729-8bcbd967a177
+WARNING 2015-06-04 02:36:44,505: Unable to decode message
+INFO 2015-06-04 02:36:44,506: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/f5587923-9d14-4109-915a-2228ae49e974.json
+INFO 2015-06-04 02:36:45,153: Scoring Task f5587923-9d14-4109-915a-2228ae49e974
+INFO 2015-06-04 02:36:45,213: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:36:45,213: Pushing f5587923-9d14-4109-915a-2228ae49e974 onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:36:45,214: Saving Emailf5587923-9d14-4109-915a-2228ae49e974
+WARNING 2015-06-04 02:36:45,859: Unable to decode message
+WARNING 2015-06-04 02:36:46,407: Unable to decode message
+INFO 2015-06-04 02:36:46,408: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/a710e275-3b5d-4163-81e4-a807e8736b66.json
+INFO 2015-06-04 02:36:46,913: Scoring Task a710e275-3b5d-4163-81e4-a807e8736b66
+INFO 2015-06-04 02:36:46,927: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:46,928: Pushing a710e275-3b5d-4163-81e4-a807e8736b66 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:46,929: Saving Emaila710e275-3b5d-4163-81e4-a807e8736b66
+WARNING 2015-06-04 02:36:47,476: Unable to decode message
+WARNING 2015-06-04 02:36:48,038: Unable to decode message
+INFO 2015-06-04 02:36:48,039: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/737f83bc-57fa-4bee-9b97-20cb9dae99db.json
+INFO 2015-06-04 02:36:49,163: Scoring Task 737f83bc-57fa-4bee-9b97-20cb9dae99db
+INFO 2015-06-04 02:36:49,291: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:36:49,291: Pushing 737f83bc-57fa-4bee-9b97-20cb9dae99db onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:36:49,292: Saving Email737f83bc-57fa-4bee-9b97-20cb9dae99db
+WARNING 2015-06-04 02:36:50,638: Unable to decode message
+INFO 2015-06-04 02:36:50,639: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77/emails/90df2709-9690-4c20-8ac4-9b1329a3ddb6.json
+INFO 2015-06-04 02:36:51,605: Scoring Task 90df2709-9690-4c20-8ac4-9b1329a3ddb6
+INFO 2015-06-04 02:36:51,619: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77'}
+INFO 2015-06-04 02:36:51,620: Pushing 90df2709-9690-4c20-8ac4-9b1329a3ddb6 onto email thread 31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77
+INFO 2015-06-04 02:36:51,620: Saving Email90df2709-9690-4c20-8ac4-9b1329a3ddb6
+WARNING 2015-06-04 02:36:52,217: Unable to decode message
+WARNING 2015-06-04 02:36:52,838: Unable to decode message
+INFO 2015-06-04 02:36:52,839: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/d6b90f00-28e0-4425-8965-6a2f9aaf17c1.json
+INFO 2015-06-04 02:36:53,433: Scoring Task d6b90f00-28e0-4425-8965-6a2f9aaf17c1
+INFO 2015-06-04 02:36:53,461: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:36:53,461: Pushing d6b90f00-28e0-4425-8965-6a2f9aaf17c1 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:36:53,461: Saving Emaild6b90f00-28e0-4425-8965-6a2f9aaf17c1
+WARNING 2015-06-04 02:36:54,129: Unable to decode message
+WARNING 2015-06-04 02:36:54,728: Unable to decode message
+WARNING 2015-06-04 02:36:55,273: Unable to decode message
+INFO 2015-06-04 02:36:55,274: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/c9c041c8-23d7-4436-b89c-7d0cd8683b59/emails/70ff5afb-b580-4e8a-80e7-00c861816148.json
+INFO 2015-06-04 02:36:55,752: Scoring Task 70ff5afb-b580-4e8a-80e7-00c861816148
+WARNING 2015-06-04 02:36:56,372: Unable to decode message
+WARNING 2015-06-04 02:36:56,928: Unable to decode message
+WARNING 2015-06-04 02:36:57,510: Unable to decode message
+WARNING 2015-06-04 02:36:58,092: Unable to decode message
+WARNING 2015-06-04 02:36:58,651: Unable to decode message
+WARNING 2015-06-04 02:36:59,222: Unable to decode message
+INFO 2015-06-04 02:36:59,223: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/b9758c62-88d0-44a0-aaf6-6faa6251eaee.json
+INFO 2015-06-04 02:36:59,790: Scoring Task b9758c62-88d0-44a0-aaf6-6faa6251eaee
+INFO 2015-06-04 02:36:59,833: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:36:59,833: Pushing b9758c62-88d0-44a0-aaf6-6faa6251eaee onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:36:59,834: Saving Emailb9758c62-88d0-44a0-aaf6-6faa6251eaee
+WARNING 2015-06-04 02:37:00,459: Unable to decode message
+INFO 2015-06-04 02:37:00,463: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/f03e16a1-0bee-4ddb-9290-74f258935f03.json
+INFO 2015-06-04 02:37:01,029: Scoring Task f03e16a1-0bee-4ddb-9290-74f258935f03
+INFO 2015-06-04 02:37:01,047: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:37:01,048: Pushing f03e16a1-0bee-4ddb-9290-74f258935f03 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:37:01,048: Saving Emailf03e16a1-0bee-4ddb-9290-74f258935f03
+WARNING 2015-06-04 02:37:01,692: Unable to decode message
+INFO 2015-06-04 02:37:01,692: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/0f33642c-5848-4de6-bea2-532a52be377c/emails/5f0e8190-4e16-4fac-a83a-03c6e37caf2e.json
+INFO 2015-06-04 02:37:02,234: Scoring Task 5f0e8190-4e16-4fac-a83a-03c6e37caf2e
+INFO 2015-06-04 02:37:02,254: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'0f33642c-5848-4de6-bea2-532a52be377c'}
+INFO 2015-06-04 02:37:02,255: Pushing 5f0e8190-4e16-4fac-a83a-03c6e37caf2e onto email thread 0f33642c-5848-4de6-bea2-532a52be377c
+INFO 2015-06-04 02:37:02,255: Saving Email5f0e8190-4e16-4fac-a83a-03c6e37caf2e
+WARNING 2015-06-04 02:37:02,849: Unable to decode message
+WARNING 2015-06-04 02:37:03,394: Unable to decode message
+WARNING 2015-06-04 02:37:03,959: Unable to decode message
+INFO 2015-06-04 02:37:03,960: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/6d6f4a3f-2396-433d-aff7-07e4085bab7e.json
+INFO 2015-06-04 02:37:04,664: Scoring Task 6d6f4a3f-2396-433d-aff7-07e4085bab7e
+INFO 2015-06-04 02:37:04,717: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:37:04,718: Pushing 6d6f4a3f-2396-433d-aff7-07e4085bab7e onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:37:04,718: Saving Email6d6f4a3f-2396-433d-aff7-07e4085bab7e
+WARNING 2015-06-04 02:37:05,287: Unable to decode message
+INFO 2015-06-04 02:37:05,287: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/11ad03ff-67db-4942-9548-8429c33bbe4b.json
+INFO 2015-06-04 02:37:06,200: Scoring Task 11ad03ff-67db-4942-9548-8429c33bbe4b
+INFO 2015-06-04 02:37:06,230: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:37:06,230: Pushing 11ad03ff-67db-4942-9548-8429c33bbe4b onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:37:06,231: Saving Email11ad03ff-67db-4942-9548-8429c33bbe4b
+WARNING 2015-06-04 02:37:06,863: Unable to decode message
+INFO 2015-06-04 02:37:06,864: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/0f33642c-5848-4de6-bea2-532a52be377c/emails/05f6f90c-2a26-4c34-ad78-eac10e1dc653.json
+INFO 2015-06-04 02:37:07,335: Scoring Task 05f6f90c-2a26-4c34-ad78-eac10e1dc653
+INFO 2015-06-04 02:37:07,351: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'0f33642c-5848-4de6-bea2-532a52be377c'}
+INFO 2015-06-04 02:37:07,352: Pushing 05f6f90c-2a26-4c34-ad78-eac10e1dc653 onto email thread 0f33642c-5848-4de6-bea2-532a52be377c
+INFO 2015-06-04 02:37:07,352: Saving Email05f6f90c-2a26-4c34-ad78-eac10e1dc653
+WARNING 2015-06-04 02:37:07,987: Unable to decode message
+INFO 2015-06-04 02:37:07,988: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/0960e0a3-555f-4992-ac1f-9971243c992d/emails/e2a03000-e621-47ff-bdba-c7b390a2da8c.json
+INFO 2015-06-04 02:37:08,492: Scoring Task e2a03000-e621-47ff-bdba-c7b390a2da8c
+INFO 2015-06-04 02:37:08,499: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'0960e0a3-555f-4992-ac1f-9971243c992d'}
+INFO 2015-06-04 02:37:08,499: Pushing e2a03000-e621-47ff-bdba-c7b390a2da8c onto email thread 0960e0a3-555f-4992-ac1f-9971243c992d
+INFO 2015-06-04 02:37:08,500: Saving Emaile2a03000-e621-47ff-bdba-c7b390a2da8c
+WARNING 2015-06-04 02:37:09,163: Unable to decode message
+INFO 2015-06-04 02:37:09,164: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/34b29aae-b0a4-480f-a450-d8560525418b.json
+INFO 2015-06-04 02:37:09,637: Scoring Task 34b29aae-b0a4-480f-a450-d8560525418b
+INFO 2015-06-04 02:37:09,652: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:37:09,652: Pushing 34b29aae-b0a4-480f-a450-d8560525418b onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:37:09,652: Saving Email34b29aae-b0a4-480f-a450-d8560525418b
+WARNING 2015-06-04 02:37:10,208: Unable to decode message
+WARNING 2015-06-04 02:37:10,677: Unable to decode message
+WARNING 2015-06-04 02:37:11,216: Unable to decode message
+INFO 2015-06-04 02:37:11,216: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/1471ed66-9fe9-4779-8d9f-c6d7be533ac0/emails/9da1b878-84ec-48d2-8cf4-37893e7a3af3.json
+INFO 2015-06-04 02:37:11,760: Scoring Task 9da1b878-84ec-48d2-8cf4-37893e7a3af3
+INFO 2015-06-04 02:37:11,766: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'1471ed66-9fe9-4779-8d9f-c6d7be533ac0'}
+INFO 2015-06-04 02:37:11,767: Pushing 9da1b878-84ec-48d2-8cf4-37893e7a3af3 onto email thread 1471ed66-9fe9-4779-8d9f-c6d7be533ac0
+INFO 2015-06-04 02:37:11,767: Saving Email9da1b878-84ec-48d2-8cf4-37893e7a3af3
+WARNING 2015-06-04 02:37:12,403: Unable to decode message
+INFO 2015-06-04 02:37:12,403: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/933d99f8-0a3c-478d-8548-d0b63052cbc3/emails/f48e0d07-abc4-4c5a-abbc-e3e1021e04fb.json
+INFO 2015-06-04 02:37:12,907: Scoring Task f48e0d07-abc4-4c5a-abbc-e3e1021e04fb
+INFO 2015-06-04 02:37:12,914: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'933d99f8-0a3c-478d-8548-d0b63052cbc3'}
+INFO 2015-06-04 02:37:12,914: Pushing f48e0d07-abc4-4c5a-abbc-e3e1021e04fb onto email thread 933d99f8-0a3c-478d-8548-d0b63052cbc3
+INFO 2015-06-04 02:37:12,915: Saving Emailf48e0d07-abc4-4c5a-abbc-e3e1021e04fb
+WARNING 2015-06-04 02:37:13,567: Unable to decode message
+WARNING 2015-06-04 02:37:14,109: Unable to decode message
+WARNING 2015-06-04 02:37:14,686: Unable to decode message
+INFO 2015-06-04 02:37:14,686: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/1de85c07-ec71-481a-bdb1-12e6726c869c.json
+INFO 2015-06-04 02:37:15,287: Scoring Task 1de85c07-ec71-481a-bdb1-12e6726c869c
+INFO 2015-06-04 02:37:15,327: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:37:15,328: Pushing 1de85c07-ec71-481a-bdb1-12e6726c869c onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:37:15,328: Saving Email1de85c07-ec71-481a-bdb1-12e6726c869c
+WARNING 2015-06-04 02:37:16,000: Unable to decode message
+WARNING 2015-06-04 02:37:16,538: Unable to decode message
+WARNING 2015-06-04 02:37:17,095: Unable to decode message
+WARNING 2015-06-04 02:37:17,570: Unable to decode message
+WARNING 2015-06-04 02:37:18,124: Unable to decode message
+WARNING 2015-06-04 02:37:18,594: Unable to decode message
+WARNING 2015-06-04 02:37:19,184: Unable to decode message
+INFO 2015-06-04 02:37:19,185: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/bedbe341-a280-47db-abaa-662f74b9e67a.json
+INFO 2015-06-04 02:37:19,858: Scoring Task bedbe341-a280-47db-abaa-662f74b9e67a
+INFO 2015-06-04 02:37:19,968: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:37:19,969: Pushing bedbe341-a280-47db-abaa-662f74b9e67a onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:37:19,970: Saving Emailbedbe341-a280-47db-abaa-662f74b9e67a
+WARNING 2015-06-04 02:37:20,729: Unable to decode message
+WARNING 2015-06-04 02:37:21,220: Unable to decode message
+INFO 2015-06-04 02:37:21,221: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/0f33642c-5848-4de6-bea2-532a52be377c/emails/bb907343-b642-4022-8611-e3dfabcbdb08.json
+INFO 2015-06-04 02:37:21,704: Scoring Task bb907343-b642-4022-8611-e3dfabcbdb08
+INFO 2015-06-04 02:37:21,713: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'0f33642c-5848-4de6-bea2-532a52be377c'}
+INFO 2015-06-04 02:37:21,715: Pushing bb907343-b642-4022-8611-e3dfabcbdb08 onto email thread 0f33642c-5848-4de6-bea2-532a52be377c
+INFO 2015-06-04 02:37:21,716: Saving Emailbb907343-b642-4022-8611-e3dfabcbdb08
+WARNING 2015-06-04 02:37:22,261: Unable to decode message
+INFO 2015-06-04 02:37:22,261: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/0960e0a3-555f-4992-ac1f-9971243c992d/emails/e2a03000-e621-47ff-bdba-c7b390a2da8c.json
+INFO 2015-06-04 02:37:22,734: Scoring Task e2a03000-e621-47ff-bdba-c7b390a2da8c
+INFO 2015-06-04 02:37:22,741: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'0960e0a3-555f-4992-ac1f-9971243c992d'}
+INFO 2015-06-04 02:37:22,741: Pushing e2a03000-e621-47ff-bdba-c7b390a2da8c onto email thread 0960e0a3-555f-4992-ac1f-9971243c992d
+INFO 2015-06-04 02:37:22,742: Saving Emaile2a03000-e621-47ff-bdba-c7b390a2da8c
+WARNING 2015-06-04 02:37:23,294: Unable to decode message
+INFO 2015-06-04 02:37:23,295: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/f31835c5-3850-4059-bd8d-670cc78bd72a.json
+INFO 2015-06-04 02:37:23,781: Scoring Task f31835c5-3850-4059-bd8d-670cc78bd72a
+INFO 2015-06-04 02:37:23,802: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:37:23,802: Pushing f31835c5-3850-4059-bd8d-670cc78bd72a onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:37:23,802: Saving Emailf31835c5-3850-4059-bd8d-670cc78bd72a
+WARNING 2015-06-04 02:37:24,486: Unable to decode message
+INFO 2015-06-04 02:37:24,486: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/b9a1c617-4ae6-40f0-a2c5-2bc775085f11/emails/aef84e43-ac13-4af8-b579-add694956a2a.json
+INFO 2015-06-04 02:37:25,066: Scoring Task aef84e43-ac13-4af8-b579-add694956a2a
+WARNING 2015-06-04 02:37:25,750: Unable to decode message
+INFO 2015-06-04 02:37:25,751: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/3949c5d8-287f-46ca-bd86-76a8343d712e/emails/a682a884-9e2b-45ba-acb4-2848bf2b89c6.json
+INFO 2015-06-04 02:37:26,441: Scoring Task a682a884-9e2b-45ba-acb4-2848bf2b89c6
+WARNING 2015-06-04 02:37:27,109: Unable to decode message
+INFO 2015-06-04 02:37:27,110: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/d1b5e94e-baf5-49bd-a87d-d9ccbb187528/emails/47280bad-d452-494a-89d7-312995fd3daa.json
+INFO 2015-06-04 02:37:27,584: Scoring Task 47280bad-d452-494a-89d7-312995fd3daa
+WARNING 2015-06-04 02:37:28,229: Unable to decode message
+INFO 2015-06-04 02:37:28,230: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/ace7242e-b06b-400b-9157-d3845a4891fe.json
+INFO 2015-06-04 02:37:28,732: Scoring Task ace7242e-b06b-400b-9157-d3845a4891fe
+INFO 2015-06-04 02:37:28,739: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:37:28,739: Pushing ace7242e-b06b-400b-9157-d3845a4891fe onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:37:28,740: Saving Emailace7242e-b06b-400b-9157-d3845a4891fe
+WARNING 2015-06-04 02:37:29,381: Unable to decode message
+WARNING 2015-06-04 02:37:29,952: Unable to decode message
+INFO 2015-06-04 02:37:29,952: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77/emails/4c5a8277-fa83-421a-8b13-8704a6850d0e.json
+INFO 2015-06-04 02:37:30,429: Scoring Task 4c5a8277-fa83-421a-8b13-8704a6850d0e
+INFO 2015-06-04 02:37:30,436: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77'}
+INFO 2015-06-04 02:37:30,436: Pushing 4c5a8277-fa83-421a-8b13-8704a6850d0e onto email thread 31ae1ad9-cef9-4dd2-8b7b-d90b345f3f77
+INFO 2015-06-04 02:37:30,437: Saving Email4c5a8277-fa83-421a-8b13-8704a6850d0e
+WARNING 2015-06-04 02:37:31,026: Unable to decode message
+INFO 2015-06-04 02:37:31,027: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/3949c5d8-287f-46ca-bd86-76a8343d712e/emails/70a2451e-9d9d-4843-aeb6-b46710e2158f.json
+INFO 2015-06-04 02:37:31,785: Scoring Task 70a2451e-9d9d-4843-aeb6-b46710e2158f
+WARNING 2015-06-04 02:37:32,481: Unable to decode message
+INFO 2015-06-04 02:37:32,482: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/5d049797-0083-459b-96d7-0d8efd6c7cb4/emails/bf850e65-d25d-4497-beef-3eee11be2c8d.json
+INFO 2015-06-04 02:37:32,971: Scoring Task bf850e65-d25d-4497-beef-3eee11be2c8d
+WARNING 2015-06-04 02:37:33,673: Unable to decode message
+INFO 2015-06-04 02:37:33,674: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/0bc45794-7757-424f-a3d1-833b94b73c20.json
+INFO 2015-06-04 02:37:34,254: Scoring Task 0bc45794-7757-424f-a3d1-833b94b73c20
+INFO 2015-06-04 02:37:34,284: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:37:34,284: Pushing 0bc45794-7757-424f-a3d1-833b94b73c20 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:37:34,285: Saving Email0bc45794-7757-424f-a3d1-833b94b73c20
+WARNING 2015-06-04 02:37:34,942: Unable to decode message
+WARNING 2015-06-04 02:37:35,535: Unable to decode message
+INFO 2015-06-04 02:37:35,536: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/d1b5e94e-baf5-49bd-a87d-d9ccbb187528/emails/7a60ee39-a5ce-48b1-a790-3a7485b0e20d.json
+INFO 2015-06-04 02:37:35,997: Scoring Task 7a60ee39-a5ce-48b1-a790-3a7485b0e20d
+WARNING 2015-06-04 02:37:36,653: Unable to decode message
+WARNING 2015-06-04 02:37:37,213: Unable to decode message
+WARNING 2015-06-04 02:37:37,759: Unable to decode message
+INFO 2015-06-04 02:37:37,760: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/3138ea2e-1150-482f-ad90-0cb31e8a9c3f/emails/d1ab46b1-c93f-46c1-9483-91d7562318a1.json
+INFO 2015-06-04 02:37:38,426: Scoring Task d1ab46b1-c93f-46c1-9483-91d7562318a1
+WARNING 2015-06-04 02:37:39,092: Unable to decode message
+WARNING 2015-06-04 02:37:39,657: Unable to decode message
+INFO 2015-06-04 02:37:39,658: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/fb251291-26ac-4e00-b2d4-3a0c10fde919/emails/48799caf-ab3b-4a3c-a725-3743d5b18397.json
+INFO 2015-06-04 02:37:40,177: Scoring Task 48799caf-ab3b-4a3c-a725-3743d5b18397
+INFO 2015-06-04 02:37:40,207: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'fb251291-26ac-4e00-b2d4-3a0c10fde919'}
+INFO 2015-06-04 02:37:40,207: Pushing 48799caf-ab3b-4a3c-a725-3743d5b18397 onto email thread fb251291-26ac-4e00-b2d4-3a0c10fde919
+INFO 2015-06-04 02:37:40,207: Saving Email48799caf-ab3b-4a3c-a725-3743d5b18397
+WARNING 2015-06-04 02:37:40,871: Unable to decode message
+WARNING 2015-06-04 02:37:41,344: Unable to decode message
+INFO 2015-06-04 02:37:41,344: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/6f7e664d-3e05-4c8f-b13d-a8a7ac6ac45b.json
+INFO 2015-06-04 02:37:42,022: Scoring Task 6f7e664d-3e05-4c8f-b13d-a8a7ac6ac45b
+INFO 2015-06-04 02:37:42,088: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:37:42,089: Pushing 6f7e664d-3e05-4c8f-b13d-a8a7ac6ac45b onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:37:42,089: Saving Email6f7e664d-3e05-4c8f-b13d-a8a7ac6ac45b
+WARNING 2015-06-04 02:37:42,731: Unable to decode message
+INFO 2015-06-04 02:37:42,731: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/aa0a8fbd-8c59-45fb-ac15-e7563b56681d/emails/9096419d-d648-4f89-9f5c-b57d5dd3cea8.json
+INFO 2015-06-04 02:37:43,209: Scoring Task 9096419d-d648-4f89-9f5c-b57d5dd3cea8
+WARNING 2015-06-04 02:37:43,875: Unable to decode message
+WARNING 2015-06-04 02:37:44,430: Unable to decode message
+WARNING 2015-06-04 02:37:45,014: Unable to decode message
+WARNING 2015-06-04 02:37:45,565: Unable to decode message
+WARNING 2015-06-04 02:37:46,061: Unable to decode message
+WARNING 2015-06-04 02:37:46,621: Unable to decode message
+WARNING 2015-06-04 02:37:47,123: Unable to decode message
+INFO 2015-06-04 02:37:47,124: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/67782d9e-aefc-455a-8124-9f44029d5b24/emails/4c040a7a-e158-4ddc-8bf1-d3846ef49108.json
+INFO 2015-06-04 02:37:47,637: Scoring Task 4c040a7a-e158-4ddc-8bf1-d3846ef49108
+WARNING 2015-06-04 02:37:48,300: Unable to decode message
+WARNING 2015-06-04 02:37:48,767: Unable to decode message
+INFO 2015-06-04 02:37:48,768: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/a7018320-0911-4fc7-92fd-5521b8460fd5/emails/5c1b8504-df57-4d31-a361-f07e67274249.json
+INFO 2015-06-04 02:37:49,416: Scoring Task 5c1b8504-df57-4d31-a361-f07e67274249
+WARNING 2015-06-04 02:37:50,092: Unable to decode message
+WARNING 2015-06-04 02:37:50,565: Unable to decode message
+WARNING 2015-06-04 02:37:51,124: Unable to decode message
+INFO 2015-06-04 02:37:51,125: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/3b91fcad-1c9f-4807-a90f-326bf81e447d/emails/a6a6afd0-f478-411f-adae-bc5e8adca2dd.json
+INFO 2015-06-04 02:37:51,612: Scoring Task a6a6afd0-f478-411f-adae-bc5e8adca2dd
+WARNING 2015-06-04 02:37:52,265: Unable to decode message
+INFO 2015-06-04 02:37:52,266: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d/emails/7512fbfa-153e-4959-a674-0bb7f1b11721.json
+INFO 2015-06-04 02:37:52,761: Scoring Task 7512fbfa-153e-4959-a674-0bb7f1b11721
+INFO 2015-06-04 02:37:52,766: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d'}
+INFO 2015-06-04 02:37:52,767: Pushing 7512fbfa-153e-4959-a674-0bb7f1b11721 onto email thread 94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d
+INFO 2015-06-04 02:37:52,767: Saving Email7512fbfa-153e-4959-a674-0bb7f1b11721
+WARNING 2015-06-04 02:37:53,406: Unable to decode message
+WARNING 2015-06-04 02:37:53,980: Unable to decode message
+INFO 2015-06-04 02:37:53,980: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/e246aaa0-db19-453e-b3ce-52ce7092416f/emails/afd717fc-0998-40a9-aa4d-6009b2f2f759.json
+INFO 2015-06-04 02:37:54,492: Scoring Task afd717fc-0998-40a9-aa4d-6009b2f2f759
+WARNING 2015-06-04 02:37:55,134: Unable to decode message
+INFO 2015-06-04 02:37:55,135: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/511d6ca7-507f-4595-ba6d-aba2dfba9aa1/emails/1b51970e-5bb4-4305-9c56-accbc9905a8d.json
+INFO 2015-06-04 02:37:55,602: Scoring Task 1b51970e-5bb4-4305-9c56-accbc9905a8d
+INFO 2015-06-04 02:37:55,613: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'511d6ca7-507f-4595-ba6d-aba2dfba9aa1'}
+INFO 2015-06-04 02:37:55,613: Pushing 1b51970e-5bb4-4305-9c56-accbc9905a8d onto email thread 511d6ca7-507f-4595-ba6d-aba2dfba9aa1
+INFO 2015-06-04 02:37:55,614: Saving Email1b51970e-5bb4-4305-9c56-accbc9905a8d
+WARNING 2015-06-04 02:37:56,273: Unable to decode message
+INFO 2015-06-04 02:37:56,274: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/fbbb9fb2-c8b7-4adc-9876-2071e1156d63.json
+INFO 2015-06-04 02:37:56,749: Scoring Task fbbb9fb2-c8b7-4adc-9876-2071e1156d63
+INFO 2015-06-04 02:37:56,775: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:37:56,775: Pushing fbbb9fb2-c8b7-4adc-9876-2071e1156d63 onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:37:56,776: Saving Emailfbbb9fb2-c8b7-4adc-9876-2071e1156d63
+WARNING 2015-06-04 02:37:57,480: Unable to decode message
+INFO 2015-06-04 02:37:57,481: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/cb2f3e71-3c5b-4044-b3c6-1d0936948369/emails/8123bea9-3b69-4a60-a892-35db2ba03667.json
+INFO 2015-06-04 02:37:58,029: Scoring Task 8123bea9-3b69-4a60-a892-35db2ba03667
+INFO 2015-06-04 02:37:58,061: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'cb2f3e71-3c5b-4044-b3c6-1d0936948369'}
+INFO 2015-06-04 02:37:58,062: Pushing 8123bea9-3b69-4a60-a892-35db2ba03667 onto email thread cb2f3e71-3c5b-4044-b3c6-1d0936948369
+INFO 2015-06-04 02:37:58,062: Saving Email8123bea9-3b69-4a60-a892-35db2ba03667
+WARNING 2015-06-04 02:37:58,736: Unable to decode message
+INFO 2015-06-04 02:37:58,736: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/3949c5d8-287f-46ca-bd86-76a8343d712e/emails/2a4617e5-1a0d-43d0-b8d9-e10330404a33.json
+INFO 2015-06-04 02:38:00,094: Scoring Task 2a4617e5-1a0d-43d0-b8d9-e10330404a33
+WARNING 2015-06-04 02:38:01,321: Unable to decode message
+WARNING 2015-06-04 02:38:02,245: Unable to decode message
+WARNING 2015-06-04 02:38:02,704: Unable to decode message
+INFO 2015-06-04 02:38:02,704: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/1471ed66-9fe9-4779-8d9f-c6d7be533ac0/emails/6c3dbd2f-d0e9-41fe-9f32-4e7a577cdd28.json
+INFO 2015-06-04 02:38:03,186: Scoring Task 6c3dbd2f-d0e9-41fe-9f32-4e7a577cdd28
+INFO 2015-06-04 02:38:03,190: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'1471ed66-9fe9-4779-8d9f-c6d7be533ac0'}
+INFO 2015-06-04 02:38:03,190: Pushing 6c3dbd2f-d0e9-41fe-9f32-4e7a577cdd28 onto email thread 1471ed66-9fe9-4779-8d9f-c6d7be533ac0
+INFO 2015-06-04 02:38:03,190: Saving Email6c3dbd2f-d0e9-41fe-9f32-4e7a577cdd28
+WARNING 2015-06-04 02:38:04,178: Unable to decode message
+WARNING 2015-06-04 02:38:04,647: Unable to decode message
+WARNING 2015-06-04 02:38:05,214: Unable to decode message
+WARNING 2015-06-04 02:38:05,690: Unable to decode message
+INFO 2015-06-04 02:38:05,691: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d/emails/3fd999b1-e01b-4744-8bb4-e80edf9bcc37.json
+INFO 2015-06-04 02:38:06,160: Scoring Task 3fd999b1-e01b-4744-8bb4-e80edf9bcc37
+INFO 2015-06-04 02:38:06,164: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d'}
+INFO 2015-06-04 02:38:06,164: Pushing 3fd999b1-e01b-4744-8bb4-e80edf9bcc37 onto email thread 94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d
+INFO 2015-06-04 02:38:06,165: Saving Email3fd999b1-e01b-4744-8bb4-e80edf9bcc37
+WARNING 2015-06-04 02:38:06,728: Unable to decode message
+WARNING 2015-06-04 02:38:07,332: Unable to decode message
+WARNING 2015-06-04 02:38:07,800: Unable to decode message
+INFO 2015-06-04 02:38:07,801: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/737f83bc-57fa-4bee-9b97-20cb9dae99db.json
+INFO 2015-06-04 02:38:08,424: Scoring Task 737f83bc-57fa-4bee-9b97-20cb9dae99db
+INFO 2015-06-04 02:38:08,494: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:38:08,494: Pushing 737f83bc-57fa-4bee-9b97-20cb9dae99db onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:38:08,494: Saving Email737f83bc-57fa-4bee-9b97-20cb9dae99db
+WARNING 2015-06-04 02:38:09,069: Unable to decode message
+WARNING 2015-06-04 02:38:09,531: Unable to decode message
+WARNING 2015-06-04 02:38:09,992: Unable to decode message
+INFO 2015-06-04 02:38:09,992: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/bedbe341-a280-47db-abaa-662f74b9e67a.json
+INFO 2015-06-04 02:38:10,655: Scoring Task bedbe341-a280-47db-abaa-662f74b9e67a
+INFO 2015-06-04 02:38:10,711: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:38:10,712: Pushing bedbe341-a280-47db-abaa-662f74b9e67a onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:38:10,712: Saving Emailbedbe341-a280-47db-abaa-662f74b9e67a
+WARNING 2015-06-04 02:38:11,310: Unable to decode message
+INFO 2015-06-04 02:38:11,311: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/11ad03ff-67db-4942-9548-8429c33bbe4b.json
+INFO 2015-06-04 02:38:11,790: Scoring Task 11ad03ff-67db-4942-9548-8429c33bbe4b
+INFO 2015-06-04 02:38:11,814: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:11,815: Pushing 11ad03ff-67db-4942-9548-8429c33bbe4b onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:11,815: Saving Email11ad03ff-67db-4942-9548-8429c33bbe4b
+WARNING 2015-06-04 02:38:12,450: Unable to decode message
+INFO 2015-06-04 02:38:12,451: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/460fb4d5-c06e-466e-b33a-92e392fe88af.json
+INFO 2015-06-04 02:38:13,042: Scoring Task 460fb4d5-c06e-466e-b33a-92e392fe88af
+INFO 2015-06-04 02:38:13,088: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:13,088: Pushing 460fb4d5-c06e-466e-b33a-92e392fe88af onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:13,089: Saving Email460fb4d5-c06e-466e-b33a-92e392fe88af
+WARNING 2015-06-04 02:38:13,639: Unable to decode message
+INFO 2015-06-04 02:38:13,640: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d/emails/7512fbfa-153e-4959-a674-0bb7f1b11721.json
+INFO 2015-06-04 02:38:14,105: Scoring Task 7512fbfa-153e-4959-a674-0bb7f1b11721
+INFO 2015-06-04 02:38:14,109: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d'}
+INFO 2015-06-04 02:38:14,109: Pushing 7512fbfa-153e-4959-a674-0bb7f1b11721 onto email thread 94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d
+INFO 2015-06-04 02:38:14,110: Saving Email7512fbfa-153e-4959-a674-0bb7f1b11721
+WARNING 2015-06-04 02:38:14,678: Unable to decode message
+INFO 2015-06-04 02:38:14,679: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/ee1e3529-c6af-469e-aa16-328371ef9bb7/emails/fbb2a434-5480-43d9-8926-2e6b2c9c2a9b.json
+INFO 2015-06-04 02:38:15,272: Scoring Task fbb2a434-5480-43d9-8926-2e6b2c9c2a9b
+INFO 2015-06-04 02:38:15,348: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'ee1e3529-c6af-469e-aa16-328371ef9bb7'}
+INFO 2015-06-04 02:38:15,348: Pushing fbb2a434-5480-43d9-8926-2e6b2c9c2a9b onto email thread ee1e3529-c6af-469e-aa16-328371ef9bb7
+INFO 2015-06-04 02:38:15,349: Saving Emailfbb2a434-5480-43d9-8926-2e6b2c9c2a9b
+WARNING 2015-06-04 02:38:15,907: Unable to decode message
+INFO 2015-06-04 02:38:15,908: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/bdc4f116-1c0b-49b0-995a-6c2f7c0cc831.json
+INFO 2015-06-04 02:38:16,395: Scoring Task bdc4f116-1c0b-49b0-995a-6c2f7c0cc831
+INFO 2015-06-04 02:38:16,417: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:16,417: Pushing bdc4f116-1c0b-49b0-995a-6c2f7c0cc831 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:16,418: Saving Emailbdc4f116-1c0b-49b0-995a-6c2f7c0cc831
+WARNING 2015-06-04 02:38:16,978: Unable to decode message
+INFO 2015-06-04 02:38:16,978: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/42ebd615-5bb2-4c23-8cc3-8f84faa23a92.json
+INFO 2015-06-04 02:38:17,437: Scoring Task 42ebd615-5bb2-4c23-8cc3-8f84faa23a92
+INFO 2015-06-04 02:38:17,456: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:17,457: Pushing 42ebd615-5bb2-4c23-8cc3-8f84faa23a92 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:17,457: Saving Email42ebd615-5bb2-4c23-8cc3-8f84faa23a92
+WARNING 2015-06-04 02:38:18,009: Unable to decode message
+WARNING 2015-06-04 02:38:18,474: Unable to decode message
+WARNING 2015-06-04 02:38:19,024: Unable to decode message
+WARNING 2015-06-04 02:38:19,503: Unable to decode message
+INFO 2015-06-04 02:38:19,504: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/18d54795-0779-48ba-90f0-2642a415c9fe/emails/9220ed42-56a7-485e-8eab-f0f178a070ba.json
+INFO 2015-06-04 02:38:19,971: Scoring Task 9220ed42-56a7-485e-8eab-f0f178a070ba
+INFO 2015-06-04 02:38:19,976: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'18d54795-0779-48ba-90f0-2642a415c9fe'}
+INFO 2015-06-04 02:38:19,977: Pushing 9220ed42-56a7-485e-8eab-f0f178a070ba onto email thread 18d54795-0779-48ba-90f0-2642a415c9fe
+INFO 2015-06-04 02:38:19,977: Saving Email9220ed42-56a7-485e-8eab-f0f178a070ba
+WARNING 2015-06-04 02:38:20,542: Unable to decode message
+INFO 2015-06-04 02:38:20,543: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/3882f864-291d-4cee-95ec-fe10518bd3fa.json
+INFO 2015-06-04 02:38:21,037: Scoring Task 3882f864-291d-4cee-95ec-fe10518bd3fa
+INFO 2015-06-04 02:38:21,059: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:21,060: Pushing 3882f864-291d-4cee-95ec-fe10518bd3fa onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:21,060: Saving Email3882f864-291d-4cee-95ec-fe10518bd3fa
+WARNING 2015-06-04 02:38:21,651: Unable to decode message
+INFO 2015-06-04 02:38:21,652: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a.json
+INFO 2015-06-04 02:38:22,218: Scoring Task 9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a
+INFO 2015-06-04 02:38:22,267: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:22,267: Pushing 9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:22,268: Saving Email9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a
+WARNING 2015-06-04 02:38:22,924: Unable to decode message
+WARNING 2015-06-04 02:38:23,473: Unable to decode message
+WARNING 2015-06-04 02:38:24,039: Unable to decode message
+INFO 2015-06-04 02:38:24,040: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a.json
+INFO 2015-06-04 02:38:24,599: Scoring Task 9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a
+INFO 2015-06-04 02:38:24,644: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:24,644: Pushing 9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:24,644: Saving Email9b68fa47-5a39-4b37-9c5b-b7c96bc03a5a
+WARNING 2015-06-04 02:38:25,200: Unable to decode message
+INFO 2015-06-04 02:38:25,201: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/0bc45794-7757-424f-a3d1-833b94b73c20.json
+INFO 2015-06-04 02:38:25,739: Scoring Task 0bc45794-7757-424f-a3d1-833b94b73c20
+INFO 2015-06-04 02:38:25,770: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:38:25,771: Pushing 0bc45794-7757-424f-a3d1-833b94b73c20 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:38:25,772: Saving Email0bc45794-7757-424f-a3d1-833b94b73c20
+WARNING 2015-06-04 02:38:26,324: Unable to decode message
+WARNING 2015-06-04 02:38:26,888: Unable to decode message
+WARNING 2015-06-04 02:38:27,359: Unable to decode message
+WARNING 2015-06-04 02:38:27,930: Unable to decode message
+WARNING 2015-06-04 02:38:28,393: Unable to decode message
+INFO 2015-06-04 02:38:28,394: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/38356258-3b80-4f0f-8a75-ad98269afbc8/emails/6034ff60-7462-42a3-8571-5b955b292f70.json
+INFO 2015-06-04 02:38:28,874: Scoring Task 6034ff60-7462-42a3-8571-5b955b292f70
+INFO 2015-06-04 02:38:28,900: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'38356258-3b80-4f0f-8a75-ad98269afbc8'}
+INFO 2015-06-04 02:38:28,900: Pushing 6034ff60-7462-42a3-8571-5b955b292f70 onto email thread 38356258-3b80-4f0f-8a75-ad98269afbc8
+INFO 2015-06-04 02:38:28,900: Saving Email6034ff60-7462-42a3-8571-5b955b292f70
+WARNING 2015-06-04 02:38:29,534: Unable to decode message
+WARNING 2015-06-04 02:38:30,124: Unable to decode message
+WARNING 2015-06-04 02:38:30,736: Unable to decode message
+INFO 2015-06-04 02:38:30,737: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/7bb76f57-5096-4628-bcae-da6ce5801787/emails/996d1682-2f48-45f0-9a9e-cf17f41ee24d.json
+INFO 2015-06-04 02:38:31,348: Scoring Task 996d1682-2f48-45f0-9a9e-cf17f41ee24d
+INFO 2015-06-04 02:38:31,362: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7bb76f57-5096-4628-bcae-da6ce5801787'}
+INFO 2015-06-04 02:38:31,362: Pushing 996d1682-2f48-45f0-9a9e-cf17f41ee24d onto email thread 7bb76f57-5096-4628-bcae-da6ce5801787
+INFO 2015-06-04 02:38:31,362: Saving Email996d1682-2f48-45f0-9a9e-cf17f41ee24d
+WARNING 2015-06-04 02:38:32,028: Unable to decode message
+WARNING 2015-06-04 02:38:32,596: Unable to decode message
+WARNING 2015-06-04 02:38:33,060: Unable to decode message
+WARNING 2015-06-04 02:38:33,523: Unable to decode message
+WARNING 2015-06-04 02:38:33,993: Unable to decode message
+WARNING 2015-06-04 02:38:34,463: Unable to decode message
+WARNING 2015-06-04 02:38:34,943: Unable to decode message
+WARNING 2015-06-04 02:38:35,479: Unable to decode message
+WARNING 2015-06-04 02:38:35,948: Unable to decode message
+WARNING 2015-06-04 02:38:36,501: Unable to decode message
+WARNING 2015-06-04 02:38:37,005: Unable to decode message
+WARNING 2015-06-04 02:38:37,573: Unable to decode message
+WARNING 2015-06-04 02:38:38,150: Unable to decode message
+WARNING 2015-06-04 02:38:38,701: Unable to decode message
+INFO 2015-06-04 02:38:38,701: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/cb2f3e71-3c5b-4044-b3c6-1d0936948369/emails/50b2d0cb-1471-4b02-9c24-f83eb351d9e6.json
+INFO 2015-06-04 02:38:39,322: Scoring Task 50b2d0cb-1471-4b02-9c24-f83eb351d9e6
+INFO 2015-06-04 02:38:39,339: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'cb2f3e71-3c5b-4044-b3c6-1d0936948369'}
+INFO 2015-06-04 02:38:39,339: Pushing 50b2d0cb-1471-4b02-9c24-f83eb351d9e6 onto email thread cb2f3e71-3c5b-4044-b3c6-1d0936948369
+INFO 2015-06-04 02:38:39,340: Saving Email50b2d0cb-1471-4b02-9c24-f83eb351d9e6
+WARNING 2015-06-04 02:38:40,000: Unable to decode message
+WARNING 2015-06-04 02:38:40,552: Unable to decode message
+INFO 2015-06-04 02:41:10,019: Loading Service
+INFO 2015-06-04 02:41:10,020: Dredd is running...
+INFO 2015-06-04 02:41:10,020: Starting Dredd
+WARNING 2015-06-04 02:41:10,654: Unable to decode message
+WARNING 2015-06-04 02:41:11,206: Unable to decode message
+WARNING 2015-06-04 02:41:11,859: Unable to decode message
+INFO 2015-06-04 02:41:11,859: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/77506dfd-5faf-4277-935e-408eda868c89/emails/62af3880-d3b8-4ad3-a172-8567e14134f3.json
+INFO 2015-06-04 02:41:12,401: Scoring Task 62af3880-d3b8-4ad3-a172-8567e14134f3
+INFO 2015-06-04 02:41:12,450: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'77506dfd-5faf-4277-935e-408eda868c89'}
+INFO 2015-06-04 02:41:12,451: Pushing 62af3880-d3b8-4ad3-a172-8567e14134f3 onto email thread 77506dfd-5faf-4277-935e-408eda868c89
+INFO 2015-06-04 02:41:12,451: Saving Email62af3880-d3b8-4ad3-a172-8567e14134f3
+WARNING 2015-06-04 02:41:13,042: Unable to decode message
+WARNING 2015-06-04 02:41:13,749: Unable to decode message
+WARNING 2015-06-04 02:41:14,240: Unable to decode message
+INFO 2015-06-04 02:41:14,241: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/60248a7a-e0bb-424c-8c22-c0ded73d5089/emails/a23f19e4-af0a-4cdb-bd15-9e1b4cf32a0d.json
+INFO 2015-06-04 02:41:15,191: Scoring Task a23f19e4-af0a-4cdb-bd15-9e1b4cf32a0d
+WARNING 2015-06-04 02:41:15,878: Unable to decode message
+INFO 2015-06-04 02:41:15,879: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/c9c041c8-23d7-4436-b89c-7d0cd8683b59/emails/70ff5afb-b580-4e8a-80e7-00c861816148.json
+INFO 2015-06-04 02:41:16,376: Scoring Task 70ff5afb-b580-4e8a-80e7-00c861816148
+WARNING 2015-06-04 02:41:16,946: Unable to decode message
+WARNING 2015-06-04 02:41:17,407: Unable to decode message
+WARNING 2015-06-04 02:41:17,898: Unable to decode message
+INFO 2015-06-04 02:41:17,899: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/40e06205-2e4a-47ca-b32d-ed1a3687e9ec/emails/331fe0f5-c520-49fc-aa9e-9f46e95f7239.json
+INFO 2015-06-04 02:41:18,574: Scoring Task 331fe0f5-c520-49fc-aa9e-9f46e95f7239
+WARNING 2015-06-04 02:41:19,233: Unable to decode message
+WARNING 2015-06-04 02:41:19,702: Unable to decode message
+INFO 2015-06-04 02:41:19,703: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/18d54795-0779-48ba-90f0-2642a415c9fe/emails/29973225-97f5-4ffb-8ad1-f9a82627ee34.json
+INFO 2015-06-04 02:41:20,187: Scoring Task 29973225-97f5-4ffb-8ad1-f9a82627ee34
+INFO 2015-06-04 02:41:20,203: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'18d54795-0779-48ba-90f0-2642a415c9fe'}
+INFO 2015-06-04 02:41:20,204: Pushing 29973225-97f5-4ffb-8ad1-f9a82627ee34 onto email thread 18d54795-0779-48ba-90f0-2642a415c9fe
+INFO 2015-06-04 02:41:20,204: Saving Email29973225-97f5-4ffb-8ad1-f9a82627ee34
+WARNING 2015-06-04 02:41:20,965: Unable to decode message
+WARNING 2015-06-04 02:41:21,432: Unable to decode message
+WARNING 2015-06-04 02:41:21,898: Unable to decode message
+INFO 2015-06-04 02:41:21,898: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/f31835c5-3850-4059-bd8d-670cc78bd72a.json
+INFO 2015-06-04 02:41:22,383: Scoring Task f31835c5-3850-4059-bd8d-670cc78bd72a
+INFO 2015-06-04 02:41:22,415: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:41:22,416: Pushing f31835c5-3850-4059-bd8d-670cc78bd72a onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:41:22,416: Saving Emailf31835c5-3850-4059-bd8d-670cc78bd72a
+WARNING 2015-06-04 02:41:23,063: Unable to decode message
+INFO 2015-06-04 02:41:23,064: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/d8ad6bf9-b1d3-4898-8a65-5eaa20643360.json
+INFO 2015-06-04 02:41:23,551: Scoring Task d8ad6bf9-b1d3-4898-8a65-5eaa20643360
+INFO 2015-06-04 02:41:23,587: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:41:23,587: Pushing d8ad6bf9-b1d3-4898-8a65-5eaa20643360 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:41:23,588: Saving Emaild8ad6bf9-b1d3-4898-8a65-5eaa20643360
+WARNING 2015-06-04 02:41:24,242: Unable to decode message
+WARNING 2015-06-04 02:41:24,827: Unable to decode message
+INFO 2015-06-04 02:41:24,827: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/d6b90f00-28e0-4425-8965-6a2f9aaf17c1.json
+INFO 2015-06-04 02:41:25,609: Scoring Task d6b90f00-28e0-4425-8965-6a2f9aaf17c1
+INFO 2015-06-04 02:41:25,643: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:41:25,643: Pushing d6b90f00-28e0-4425-8965-6a2f9aaf17c1 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:41:25,644: Saving Emaild6b90f00-28e0-4425-8965-6a2f9aaf17c1
+WARNING 2015-06-04 02:41:26,309: Unable to decode message
+WARNING 2015-06-04 02:41:26,766: Unable to decode message
+INFO 2015-06-04 02:41:26,767: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/8d8b3a11-2f53-4f0c-a1f3-8cd63ac76509/emails/c3342d24-137c-48ac-ab6c-15b2a61b7994.json
+INFO 2015-06-04 02:41:27,237: Scoring Task c3342d24-137c-48ac-ab6c-15b2a61b7994
+INFO 2015-06-04 02:41:27,262: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'8d8b3a11-2f53-4f0c-a1f3-8cd63ac76509'}
+INFO 2015-06-04 02:41:27,263: Pushing c3342d24-137c-48ac-ab6c-15b2a61b7994 onto email thread 8d8b3a11-2f53-4f0c-a1f3-8cd63ac76509
+INFO 2015-06-04 02:41:27,263: Saving Emailc3342d24-137c-48ac-ab6c-15b2a61b7994
+WARNING 2015-06-04 02:41:27,895: Unable to decode message
+INFO 2015-06-04 02:41:27,895: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/d1b5e94e-baf5-49bd-a87d-d9ccbb187528/emails/47280bad-d452-494a-89d7-312995fd3daa.json
+INFO 2015-06-04 02:41:28,386: Scoring Task 47280bad-d452-494a-89d7-312995fd3daa
+WARNING 2015-06-04 02:41:29,011: Unable to decode message
+WARNING 2015-06-04 02:41:29,510: Unable to decode message
+WARNING 2015-06-04 02:41:30,082: Unable to decode message
+WARNING 2015-06-04 02:41:30,602: Unable to decode message
+WARNING 2015-06-04 02:41:31,151: Unable to decode message
+WARNING 2015-06-04 02:41:31,702: Unable to decode message
+WARNING 2015-06-04 02:41:32,263: Unable to decode message
+WARNING 2015-06-04 02:41:32,810: Unable to decode message
+WARNING 2015-06-04 02:41:33,289: Unable to decode message
+WARNING 2015-06-04 02:41:33,877: Unable to decode message
+WARNING 2015-06-04 02:41:34,344: Unable to decode message
+WARNING 2015-06-04 02:41:34,826: Unable to decode message
+INFO 2015-06-04 02:41:34,826: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/bdc4f116-1c0b-49b0-995a-6c2f7c0cc831.json
+INFO 2015-06-04 02:41:35,362: Scoring Task bdc4f116-1c0b-49b0-995a-6c2f7c0cc831
+INFO 2015-06-04 02:41:35,407: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:41:35,407: Pushing bdc4f116-1c0b-49b0-995a-6c2f7c0cc831 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:41:35,408: Saving Emailbdc4f116-1c0b-49b0-995a-6c2f7c0cc831
+WARNING 2015-06-04 02:41:35,968: Unable to decode message
+WARNING 2015-06-04 02:41:36,533: Unable to decode message
+WARNING 2015-06-04 02:41:36,995: Unable to decode message
+WARNING 2015-06-04 02:41:37,560: Unable to decode message
+WARNING 2015-06-04 02:41:38,180: Unable to decode message
+WARNING 2015-06-04 02:41:38,640: Unable to decode message
+WARNING 2015-06-04 02:41:39,245: Unable to decode message
+WARNING 2015-06-04 02:41:39,774: Unable to decode message
+WARNING 2015-06-04 02:41:40,320: Unable to decode message
+WARNING 2015-06-04 02:41:40,775: Unable to decode message
+WARNING 2015-06-04 02:41:41,270: Unable to decode message
+WARNING 2015-06-04 02:41:41,742: Unable to decode message
+WARNING 2015-06-04 02:41:42,286: Unable to decode message
+INFO 2015-06-04 02:41:42,287: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/39853dce-ddc2-4162-8d0b-6cfd7eec2a94/emails/413d6051-d0cf-4b59-904a-721d48d9672d.json
+INFO 2015-06-04 02:41:43,167: Scoring Task 413d6051-d0cf-4b59-904a-721d48d9672d
+INFO 2015-06-04 02:41:43,216: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'39853dce-ddc2-4162-8d0b-6cfd7eec2a94'}
+INFO 2015-06-04 02:41:43,216: Pushing 413d6051-d0cf-4b59-904a-721d48d9672d onto email thread 39853dce-ddc2-4162-8d0b-6cfd7eec2a94
+INFO 2015-06-04 02:41:43,217: Saving Email413d6051-d0cf-4b59-904a-721d48d9672d
+WARNING 2015-06-04 02:41:43,968: Unable to decode message
+WARNING 2015-06-04 02:41:44,426: Unable to decode message
+INFO 2015-06-04 02:41:44,427: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/7bb76f57-5096-4628-bcae-da6ce5801787/emails/996d1682-2f48-45f0-9a9e-cf17f41ee24d.json
+INFO 2015-06-04 02:41:44,933: Scoring Task 996d1682-2f48-45f0-9a9e-cf17f41ee24d
+INFO 2015-06-04 02:41:44,946: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7bb76f57-5096-4628-bcae-da6ce5801787'}
+INFO 2015-06-04 02:41:44,946: Pushing 996d1682-2f48-45f0-9a9e-cf17f41ee24d onto email thread 7bb76f57-5096-4628-bcae-da6ce5801787
+INFO 2015-06-04 02:41:44,947: Saving Email996d1682-2f48-45f0-9a9e-cf17f41ee24d
+WARNING 2015-06-04 02:41:45,492: Unable to decode message
+WARNING 2015-06-04 02:41:46,052: Unable to decode message
+WARNING 2015-06-04 02:41:46,613: Unable to decode message
+WARNING 2015-06-04 02:41:47,075: Unable to decode message
+WARNING 2015-06-04 02:41:47,613: Unable to decode message
+WARNING 2015-06-04 02:41:48,188: Unable to decode message
+WARNING 2015-06-04 02:41:48,678: Unable to decode message
+WARNING 2015-06-04 02:41:49,231: Unable to decode message
+WARNING 2015-06-04 02:41:49,714: Unable to decode message
+WARNING 2015-06-04 02:41:50,172: Unable to decode message
+WARNING 2015-06-04 02:41:50,690: Unable to decode message
+WARNING 2015-06-04 02:41:51,247: Unable to decode message
+WARNING 2015-06-04 02:41:51,712: Unable to decode message
+WARNING 2015-06-04 02:41:52,296: Unable to decode message
+WARNING 2015-06-04 02:41:52,761: Unable to decode message
+WARNING 2015-06-04 02:41:53,302: Unable to decode message
+WARNING 2015-06-04 02:41:53,863: Unable to decode message
+WARNING 2015-06-04 02:41:54,391: Unable to decode message
+WARNING 2015-06-04 02:41:54,857: Unable to decode message
+INFO 2015-06-04 02:41:54,858: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/12bf8a2d-8f3c-421e-8a32-2fd091de68f9.json
+INFO 2015-06-04 02:41:55,369: Scoring Task 12bf8a2d-8f3c-421e-8a32-2fd091de68f9
+INFO 2015-06-04 02:41:55,388: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:41:55,389: Pushing 12bf8a2d-8f3c-421e-8a32-2fd091de68f9 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:41:55,389: Saving Email12bf8a2d-8f3c-421e-8a32-2fd091de68f9
+WARNING 2015-06-04 02:41:55,962: Unable to decode message
+INFO 2015-06-04 02:41:55,962: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/12bf8a2d-8f3c-421e-8a32-2fd091de68f9.json
+INFO 2015-06-04 02:41:56,435: Scoring Task 12bf8a2d-8f3c-421e-8a32-2fd091de68f9
+INFO 2015-06-04 02:41:56,456: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:41:56,457: Pushing 12bf8a2d-8f3c-421e-8a32-2fd091de68f9 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:41:56,458: Saving Email12bf8a2d-8f3c-421e-8a32-2fd091de68f9
+WARNING 2015-06-04 02:41:57,143: Unable to decode message
+WARNING 2015-06-04 02:41:57,693: Unable to decode message
+WARNING 2015-06-04 02:41:58,149: Unable to decode message
+WARNING 2015-06-04 02:41:58,767: Unable to decode message
+WARNING 2015-06-04 02:41:59,361: Unable to decode message
+WARNING 2015-06-04 02:41:59,972: Unable to decode message
+INFO 2015-06-04 02:41:59,973: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/e1c8547b-ec09-4773-b5d0-ff98fe9fd57f/emails/044cc2ac-a042-4881-82bb-42f7db1ab9cf.json
+INFO 2015-06-04 02:42:00,511: Scoring Task 044cc2ac-a042-4881-82bb-42f7db1ab9cf
+INFO 2015-06-04 02:42:00,529: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'e1c8547b-ec09-4773-b5d0-ff98fe9fd57f'}
+INFO 2015-06-04 02:42:00,530: Pushing 044cc2ac-a042-4881-82bb-42f7db1ab9cf onto email thread e1c8547b-ec09-4773-b5d0-ff98fe9fd57f
+INFO 2015-06-04 02:42:00,530: Saving Email044cc2ac-a042-4881-82bb-42f7db1ab9cf
+WARNING 2015-06-04 02:42:01,188: Unable to decode message
+INFO 2015-06-04 02:42:01,189: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/86b098bc-4013-49e9-9254-bd9ca3163c44/emails/890e8330-5186-4b56-8cf6-b5f76e7a7357.json
+INFO 2015-06-04 02:42:01,662: Scoring Task 890e8330-5186-4b56-8cf6-b5f76e7a7357
+WARNING 2015-06-04 02:42:02,270: Unable to decode message
+WARNING 2015-06-04 02:42:02,738: Unable to decode message
+INFO 2015-06-04 02:42:02,739: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/401c6529-0766-4f2c-b95a-3e3ccd301a5d.json
+INFO 2015-06-04 02:42:03,362: Scoring Task 401c6529-0766-4f2c-b95a-3e3ccd301a5d
+INFO 2015-06-04 02:42:03,460: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:42:03,460: Pushing 401c6529-0766-4f2c-b95a-3e3ccd301a5d onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:42:03,461: Saving Email401c6529-0766-4f2c-b95a-3e3ccd301a5d
+WARNING 2015-06-04 02:42:04,086: Unable to decode message
+INFO 2015-06-04 02:42:04,086: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/4b952ec8-2e2e-4ff4-b0b0-79ec372586d2/emails/978127db-e22c-457f-8d8b-658beaac5fc8.json
+INFO 2015-06-04 02:42:04,661: Scoring Task 978127db-e22c-457f-8d8b-658beaac5fc8
+WARNING 2015-06-04 02:42:05,228: Unable to decode message
+INFO 2015-06-04 02:42:05,229: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/8b4913ed-272a-4325-b500-40e8198fe76c/emails/0d976742-96d2-45d1-99f7-c26924d226f8.json
+INFO 2015-06-04 02:42:05,826: Scoring Task 0d976742-96d2-45d1-99f7-c26924d226f8
+WARNING 2015-06-04 02:42:06,439: Unable to decode message
+INFO 2015-06-04 02:42:06,440: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/273c2e69-0a30-4e78-85b9-c3821df407d1.json
+INFO 2015-06-04 02:42:07,010: Scoring Task 273c2e69-0a30-4e78-85b9-c3821df407d1
+INFO 2015-06-04 02:42:07,054: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:42:07,054: Pushing 273c2e69-0a30-4e78-85b9-c3821df407d1 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:42:07,055: Saving Email273c2e69-0a30-4e78-85b9-c3821df407d1
+WARNING 2015-06-04 02:42:07,611: Unable to decode message
+INFO 2015-06-04 02:42:07,612: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/991a2aba-4e97-411a-985a-70a25e7d2416/emails/f2b298a7-43bb-43ee-b832-fa38182fa397.json
+INFO 2015-06-04 02:42:08,202: Scoring Task f2b298a7-43bb-43ee-b832-fa38182fa397
+WARNING 2015-06-04 02:42:08,750: Unable to decode message
+WARNING 2015-06-04 02:42:09,214: Unable to decode message
+INFO 2015-06-04 02:42:09,214: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/5d5d79a4-c0ef-4eb8-94a3-764e59f58ce3/emails/3f9ac042-7e8c-447d-bef4-343e372a697f.json
+INFO 2015-06-04 02:42:09,773: Scoring Task 3f9ac042-7e8c-447d-bef4-343e372a697f
+WARNING 2015-06-04 02:42:10,456: Unable to decode message
+WARNING 2015-06-04 02:42:10,923: Unable to decode message
+WARNING 2015-06-04 02:42:11,496: Unable to decode message
+WARNING 2015-06-04 02:42:11,976: Unable to decode message
+INFO 2015-06-04 02:42:11,976: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/7/threads/38356258-3b80-4f0f-8a75-ad98269afbc8/emails/6034ff60-7462-42a3-8571-5b955b292f70.json
+INFO 2015-06-04 02:42:12,435: Scoring Task 6034ff60-7462-42a3-8571-5b955b292f70
+INFO 2015-06-04 02:42:12,463: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'38356258-3b80-4f0f-8a75-ad98269afbc8'}
+INFO 2015-06-04 02:42:12,464: Pushing 6034ff60-7462-42a3-8571-5b955b292f70 onto email thread 38356258-3b80-4f0f-8a75-ad98269afbc8
+INFO 2015-06-04 02:42:12,464: Saving Email6034ff60-7462-42a3-8571-5b955b292f70
+WARNING 2015-06-04 02:42:13,098: Unable to decode message
+INFO 2015-06-04 02:42:13,099: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/20a5c49f-fc0e-4057-bf0d-100a0301f051/emails/816b9635-62ee-4922-bee2-1f118af135c6.json
+INFO 2015-06-04 02:42:13,566: Scoring Task 816b9635-62ee-4922-bee2-1f118af135c6
+WARNING 2015-06-04 02:42:14,123: Unable to decode message
+WARNING 2015-06-04 02:42:14,595: Unable to decode message
+WARNING 2015-06-04 02:42:15,078: Unable to decode message
+WARNING 2015-06-04 02:42:15,541: Unable to decode message
+WARNING 2015-06-04 02:42:16,080: Unable to decode message
+WARNING 2015-06-04 02:42:16,629: Unable to decode message
+WARNING 2015-06-04 02:42:17,094: Unable to decode message
+WARNING 2015-06-04 02:42:17,554: Unable to decode message
+WARNING 2015-06-04 02:42:18,010: Unable to decode message
+WARNING 2015-06-04 02:42:18,611: Unable to decode message
+WARNING 2015-06-04 02:42:19,087: Unable to decode message
+WARNING 2015-06-04 02:42:19,556: Unable to decode message
+WARNING 2015-06-04 02:42:20,052: Unable to decode message
+WARNING 2015-06-04 02:42:20,613: Unable to decode message
+WARNING 2015-06-04 02:42:21,167: Unable to decode message
+WARNING 2015-06-04 02:42:21,735: Unable to decode message
+INFO 2015-06-04 02:42:21,735: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/fb637126-3685-4b77-b64c-adbb791b3c53/emails/b9e3e979-5459-494b-b149-ab013d2476b3.json
+INFO 2015-06-04 02:42:22,208: Scoring Task b9e3e979-5459-494b-b149-ab013d2476b3
+WARNING 2015-06-04 02:42:22,780: Unable to decode message
+WARNING 2015-06-04 02:42:23,238: Unable to decode message
+INFO 2015-06-04 02:42:23,239: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/2226f357-55b9-452d-90e6-06418ad3a846/emails/79c58cfa-7f11-4348-8909-ff50c9dd6c95.json
+INFO 2015-06-04 02:42:23,803: Scoring Task 79c58cfa-7f11-4348-8909-ff50c9dd6c95
+WARNING 2015-06-04 02:42:24,352: Unable to decode message
+WARNING 2015-06-04 02:42:24,862: Unable to decode message
+WARNING 2015-06-04 02:42:25,409: Unable to decode message
+WARNING 2015-06-04 02:42:25,878: Unable to decode message
+WARNING 2015-06-04 02:42:26,344: Unable to decode message
+WARNING 2015-06-04 02:42:26,936: Unable to decode message
+INFO 2015-06-04 02:42:26,936: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/431b22d0-0353-41e8-ae64-6f60ad5690ba/emails/74c0e617-d17d-47d9-ae74-61b60a7e14cb.json
+INFO 2015-06-04 02:42:27,434: Scoring Task 74c0e617-d17d-47d9-ae74-61b60a7e14cb
+INFO 2015-06-04 02:42:27,452: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'431b22d0-0353-41e8-ae64-6f60ad5690ba'}
+INFO 2015-06-04 02:42:27,452: Pushing 74c0e617-d17d-47d9-ae74-61b60a7e14cb onto email thread 431b22d0-0353-41e8-ae64-6f60ad5690ba
+INFO 2015-06-04 02:42:27,453: Saving Email74c0e617-d17d-47d9-ae74-61b60a7e14cb
+WARNING 2015-06-04 02:42:28,019: Unable to decode message
+WARNING 2015-06-04 02:42:28,491: Unable to decode message
+INFO 2015-06-04 02:42:28,491: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/20a5c49f-fc0e-4057-bf0d-100a0301f051/emails/816b9635-62ee-4922-bee2-1f118af135c6.json
+INFO 2015-06-04 02:42:28,948: Scoring Task 816b9635-62ee-4922-bee2-1f118af135c6
+WARNING 2015-06-04 02:42:29,509: Unable to decode message
+WARNING 2015-06-04 02:42:29,969: Unable to decode message
+WARNING 2015-06-04 02:42:30,536: Unable to decode message
+WARNING 2015-06-04 02:42:31,100: Unable to decode message
+INFO 2015-06-04 02:42:31,100: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/401c6529-0766-4f2c-b95a-3e3ccd301a5d.json
+INFO 2015-06-04 02:42:31,688: Scoring Task 401c6529-0766-4f2c-b95a-3e3ccd301a5d
+INFO 2015-06-04 02:42:31,763: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:42:31,763: Pushing 401c6529-0766-4f2c-b95a-3e3ccd301a5d onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:42:31,764: Saving Email401c6529-0766-4f2c-b95a-3e3ccd301a5d
+WARNING 2015-06-04 02:42:32,329: Unable to decode message
+WARNING 2015-06-04 02:42:32,885: Unable to decode message
+WARNING 2015-06-04 02:42:33,363: Unable to decode message
+WARNING 2015-06-04 02:42:33,906: Unable to decode message
+WARNING 2015-06-04 02:42:34,459: Unable to decode message
+WARNING 2015-06-04 02:42:35,030: Unable to decode message
+WARNING 2015-06-04 02:42:35,501: Unable to decode message
+WARNING 2015-06-04 02:42:35,964: Unable to decode message
+WARNING 2015-06-04 02:42:36,423: Unable to decode message
+WARNING 2015-06-04 02:42:36,923: Unable to decode message
+WARNING 2015-06-04 02:42:37,467: Unable to decode message
+WARNING 2015-06-04 02:42:37,930: Unable to decode message
+WARNING 2015-06-04 02:42:38,525: Unable to decode message
+WARNING 2015-06-04 02:42:38,988: Unable to decode message
+WARNING 2015-06-04 02:42:39,487: Unable to decode message
+WARNING 2015-06-04 02:42:39,977: Unable to decode message
+WARNING 2015-06-04 02:42:40,502: Unable to decode message
+INFO 2015-06-04 02:42:40,502: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/3c10bb20-09f3-4543-b85d-a7efca8f88c4/emails/05adf5b1-c9ab-407a-a618-766ab6de0cd5.json
+INFO 2015-06-04 02:42:41,007: Scoring Task 05adf5b1-c9ab-407a-a618-766ab6de0cd5
+INFO 2015-06-04 02:42:41,020: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'3c10bb20-09f3-4543-b85d-a7efca8f88c4'}
+INFO 2015-06-04 02:42:41,021: Pushing 05adf5b1-c9ab-407a-a618-766ab6de0cd5 onto email thread 3c10bb20-09f3-4543-b85d-a7efca8f88c4
+INFO 2015-06-04 02:42:41,021: Saving Email05adf5b1-c9ab-407a-a618-766ab6de0cd5
+WARNING 2015-06-04 02:42:41,647: Unable to decode message
+INFO 2015-06-04 02:42:41,648: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/21025e40-3d96-4a9f-af94-0cb5a1f5523f/emails/cd189ee1-b723-4533-910a-fc6b120e1b5f.json
+INFO 2015-06-04 02:42:42,153: Scoring Task cd189ee1-b723-4533-910a-fc6b120e1b5f
+WARNING 2015-06-04 02:42:42,779: Unable to decode message
+WARNING 2015-06-04 02:42:43,339: Unable to decode message
+WARNING 2015-06-04 02:42:43,822: Unable to decode message
+WARNING 2015-06-04 02:42:44,389: Unable to decode message
+WARNING 2015-06-04 02:42:44,877: Unable to decode message
+INFO 2015-06-04 02:42:44,877: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/0f33642c-5848-4de6-bea2-532a52be377c/emails/027ea798-dbbd-483b-9863-e61fce8f0966.json
+INFO 2015-06-04 02:42:45,402: Scoring Task 027ea798-dbbd-483b-9863-e61fce8f0966
+INFO 2015-06-04 02:42:45,437: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'0f33642c-5848-4de6-bea2-532a52be377c'}
+INFO 2015-06-04 02:42:45,437: Pushing 027ea798-dbbd-483b-9863-e61fce8f0966 onto email thread 0f33642c-5848-4de6-bea2-532a52be377c
+INFO 2015-06-04 02:42:45,438: Saving Email027ea798-dbbd-483b-9863-e61fce8f0966
+WARNING 2015-06-04 02:42:46,083: Unable to decode message
+WARNING 2015-06-04 02:42:46,648: Unable to decode message
+WARNING 2015-06-04 02:42:47,234: Unable to decode message
+WARNING 2015-06-04 02:42:47,696: Unable to decode message
+INFO 2015-06-04 02:42:47,697: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/28f67b77-ee05-4056-b325-b244c8febdd0/emails/44b16d68-ca03-4592-9861-fa181769c57e.json
+INFO 2015-06-04 02:42:48,179: Scoring Task 44b16d68-ca03-4592-9861-fa181769c57e
+WARNING 2015-06-04 02:42:48,742: Unable to decode message
+WARNING 2015-06-04 02:42:49,291: Unable to decode message
+INFO 2015-06-04 02:42:49,292: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d/emails/44bd0862-e8e3-4da3-8d02-645b734a7652.json
+INFO 2015-06-04 02:42:49,813: Scoring Task 44bd0862-e8e3-4da3-8d02-645b734a7652
+INFO 2015-06-04 02:42:49,826: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d'}
+INFO 2015-06-04 02:42:49,826: Pushing 44bd0862-e8e3-4da3-8d02-645b734a7652 onto email thread 94aad7f3-cabf-48f2-8079-c5a7ef6e1f7d
+INFO 2015-06-04 02:42:49,827: Saving Email44bd0862-e8e3-4da3-8d02-645b734a7652
+WARNING 2015-06-04 02:42:50,376: Unable to decode message
+WARNING 2015-06-04 02:42:50,918: Unable to decode message
+WARNING 2015-06-04 02:42:51,470: Unable to decode message
+WARNING 2015-06-04 02:42:52,020: Unable to decode message
+WARNING 2015-06-04 02:42:52,481: Unable to decode message
+WARNING 2015-06-04 02:42:52,991: Unable to decode message
+WARNING 2015-06-04 02:42:53,554: Unable to decode message
+WARNING 2015-06-04 02:42:54,093: Unable to decode message
+WARNING 2015-06-04 02:42:54,554: Unable to decode message
+WARNING 2015-06-04 02:42:55,112: Unable to decode message
+WARNING 2015-06-04 02:42:55,663: Unable to decode message
+WARNING 2015-06-04 02:42:56,113: Unable to decode message
+WARNING 2015-06-04 02:42:56,660: Unable to decode message
+WARNING 2015-06-04 02:42:57,218: Unable to decode message
+WARNING 2015-06-04 02:42:57,764: Unable to decode message
+WARNING 2015-06-04 02:42:58,281: Unable to decode message
+INFO 2015-06-04 02:42:58,281: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/5667cd73-bffb-4e75-905c-b60e8ccf8522/emails/5a28ef3a-f004-42e7-ab0d-1eb98c3a909a.json
+INFO 2015-06-04 02:42:59,157: Scoring Task 5a28ef3a-f004-42e7-ab0d-1eb98c3a909a
+WARNING 2015-06-04 02:42:59,840: Unable to decode message
+WARNING 2015-06-04 02:43:00,319: Unable to decode message
+WARNING 2015-06-04 02:43:00,780: Unable to decode message
+WARNING 2015-06-04 02:43:01,351: Unable to decode message
+WARNING 2015-06-04 02:43:02,006: Unable to decode message
+WARNING 2015-06-04 02:43:02,466: Unable to decode message
+INFO 2015-06-04 02:43:02,466: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/18d54795-0779-48ba-90f0-2642a415c9fe/emails/9220ed42-56a7-485e-8eab-f0f178a070ba.json
+INFO 2015-06-04 02:43:03,161: Scoring Task 9220ed42-56a7-485e-8eab-f0f178a070ba
+INFO 2015-06-04 02:43:03,170: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'18d54795-0779-48ba-90f0-2642a415c9fe'}
+INFO 2015-06-04 02:43:03,170: Pushing 9220ed42-56a7-485e-8eab-f0f178a070ba onto email thread 18d54795-0779-48ba-90f0-2642a415c9fe
+INFO 2015-06-04 02:43:03,170: Saving Email9220ed42-56a7-485e-8eab-f0f178a070ba
+WARNING 2015-06-04 02:43:03,824: Unable to decode message
+WARNING 2015-06-04 02:43:04,288: Unable to decode message
+INFO 2015-06-04 02:43:04,288: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/766e2bda-9ac3-46b5-a379-dedc1b3ba1cf/emails/69c0a920-ed8d-4a4e-b6e6-683a129f34e1.json
+INFO 2015-06-04 02:43:04,855: Scoring Task 69c0a920-ed8d-4a4e-b6e6-683a129f34e1
+INFO 2015-06-04 02:43:04,887: Adding recommendation {'score': 0.0, 'type': 'email_thread', 'id': u'766e2bda-9ac3-46b5-a379-dedc1b3ba1cf'}
+INFO 2015-06-04 02:43:04,888: Pushing 69c0a920-ed8d-4a4e-b6e6-683a129f34e1 onto email thread 766e2bda-9ac3-46b5-a379-dedc1b3ba1cf
+INFO 2015-06-04 02:43:04,888: Saving Email69c0a920-ed8d-4a4e-b6e6-683a129f34e1
+WARNING 2015-06-04 02:43:05,523: Unable to decode message
+WARNING 2015-06-04 02:43:06,073: Unable to decode message
+INFO 2015-06-04 02:43:06,073: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/525bfa2e-e81c-48dd-8fcb-62ab86eec2f0/emails/47f92fcc-2d4a-4fb3-9d57-a6c9de847ed4.json
+INFO 2015-06-04 02:43:06,710: Scoring Task 47f92fcc-2d4a-4fb3-9d57-a6c9de847ed4
+WARNING 2015-06-04 02:43:07,418: Unable to decode message
+INFO 2015-06-04 02:43:07,419: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/907b1bae-2454-402c-a117-f4c1d65ce7a5/emails/eaf7fbf4-3fbf-4cd1-83bb-356399584a96.json
+INFO 2015-06-04 02:43:07,894: Scoring Task eaf7fbf4-3fbf-4cd1-83bb-356399584a96
+WARNING 2015-06-04 02:43:08,468: Unable to decode message
+WARNING 2015-06-04 02:43:08,933: Unable to decode message
+WARNING 2015-06-04 02:43:09,422: Unable to decode message
+INFO 2015-06-04 02:43:09,422: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/d0bda856-cf8b-4055-be9b-ac2cd8b1fcf2/emails/f75ccef6-2fe2-4f59-9f26-cc6ce2016ffe.json
+INFO 2015-06-04 02:43:09,936: Scoring Task f75ccef6-2fe2-4f59-9f26-cc6ce2016ffe
+WARNING 2015-06-04 02:43:10,497: Unable to decode message
+WARNING 2015-06-04 02:43:11,040: Unable to decode message
+WARNING 2015-06-04 02:43:11,584: Unable to decode message
+WARNING 2015-06-04 02:43:12,053: Unable to decode message
+WARNING 2015-06-04 02:43:12,517: Unable to decode message
+WARNING 2015-06-04 02:43:13,119: Unable to decode message
+INFO 2015-06-04 02:43:13,120: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/1/threads/19305eec-3eb2-4a90-aa2f-b72d78993f66/emails/d0a6807e-12c8-4562-97a7-a48d9f9bffe5.json
+INFO 2015-06-04 02:43:13,680: Scoring Task d0a6807e-12c8-4562-97a7-a48d9f9bffe5
+WARNING 2015-06-04 02:43:14,345: Unable to decode message
+WARNING 2015-06-04 02:43:14,848: Unable to decode message
+WARNING 2015-06-04 02:43:15,315: Unable to decode message
+WARNING 2015-06-04 02:43:15,920: Unable to decode message
+INFO 2015-06-04 02:43:15,921: Getting task from: https://vesper-lts-development.s3.amazonaws.com/accounts/8/threads/7a3bb954-6f78-4ef1-9529-af265b351304/emails/dff46bc1-8d50-460c-91f9-20ada75cdf51.json
+INFO 2015-06-04 02:43:16,519: Scoring Task dff46bc1-8d50-460c-91f9-20ada75cdf51
+INFO 2015-06-04 02:43:16,595: Adding recommendation {'score': 1.0, 'type': 'email_thread', 'id': u'7a3bb954-6f78-4ef1-9529-af265b351304'}
+INFO 2015-06-04 02:43:16,596: Pushing dff46bc1-8d50-460c-91f9-20ada75cdf51 onto email thread 7a3bb954-6f78-4ef1-9529-af265b351304
+INFO 2015-06-04 02:43:16,596: Saving Emaildff46bc1-8d50-460c-91f9-20ada75cdf51
+WARNING 2015-06-04 02:43:17,238: Unable to decode message
+WARNING 2015-06-04 02:43:17,796: Unable to decode message
+WARNING 2015-06-04 02:43:18,364: Unable to decode message
+WARNING 2015-06-04 02:43:18,911: Unable to decode message
+WARNING 2015-06-04 02:43:19,457: Unable to decode message
+WARNING 2015-06-04 02:43:19,997: Unable to decode message
+WARNING 2015-06-04 02:43:20,478: Unable to decode message
+WARNING 2015-06-04 02:43:20,996: Unable to decode message
+WARNING 2015-06-04 02:43:21,563: Unable to decode message
+WARNING 2015-06-04 02:43:22,146: Unable to decode message
+WARNING 2015-06-04 02:43:22,680: Unable to decode message
+WARNING 2015-06-04 02:43:23,185: Unable to decode message
+WARNING 2015-06-04 02:43:23,651: Unable to decode message
+WARNING 2015-06-04 02:43:24,126: Unable to decode message
+WARNING 2015-06-04 02:43:24,676: Unable to decode message
+WARNING 2015-06-04 02:43:25,138: Unable to decode message
+WARNING 2015-06-04 02:43:25,692: Unable to decode message
+WARNING 2015-06-04 02:43:26,245: Unable to decode message
+WARNING 2015-06-04 02:43:26,735: Unable to decode message
+WARNING 2015-06-04 02:43:27,313: Unable to decode message
+WARNING 2015-06-04 02:43:27,875: Unable to decode message
+WARNING 2015-06-04 02:43:28,418: Unable to decode message
+WARNING 2015-06-04 02:43:28,906: Unable to decode message

@@ -15,6 +15,8 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - MEM_STORE_DB = Obvious
 - MEM_STORE_TYPE = Obvious
 - POLL_INTERVAL = Interval To Poll The Server
+- AWS_ACCESS_KEY_ID = Obvious
+- AWS_SECRET_ACCESS_KEY = Obvious
 
 ## Setup
   ```

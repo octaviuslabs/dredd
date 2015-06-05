@@ -1,4 +1,5 @@
 import logging
+import json
 from boto.sqs.message import RawMessage
 
 class DreddMessage(RawMessage):

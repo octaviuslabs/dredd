@@ -2,9 +2,10 @@ import sure
 import redis
 import json
 import time
+import random
 from mem_store.email_message import EmailMessage
-redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 from nose_focus import focus
+redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 
 email_attrs = {
     "id": "this-be-my-id",
@@ -37,13 +38,13 @@ def sure_convert(statement):
 
 #flush db
 def flush_memory():
-    redis.flushall
+    return redis.flushall()
 
 def teardown_func():
     redis.flushall
 
-def test():
-    flush_memory
+def test_building():
+    flush_memory()
     email = EmailMessage(email_attrs)
     yield sure_convert, (email.id_).should.be.equal(email_attrs["id"])
     yield sure_convert, (email.account_id).should.be.equal(email_attrs["account_id"])
@@ -61,7 +62,6 @@ def test():
     yield sure_convert, (email.subject).should.be.equal(email_attrs["subject"])
     yield sure_convert, (email.body.raw).should.be.equal(email_attrs["body"])
 
-@focus
 def test_empty_body():
     empty_body = email_attrs
     empty_body["body"] = ""
@@ -69,15 +69,15 @@ def test_empty_body():
     yield sure_convert, (email.body.raw).should.be.equal("")
 
 def test_saving():
-    flush_memory
+    flush_memory()
+    random_score = "%.4f"%(random.random()*100000)
     email = EmailMessage(email_attrs)
-    email.score = 50
+    email.score = random_score
     email.save()
     # Recommendation Save Test
-    reco_listing = json.dumps({ "type": "email_thread", "id": email_attrs["thread_id"], "score": 50})
+    reco_listing = json.dumps({ "type": "email_thread", "id": email_attrs["thread_id"], "score": random_score})
     key = ":".join(["recommendations",  email_attrs["account_id"]])
-    yield sure_convert, (redis.zrangebyscore(key, 50, 50)).should.be.equal([reco_listing])
-    # how do you overwite a recommendation & make sure its unique
+    yield sure_convert, (redis.zrangebyscore(key, random_score, random_score)).should.be.equal([reco_listing])
 
     # Thread Add Test
     key = ":".join(["email_threads",  email_attrs["account_id"], email_attrs["thread_id"]])
@@ -90,11 +90,20 @@ def test_saving():
     key = ":".join(["emails", email_attrs["id"]])
     yield sure_convert, (json.loads(redis.get(key))).should.be.equal(email_attrs)
 
-# It should know what to do if it gets null values for the attrs
+def test_inserting_old_thread():
+    flush_memory()
 
-# Save questions in question?
-# key = ":".join(["questions", email_attrs["id"]])
-# (redis.lget(key)).should.be.equal(["this-is-a-question-man1", "this-is-a-question-man2"])
-# It should have a error state???
+    email2_attrs = email_attrs
+    email2_attrs["id"] = "id-of-email-2"
+    email2_attrs["sent_at"] = "2015-03-01T21:22:48.000Z"
+    email2 = EmailMessage(email2_attrs)
+    email2.score = float(100)
+    email2.save()
 
-# it should be able to fetch an object and build its self
+    email1 = EmailMessage(email_attrs)
+    email1.score = float(50)
+    email1.save()
+
+    key = ":".join(["recommendations",  email_attrs["account_id"]])
+    reco_listing = json.dumps({ "type": "email_thread", "id": email_attrs["thread_id"], "score": 100.0})
+    yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf")).should.be.equal([reco_listing])

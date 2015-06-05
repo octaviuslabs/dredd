@@ -70,10 +70,10 @@ class EmailMessage(Base):
             return False
         # Store the recommendation
         try:
-            self.push(email)
-            self.thread.save()
+            self.thread.push(self)
+            self.thread.recommend()
             self.store().getset(self.storage_key, self.to_json())
-            logging.warn("Saved " + self.log_ident)
+            logging.info("Saved " + self.log_ident)
             return True
         except Exception as e:
             logging.critical(e)

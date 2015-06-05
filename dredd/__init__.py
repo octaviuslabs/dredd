@@ -4,6 +4,7 @@ import pickle
 from config import Configuration
 from daemon import Daemon
 from heartbeat import Heartbeat
+from retrying import retry
 import time
 import logging
 import os
@@ -19,19 +20,24 @@ class Dredd:
     def run(self):
         heartbeat = Heartbeat()
         while True:
-            try:
-                heartbeat.send_heartbeat()
-                coordinator = Coordinator(self.config.q_name)
-                task = coordinator.get_task()
-                if bool(task):
-                    task = self._score_task(task)
-                    if task.save():
-                        coordinator.clean()
-                # It should wait until now to kill
-                time.sleep(self.poll_interval)
-            except Exception as e:
-                logging.critical(e)
-                time.sleep(self.poll_interval)
+            self._run_cycle(heartbeat)
+            time.sleep(self.poll_interval)
+
+    @retry(wait_exponential_multiplier=1000, wait_exponential_max=30000)
+    def _run_cycle(self, heartbeat):
+        try:
+            heartbeat.send_heartbeat()
+            coordinator = Coordinator(self.config.q_name)
+            task = coordinator.get_task()
+            if bool(task):
+                task = self._score_task(task)
+                if task.save():
+                    coordinator.clean()
+            # It should wait until now to kill
+            time.sleep(self.poll_interval)
+        except Exception as e:
+            logging.critical(e)
+
 
     def start(self):
         logging.info("Starting Dredd")

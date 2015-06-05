@@ -17,8 +17,8 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - POLL_INTERVAL = Interval To Poll The Server
 - AWS_ACCESS_KEY_ID = Obvious
 - AWS_SECRET_ACCESS_KEY = Obvious
-- Q_TOWATCH
-- AWS_Q_REGION
+- Q_TOWATCH = The name of the queue dredd should be watching
+- AWS_Q_REGION = The region that the queue is in
 
 ## Setup
   ```

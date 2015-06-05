@@ -24,7 +24,6 @@ def main():
     	sys.exit(2)
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='./logs/dredd.log',
-                        level=logging.INFO,
+    logging.basicConfig(level=logging.INFO,
                         format='%(levelname)s %(asctime)s: %(message)s')
     main()

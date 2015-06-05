@@ -24,6 +24,7 @@ class EmailThread(Base):
     def recommend(self):
         try:
             recommendation = ThreadRecommendation(self.score, self.account_id, self.id_)
+            recommendation.pop()
             recommendation.save()
             logging.info("Recommended " + self.log_ident )
             return True
@@ -38,7 +39,6 @@ class EmailThread(Base):
         return bool(self.get_items_after(sent_at))
 
     def get_items_after(self, sent_at):
-        logging.info("finding items after " + str(sent_at) )
         return self.store().zrangebyscore(self.storage_key, sent_at, "+inf")
 
     def compute_score(self):

@@ -4,18 +4,31 @@ import logging
 
 class Recommendation(Base):
     def __init__(self, score, account_id):
-        self.score = score
+        self.score = float(score)
         self.account_id = account_id
         self.storage_key = ":".join(["recommendations",  account_id])
+        self.log_ident = "".join(["Recommendation for account ", str(self.account_id), " of score " + str(self.score)])
 
     def save(self):
         try:
-            res = self.store().zadd(self.storage_key, self.score, self.to_json())
-            logging.info("Adding recommendation " + str(self.to_dict()))
+            self.store().zadd(self.storage_key, self.score, self.storage_value)
+            logging.info("Added " + self.log_ident)
             return True
         except Exception as e:
             logging.critical(e)
             return False
+
+    def pop(self):
+        try:
+            self.store().zrem(self.storage_key, self.storage_value)
+            logging.info("Removed " + self.log_ident)
+            return True
+        except Exception as e:
+            logging.critical(e)
+            return False
+
+    def value(self):
+        raise Exception("No value defined")
 
     def to_dict(self):
         raise Exception("No to_dict defined")

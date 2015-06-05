@@ -68,7 +68,6 @@ class EmailMessage(Base):
             #raise if score is a problem
             logging.warn(self.log_ident + " is not valid or committed")
             return False
-        # Store the recommendation
         try:
             self.thread.push(self)
             self.thread.recommend()

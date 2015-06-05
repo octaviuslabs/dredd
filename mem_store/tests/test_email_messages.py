@@ -75,7 +75,7 @@ def test_saving():
     email.score = random_score
     email.save()
     # Recommendation Save Test
-    reco_listing = json.dumps({ "type": "email_thread", "id": email_attrs["thread_id"], "score": random_score})
+    reco_listing = ":".join(["email_thread", email_attrs["thread_id"]])
     key = ":".join(["recommendations",  email_attrs["account_id"]])
     yield sure_convert, (redis.zrangebyscore(key, random_score, random_score)).should.be.equal([reco_listing])
 
@@ -93,11 +93,11 @@ def test_saving():
 def test_inserting_old_thread():
     flush_memory()
 
-    email2_attrs = email_attrs
+    email2_attrs = email_attrs.copy()
     email2_attrs["id"] = "id-of-email-2"
     email2_attrs["sent_at"] = "2015-03-01T21:22:48.000Z"
     email2 = EmailMessage(email2_attrs)
-    email2.score = float(100)
+    email2.score = float(75)
     email2.save()
 
     email1 = EmailMessage(email_attrs)
@@ -105,5 +105,23 @@ def test_inserting_old_thread():
     email1.save()
 
     key = ":".join(["recommendations",  email_attrs["account_id"]])
-    reco_listing = json.dumps({ "type": "email_thread", "id": email_attrs["thread_id"], "score": 100.0})
-    yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf")).should.be.equal([reco_listing])
+    reco_listing = ":".join(["email_thread", email_attrs["thread_id"]])
+    yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(75))])
+
+def test_inserting_new_thread():
+    flush_memory()
+
+    email1 = EmailMessage(email_attrs)
+    email1.score = float(50)
+    email1.save()
+
+    email2_attrs = email_attrs.copy()
+    email2_attrs["id"] = "id-of-email-2"
+    email2_attrs["sent_at"] = "2015-03-01T21:22:48.000Z"
+    email2 = EmailMessage(email2_attrs)
+    email2.score = float(2)
+    email2.save()
+
+    key = ":".join(["recommendations",  email_attrs["account_id"]])
+    reco_listing = ":".join(["email_thread", email_attrs["thread_id"]])
+    yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(2))])

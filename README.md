@@ -25,6 +25,11 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
     pip install -r ./requirements.txt
   ```
 
+# Running
+  ```
+  $ python . start
+  ```
+
 ## Building A Question Classifier
 The script used to train the classifier is in the root directory under “train_classifier”. This file will write to  “classified_output” a classifier, scored sample emails and the questions that were classified.
 

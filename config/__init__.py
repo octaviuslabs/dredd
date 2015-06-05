@@ -11,11 +11,8 @@ class Configuration:
 
         self.aws_access_key = self._locate_value('AWS_ACCESS_KEY_ID', attrs)
         self.aws_secret_access_key = self._locate_value('AWS_SECRET_ACCESS_KEY', attrs)
-
-
-        #self._locate_value('AWS_SECRET_ACCESS_KEY', attrs) #Move to env var
-        self.q_name = "staging_dredd-staging_message_bodies" #"dev_dredd-dev_message_bodies"
-        self.q_region = "us-east-1"
+        self.q_name = self._locate_value('Q_TOWATCH', attrs)
+        self.q_region = self._locate_value('AWS_Q_REGION', attrs)
 
 
     def _locate_value(self, key, attrs):

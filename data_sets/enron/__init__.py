@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from mem_store.email_message import EmailMessage
+from dredd.mem_store.email_message import EmailMessage
 
 class EnronData:
     DEFAULT_SAMPLE_SIZE = 1000

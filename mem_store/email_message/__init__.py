@@ -7,6 +7,8 @@ from mem_store.recommendation import Recommendation
 from text_set.message_body import MessageBody
 import logging
 
+
+
 class EmailMessage(Base):
     DEFAULT_EMAIL_THREAD_ID='threadless'
 
@@ -19,14 +21,14 @@ class EmailMessage(Base):
             self.account_id = attrs.get("account_id")
             if attrs.get("thread_id", False):
                 self.thread = EmailThread(attrs.get("thread_id"), self.account_id)
-            self.raw_body = attrs.get("body")
             if attrs.get("from_id", False):
                 self.from_ = Contact(attrs.get("from_id"))
             self.to = [Contact(i) for i in attrs.get("to_ids", list())]
             self.cc = [Contact(i) for i in attrs.get("cc_ids", list())]
             self.bcc = [Contact(i) for i in attrs.get("bcc_ids", list())]
             self.subject = attrs.get("subject")
-            if attrs.get("body", False):
+            body = attrs.get("body", None)
+            if body or body == "":
                 self.body = MessageBody(attrs.get("body"))
             self.processed_text = self.body
             self.features = {}
@@ -34,10 +36,16 @@ class EmailMessage(Base):
             self.score_calculated = False
             self.committed = False
             self.storage_key = ":".join(["emails",  self.id_])
-            logging.info("Built email " + "::".join([self.account_id, self.id_]))
+            self.log_ident = "".join(["Email ", self.id_, " for account ", self.account_id])
         except Exception as e:
             logging.critical(e)
             return None
+
+    def _valid_body(self, body):
+        if body == False:
+            return False
+        return True
+
 
     def add_feature(self, key, value):
         # It would be cooler if I could pass the classifier in here like ruby's rack
@@ -45,6 +53,7 @@ class EmailMessage(Base):
         return self.features
 
     def calculate_score(self):
+        logging.info("Scoring " + self.log_ident)
         if self.features['question_count'] > 0:
             self.increase_score(1)
         self.score_calculated = True
@@ -57,22 +66,14 @@ class EmailMessage(Base):
     def save(self):
         if not self.is_valid() or self.committed:
             #raise if score is a problem
-            logging.warn("Email is not valid or committed")
+            logging.warn(self.log_ident + " is not valid or committed")
             return False
         # Store the recommendation
         try:
-            recommendation = Recommendation(self.account_id)
-            recommendation_listing = {
-                "type": "email_thread",
-                "id": self.thread.id_,
-                "score": self.score
-            }
-            recommendation.push(self.score, recommendation_listing)
-            # Push the email onto its thread
-            self.thread.push(self)
-            # Store the email its self
-            logging.info("Saving Email" + str(self.id_) )
+            self.push(email)
+            self.thread.save()
             self.store().getset(self.storage_key, self.to_json())
+            logging.warn("Saved " + self.log_ident)
             return True
         except Exception as e:
             logging.critical(e)

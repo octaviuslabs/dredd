@@ -12,11 +12,9 @@ import os
 class Dredd:
     config = Configuration()
     def __init__(self, queue_endpoint, poll_interval):
-        pid = '/tmp/dredd.pid'
         self.endpoint = queue_endpoint
         self.poll_interval = poll_interval
         logging.info("Dredd is running...")
-        # super(Dredd, self).__init__('/tmp/dredd.pid')
 
     def run(self):
         heartbeat = Heartbeat()
@@ -38,14 +36,11 @@ class Dredd:
     def start(self):
         logging.info("Starting Dredd")
         self.run()
-        # super(Dredd, self)
 
     def stop(self):
         logging.info("Stopping Dredd")
-        # super(Dredd, self)
 
     def _score_task(self, task):
-        logging.info("Scoring Task " + "::".join([task.account_id, task.id_]))
         task.processed_text.classify_questions(self.classifier())
         task.add_feature('question_count', len(task.processed_text.questions))
         task.add_feature('non_question_count',  len(task.processed_text.non_questions))

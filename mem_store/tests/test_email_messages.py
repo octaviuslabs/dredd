@@ -4,6 +4,7 @@ import json
 import time
 from mem_store.email_message import EmailMessage
 redis = redis.StrictRedis(host='localhost', port=6379, db=0)
+from nose_focus import focus
 
 email_attrs = {
     "id": "this-be-my-id",
@@ -59,6 +60,13 @@ def test():
     yield sure_convert, (contact_ids).should.be.equal(email_attrs["bcc_ids"])
     yield sure_convert, (email.subject).should.be.equal(email_attrs["subject"])
     yield sure_convert, (email.body.raw).should.be.equal(email_attrs["body"])
+
+@focus
+def test_empty_body():
+    empty_body = email_attrs
+    empty_body["body"] = ""
+    email = EmailMessage(email_attrs)
+    yield sure_convert, (email.body.raw).should.be.equal("")
 
 def test_saving():
     flush_memory

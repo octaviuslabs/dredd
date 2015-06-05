@@ -57,8 +57,9 @@ class Coordinator(object):
             email_data = message["email"]
             lts_data = json.loads(raw_data)
             email_data.update(lts_data["email"])
-            logging.info("EmailMessage built")
-            return EmailMessage(email_data)
+            message = EmailMessage(email_data)
+            logging.info("Built " + message.log_ident)
+            return message
         logging.warn(task_type + " is not currently supported")
         return None
 

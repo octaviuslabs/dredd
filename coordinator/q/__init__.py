@@ -1,20 +1,9 @@
 import boto.sqs
-from boto.sqs.message import RawMessage
 import json
 from config import Configuration
+from coordinator.q.dredd_message import DreddMessage
 import logging
 
-class DreddMessage(RawMessage):
-    def parsed_body(self):
-        message = json.loads(self.get_body())
-        message["Message"] = json.loads(message.get("Message", ""))
-        return message
-
-    def parsed_message(self):
-        return self.parsed_body().get("Message", {}).get("message", {})
-
-    def is_valid(self):
-        return bool(self.parsed_message().get("email", None))
 
 class Q(object):
     config = Configuration()

@@ -5,7 +5,6 @@ import time
 import logging
 from q import Q
 from config import Configuration
-from retrying import retry
 from mem_store.email_message import EmailMessage
 import traceback
 from s3_url import S3Url
@@ -20,7 +19,6 @@ class Coordinator(object):
         self.q_name = q_name
         self.retries = 0
 
-    # @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=10)
     def get_task(self):
         messages = self.q().fetch_messages()
         if len(messages) <= 0:

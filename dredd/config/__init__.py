@@ -13,7 +13,7 @@ class Configuration:
         self.aws_secret_access_key = self._locate_value('AWS_SECRET_ACCESS_KEY', attrs)
         self.q_name = self._locate_value('Q_TOWATCH', attrs)
         self.q_region = self._locate_value('AWS_Q_REGION', attrs)
-        self.poll_interval = self._locate_value('POLL_INTERVAL', attrs)
+        self.poll_interval = float(self._locate_value('POLL_INTERVAL', attrs))
 
 
     def _locate_value(self, key, attrs):

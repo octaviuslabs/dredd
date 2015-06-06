@@ -22,12 +22,13 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 
 ## Setup
   ```
-    pip install -r ./requirements.txt
+    $ pip install -r ./requirements.txt
+    $ python setup
   ```
 
 # Running
   ```
-  $ python . start
+  $ python dredd start
   ```
 
 ## Building A Question Classifier

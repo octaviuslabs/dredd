@@ -19,7 +19,6 @@ class Coordinator(object):
     def __init__(self, q_name):
         self.q_name = q_name
         self.retries = 0
-        self.logger.info("No messages found")
 
     def get_task(self):
         messages = self.q().fetch_messages()

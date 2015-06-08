@@ -94,5 +94,35 @@ email.save()
 
 5. The email and required associations will be saved to REDIS
 
+## Redis Layout:
+
+EmailMessage [KEY]
+```
+account:<acocunt_id>:email:<email_id>
+
+value = The assumed EmailMessage above without the body
+```
+
+EmailThread [SCORED SET]
+```
+account:<acocunt_id>:email_thread:<thread_id>
+
+score = sent_at date (integer format)
+value = <email_id>
+
+```
+
+Recommendations [SCORED SET]
+```
+recommendations:<acocunt_id>
+
+score = score of the recommendation
+value = account:<acocunt_id>:<recommendation_type>:<recommendation_id>
+```
+
+
+
+
+
 ## Email Judging Method
 TODO

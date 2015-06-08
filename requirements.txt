@@ -6,3 +6,4 @@ redis
 retrying
 boto
 beautifulsoup4
+coverage

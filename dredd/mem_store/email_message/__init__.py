@@ -34,7 +34,7 @@ class EmailMessage(Base):
             self.score = float(0)
             self.score_calculated = False
             self.committed = False
-            self.storage_key = ":".join(["emails",  self.id_])
+            self.storage_key = ":".join(["account", self.account_id, "email",  self.id_])
             self.log_ident = "".join(["Email ", self.id_, " for account ", self.account_id])
         except Exception as e:
             self.logging.critical(e)

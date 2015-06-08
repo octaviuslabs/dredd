@@ -75,19 +75,18 @@ def test_saving():
     email.score = random_score
     email.save()
     # Recommendation Save Test
-    reco_listing = ":".join(["email_thread", email_attrs["thread_id"]])
+    reco_listing = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
     key = ":".join(["recommendations",  email_attrs["account_id"]])
     yield sure_convert, (redis.zrangebyscore(key, random_score, random_score)).should.be.equal([reco_listing])
-
     # Thread Add Test
-    key = ":".join(["email_threads",  email_attrs["account_id"], email_attrs["thread_id"]])
+    key = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
     email_time = email_attrs["sent_at"]
     email_time = time.strptime(email_time, "%Y-%m-%dT%H:%M:%S.%fZ")
     email_time = time.mktime(email_time)
     yield sure_convert, (redis.zrangebyscore(key, email_time, email_time)).should.be.equal([email_attrs["id"]])
-
+    
     # Save json or_url in emails
-    key = ":".join(["emails", email_attrs["id"]])
+    key = ":".join(["account", email_attrs["account_id"], "email", email_attrs["id"]])
     yield sure_convert, (json.loads(redis.get(key))).should.be.equal(email_attrs)
 
 def test_inserting_old_thread():
@@ -103,9 +102,8 @@ def test_inserting_old_thread():
     email1 = EmailMessage(email_attrs)
     email1.score = float(50)
     email1.save()
-
     key = ":".join(["recommendations",  email_attrs["account_id"]])
-    reco_listing = ":".join(["email_thread", email_attrs["thread_id"]])
+    reco_listing = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
     yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(75))])
 
 def test_inserting_new_thread():
@@ -123,5 +121,5 @@ def test_inserting_new_thread():
     email2.save()
 
     key = ":".join(["recommendations",  email_attrs["account_id"]])
-    reco_listing = ":".join(["email_thread", email_attrs["thread_id"]])
+    reco_listing = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
     yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(2))])

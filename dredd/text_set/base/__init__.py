@@ -9,7 +9,7 @@ class Base(object):
         self.clean = self.clean_corpus(corpus)
         self.corpus = self.clean
         self.questions = list()
-        self.sentence_tokens = nltk.sent_tokenize(self.corpus)
+        self.sentence_tokens = self._sent_tokenizer(self.corpus)
 
     def clean_corpus(self, corpus):
         corpus = corpus.lower()
@@ -19,6 +19,9 @@ class Base(object):
                         .replace('=A0', ' ') \
                         .replace('=09', ' ') \
                         .replace('=01', ' ')
+
+    def _sent_tokenizer(self, corpus):
+        return nltk.sent_tokenize(corpus)
 
     def sentences(self):
         try:

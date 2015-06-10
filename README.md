@@ -27,10 +27,7 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
   ```
 
 # Testing
-You may have to install `sure` first
-```$ pip install sure```
-
-Once `sure` is installed go into the dredd folder (yes, inside the dredd project is a folder called `dredd`, go into that folder)
+Go into the dredd folder (yes, inside the dredd project is a folder called `dredd`, go into that folder)
 ```
 $ cd dredd
 $ nosetests

@@ -7,3 +7,4 @@ retrying
 boto
 beautifulsoup4
 coverage
+sure

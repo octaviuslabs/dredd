@@ -10,6 +10,7 @@ redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 email_attrs = {
     "id": "this-be-my-id",
     "account_id": "this-is-the-accoundid",
+    "account_contact_id": "this-is-the-account-contact-id",
     "thread_id": "a-thread-of-email",
     "sent_at": "2015-02-23T21:22:48.000Z",
     "url": "http://lts.meetvesper.com/id",
@@ -48,6 +49,7 @@ def test_building():
     email = EmailMessage(email_attrs)
     yield sure_convert, (email.id_).should.be.equal(email_attrs["id"])
     yield sure_convert, (email.account_id).should.be.equal(email_attrs["account_id"])
+    yield sure_convert, (email.account_contact_id).should.be.equal(email_attrs["account_contact_id"])
     yield sure_convert, (email.thread.id_).should.be.equal(email_attrs["thread_id"])
     yield sure_convert, (email.thread.account_id).should.be.equal(email_attrs["account_id"])
     yield sure_convert, (email.sent_at.to_s()).should.be.equal(email_attrs["sent_at"])
@@ -84,7 +86,7 @@ def test_saving():
     email_time = time.strptime(email_time, "%Y-%m-%dT%H:%M:%S.%fZ")
     email_time = time.mktime(email_time)
     yield sure_convert, (redis.zrangebyscore(key, email_time, email_time)).should.be.equal([email_attrs["id"]])
-    
+
     # Save json or_url in emails
     key = ":".join(["account", email_attrs["account_id"], "email", email_attrs["id"]])
     yield sure_convert, (json.loads(redis.get(key))).should.be.equal(email_attrs)

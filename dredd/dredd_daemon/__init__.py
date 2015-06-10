@@ -16,9 +16,8 @@ class DreddDaemon(Daemon):
     logging = logging.getLogger('dredd')
     classifier_filename = 'naivebays_1433295569.pickle'
 
-    def __init__(self, queue_endpoint, poll_interval):
+    def __init__(self, poll_interval):
         super(DreddDaemon, self).__init__('/tmp/dredd.pid')
-        self.endpoint = queue_endpoint
         self.poll_interval = poll_interval
         self.daemon_location = os.path.abspath(__file__)
         self.heartbeat = Heartbeat()

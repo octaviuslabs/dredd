@@ -18,7 +18,8 @@ class EmailMessage(Base):
                 self.sent_at = DreddTime(attrs.get("sent_at"))
             self.url = attrs.get("url")
             self.account_id = attrs.get("account_id")
-            self.account_contact_id = attrs.get("account_contact_id")
+            if attrs.get("account_contact_id", False):
+                self.account_contact = Contact(attrs.get("account_contact_id"))
             if attrs.get("thread_id", False):
                 self.thread = EmailThread(attrs.get("thread_id"), self.account_id)
             if attrs.get("from_id", False):
@@ -56,8 +57,8 @@ class EmailMessage(Base):
         self.logging.info("Scoring " + self.log_ident)
         if self.features['question_count'] > 0:
             self.increase_score(1)
-        if self.from_.id_ == self.account_contact_id:
-            self.increase_score(1)
+        if self.from_.id_ == self.account_contact.id_:
+            self.increase_score()
 
         self.score_calculated = True
         return self.score
@@ -88,7 +89,7 @@ class EmailMessage(Base):
         return {
             "id": self.id_,
             "account_id": self.account_id,
-            "account_contact_id": self.account_contact_id,
+            "account_contact_id": self.account_contact.id_,
             "thread_id": self.thread.id_,
             "sent_at": self.sent_at.to_s(),
             "url": self.url,
@@ -107,7 +108,7 @@ class EmailMessage(Base):
         try:
             self.id_
             self.account_id
-            self.account_contact_id
+            self.account_contact.id_
             self.thread.id_
             self.sent_at.to_s()
             self.url

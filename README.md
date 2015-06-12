@@ -26,6 +26,13 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
     $ python setup
   ```
 
+# Testing
+Go into the dredd folder (yes, inside the dredd project is a folder called `dredd`, go into that folder)
+```
+$ cd dredd
+$ nosetests
+```
+
 # Running
   ```
   $ python dredd start

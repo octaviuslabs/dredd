@@ -32,7 +32,7 @@ email_attrs = {
         "id-to-3"
     ],
     "subject": "This Is The Subject Of The Email",
-    "body": "This is the body of the email"
+    "body": "This is the body of the email. This is the second sentence of the first email."
 }
 
 email_attrs_from_self = {
@@ -40,7 +40,7 @@ email_attrs_from_self = {
     "account_id": "this-is-the-accoundid",
     "account_contact_id": "this-is-the-account-contact-id",
     "thread_id": "a-thread-of-email",
-    "sent_at": "2015-02-23T21:22:48.000Z",
+    "sent_at": "2015-02-20T21:22:48.000Z",
     "url": "http://lts.meetvesper.com/id",
     "from_id": "this-is-the-account-contact-id",
     "to_ids": [
@@ -59,7 +59,7 @@ email_attrs_from_self = {
         "id-to-3"
     ],
     "subject": "This Is The Subject Of The Email",
-    "body": "This is the body of the email"
+    "body": "This is the first sentences of the second email. This is the body of the email. This is an inline sentence. This is the second sentence of the first email."
 }
 
 def sure_convert(statement):
@@ -70,7 +70,7 @@ def flush_memory():
     return redis.flushall()
 
 def teardown_func():
-    redis.flushall
+    redis.flushall()
 
 def test_building():
     flush_memory()
@@ -93,9 +93,9 @@ def test_building():
     yield sure_convert, (email.body.raw).should.be.equal(email_attrs["body"])
 
 def test_empty_body():
-    empty_body = email_attrs
+    empty_body = email_attrs.copy()
     empty_body["body"] = ""
-    email = EmailMessage(email_attrs)
+    email = EmailMessage(empty_body)
     yield sure_convert, (email.body.raw).should.be.equal("")
 
 def test_score_saving_email_from_other():
@@ -121,16 +121,19 @@ def test_saving():
     email = EmailMessage(email_attrs)
     email.score = random_score
     email.save()
+
     # Recommendation Save Test
     reco_listing = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
     key = ":".join(["recommendations",  email_attrs["account_id"]])
     yield sure_convert, (redis.zrangebyscore(key, random_score, random_score)).should.be.equal([reco_listing])
+
     # Thread Add Test
     key = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
+    expected_email_key = ":".join(["account", email_attrs["account_id"], "email", email_attrs["id"]])
     email_time = email_attrs["sent_at"]
     email_time = time.strptime(email_time, "%Y-%m-%dT%H:%M:%S.%fZ")
     email_time = time.mktime(email_time)
-    yield sure_convert, (redis.zrangebyscore(key, email_time, email_time)).should.be.equal([email_attrs["id"]])
+    yield sure_convert, (redis.zrangebyscore(key, email_time, email_time)).should.be.equal([expected_email_key])
 
     # Save json or_url in emails
     key = ":".join(["account", email_attrs["account_id"], "email", email_attrs["id"]])

@@ -14,7 +14,7 @@ class EmailThread(Base):
         try:
             self.emails.append(email)
             self.compute_score()
-            self.store().zadd(self.storage_key, email.sent_at.to_f(), email.id_)
+            self.store().zadd(self.storage_key, email.sent_at.to_f(), email.storage_key)
             self.logging.info("Pushed email " + email.id_ + " onto " + self.log_ident )
             return True
         except Exception as e:
@@ -40,6 +40,9 @@ class EmailThread(Base):
 
     def get_items_after(self, sent_at):
         return self.store().zrangebyscore(self.storage_key, sent_at, "+inf")
+
+    def get_items_before(self, sent_at):
+        return self.store().zrevrangebyscore(self.storage_key, sent_at, 0.0)
 
     def compute_score(self):
         email = self.emails[0] # In the future scoring can take in to account all of the emails

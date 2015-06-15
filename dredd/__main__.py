@@ -10,7 +10,7 @@ import os
 def main(log):
     log.info("Running management script")
     configuration = Configuration()
-    daemon = DreddDaemonconfiguration.poll_interval)
+    daemon = DreddDaemon(configuration.poll_interval)
     if len(sys.argv) == 2:
     	if 'start' == sys.argv[1]:
     		daemon.start()

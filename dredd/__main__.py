@@ -3,6 +3,8 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 from config import Configuration
 from dredd_daemon import DreddDaemon
+from dredd_primer_daemon import DreddPrimerDaemon
+
 import sys
 import os
 
@@ -10,21 +12,39 @@ import os
 def main(log):
     log.info("Running management script")
     configuration = Configuration()
-    daemon = DreddDaemon(configuration.poll_interval)
-    if len(sys.argv) == 2:
-    	if 'start' == sys.argv[1]:
-    		daemon.start()
-    	elif 'stop' == sys.argv[1]:
-    		daemon.stop()
-    	elif 'restart' == sys.argv[1]:
-    		daemon.restart()
-    	else:
-    		print "Unknown command"
-    		sys.exit(2)
+
+
+    if len(sys.argv) == 3:
+        log.info("Launching daemon: %s" % sys.argv[1])
+        daemon = None
+        if sys.argv[1] == 'judge':
+            daemon = DreddDaemon(configuration.poll_interval)
+        elif sys.argv[1] == 'prime':
+            daemon = DreddPrimerDaemon()
+        else:
+            print "Unknown daemon (use 'prime' to initialize or 'judge' to run)"
+            sys.exit(2)
+
+        launch_daemon(daemon, log)
+
     	sys.exit(0)
     else:
-    	print "usage: %s start|stop|restart" % sys.argv[0]
+    	print "usage: %s prime|judge start|stop|restart" % sys.argv[0]
     	sys.exit(2)
+
+def launch_daemon(daemon, log):
+    log.info("Launching daemon with parameter: %s" % sys.argv[2])
+    if 'start' == sys.argv[2]:
+        daemon.start()
+    elif 'stop' == sys.argv[2]:
+        daemon.stop()
+    elif 'restart' == sys.argv[2]:
+        daemon.restart()
+    else:
+		print "Unknown command"
+		sys.exit(2)
+
+
 
 def assure_path_exists(path="~/dredd_logs"):
     path = os.path.expanduser(path)
@@ -40,4 +60,5 @@ if __name__ == "__main__":
     log_format = logging.Formatter('%(levelname)s %(asctime)s: %(message)s')
     file_handeler.setFormatter(log_format)
     logger.addHandler(file_handeler)
+
     main(logger)

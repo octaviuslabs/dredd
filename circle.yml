@@ -8,6 +8,7 @@ machine:
     MEM_STORE_PORT: 6379
     MEM_STORE_DB: 0
     MEM_STORE_TYPE: redis
+    POLL_INTERVAL: 1
     AWS_ACCESS_KEY_ID: test_placeholder
     AWS_SECRET_ACCESS_KEY: test_placeholder
     Q_TOWATCH: test_placeholder

@@ -3,8 +3,6 @@ import difflib
 from mem_store.email_message import EmailMessage
 from text_set.message_body import MessageBody
 
-from IPython import embed
-
 class EmailMessageWithDiff(EmailMessage):
     def __init__(self, attrs):
         # Initialize

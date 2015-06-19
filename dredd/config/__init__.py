@@ -14,6 +14,7 @@ class Configuration:
         self.q_name = self._locate_value('Q_TOWATCH', attrs)
         self.q_region = self._locate_value('AWS_Q_REGION', attrs)
         self.poll_interval = float(self._locate_value('POLL_INTERVAL', attrs))
+        self.aws_s3_bucket_name = self._locate_value("AWS_S3_BUCKET_NAME", attrs)
 
 
     def _locate_value(self, key, attrs):

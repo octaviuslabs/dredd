@@ -1,5 +1,3 @@
-from IPython import embed
-
 import sure
 import redis
 import json

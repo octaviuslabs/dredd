@@ -10,21 +10,22 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - Mongo Database w/ Enron Email Corpus Loaded (http://mongodb-enron-email.s3-website-us-east-1.amazonaws.com/) --if you are building a classifier
 
 ## Environment Variables
-- MEM_STORE_HOST = Obvious
-- MEM_STORE_PORT = Obvious
-- MEM_STORE_DB = Obvious
-- MEM_STORE_TYPE = Obvious
-- POLL_INTERVAL = Interval To Poll The Server
-- AWS_ACCESS_KEY_ID = Obvious
-- AWS_SECRET_ACCESS_KEY = Obvious
-- Q_TOWATCH = The name of the queue dredd should be watching
-- AWS_Q_REGION = The region that the queue is in
+- `MEM_STORE_HOST` = Obvious
+- `MEM_STORE_PORT` = Obvious
+- `MEM_STORE_DB` = Obvious
+- `MEM_STORE_TYPE` = Obvious
+- `POLL_INTERVAL` = Interval To Poll The Server
+- `AWS_ACCESS_KEY_ID` = Obvious
+- `AWS_SECRET_ACCESS_KEY` = Obvious
+- `Q_TOWATCH` = The name of the queue dredd should be watching
+- `AWS_Q_REGION` = The region that the queue is in
+- `AWS_S3_BUCKET_NAME` = Name of bucket to search for unprocessed entities (needed for primer but the config class currently requires that this variable is set)
 
 ## Setup
-  ```
-    $ pip install -r ./requirements.txt
-    $ python setup
-  ```
+```
+$ pip install -r ./requirements.txt
+$ python setup
+```
 
 # Testing
 Go into the dredd folder (yes, inside the dredd project is a folder called `dredd`, go into that folder)
@@ -34,9 +35,16 @@ $ nosetests
 ```
 
 # Running
-  ```
-  $ python dredd start
-  ```
+To launch processing
+```
+$ python dredd judge start
+```
+
+To initialize Dredd from no data (Dredd can also resume a failed initialization)
+```
+$ python dredd prime start
+```
+
 
 ## Building A Question Classifier
 The script used to train the classifier is in the root directory under “train_classifier”. This file will write to  “classified_output” a classifier, scored sample emails and the questions that were classified.

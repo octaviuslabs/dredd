@@ -7,7 +7,6 @@ class Configuration:
         self.mem_store_database = self._locate_value('MEM_STORE_DB', attrs)
         self.mem_store_type = self._locate_value('MEM_STORE_TYPE', attrs)
         self.poll_interval = float(self._locate_value('POLL_INTERVAL', attrs))
-        self.queue_endpoint = self._locate_value('QUEUE_ENDPOINT', attrs)
 
         self.aws_access_key = self._locate_value('AWS_ACCESS_KEY_ID', attrs)
         self.aws_secret_access_key = self._locate_value('AWS_SECRET_ACCESS_KEY', attrs)

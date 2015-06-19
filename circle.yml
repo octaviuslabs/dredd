@@ -12,6 +12,5 @@ machine:
     AWS_ACCESS_KEY_ID: test_placeholder
     AWS_SECRET_ACCESS_KEY: test_placeholder
     Q_TOWATCH: test_placeholder
-    QUEUE_ENDPOINT: test_placeholder
     AWS_Q_REGION: test_placeholder
     AWS_S3_BUCKET_NAME: test_placeholder

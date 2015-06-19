@@ -6,6 +6,7 @@ import logging
 from q import Q
 from config import Configuration
 from mem_store.email_message.email_message_with_diff import EmailMessageWithDiff
+from mem_store.init_status_item import InitStatusItem
 import traceback
 from s3_url import S3Url
 from boto.s3.key import Key
@@ -31,7 +32,16 @@ class Coordinator(object):
 
     def clean(self):
         self.logger.info("Cleaning Message")
+        self.clean_internal_init_status()
         return self.q().q().delete_message(self.message)
+
+    def clean_internal_init_status(self):
+        init_status = InitStatusItem(
+            self.task.account_id,
+            self.message.parsed_message()['type'],
+            self.task.id_)
+        init_status.finish_item()
+
 
     def _fetch_task_data(self, message):
         location = message.get("email", {}).get("url", None)

@@ -1,4 +1,5 @@
 from coordinator import Coordinator
+from coordinator import NoMessage
 import nltk
 import pickle
 from config import Configuration
@@ -8,6 +9,7 @@ from retrying import retry
 import time
 import logging
 import os
+import sys
 from daemon import Daemon
 
 # Daemon pattern found http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
@@ -40,12 +42,15 @@ class DreddDaemon(Daemon):
             self.heartbeat.send_heartbeat()
             coordinator = Coordinator(self.config.q_name)
             task = coordinator.get_task()
-            if bool(task):
-                task = self._score_task(task)
-                if task.save():
-                    coordinator.clean()
-        except Exception as e:
+            task = self._score_task(task)
+            if task.save():
+                coordinator.clean()
+        except NoMessage:
+            raise("Retrying...")
+        except:
+            e = sys.exc_info()[0]
             self.logging.critical(e)
+            raise("Retrying...")
 
 
     def start(self):

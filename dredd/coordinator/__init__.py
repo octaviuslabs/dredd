@@ -12,6 +12,9 @@ from s3_url import S3Url
 from boto.s3.key import Key
 from boto.s3.connection import S3Connection
 
+class NoMessage(Exception):
+    pass
+
 
 class Coordinator(object):
     config = Configuration()
@@ -25,7 +28,7 @@ class Coordinator(object):
         messages = self.q().fetch_messages()
         if len(messages) <= 0:
             self.logger.info("No messages found")
-            return None
+            raise NoMessage
         self.message = messages[0]
         self.task = self._fetch_task_data(self.message.parsed_message())
         return self.task

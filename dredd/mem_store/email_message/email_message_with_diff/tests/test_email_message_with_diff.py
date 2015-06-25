@@ -26,9 +26,12 @@ def test_diffing_email_bodies_with_late_insert():
     flush_memory()
 
     for i in [0, 1, 3]:
-        EmailMessageWithDiff(email_attrs[i]).save()
+        message = EmailMessageWithDiff(email_attrs[i])
+        message.diff_with_previously_stored_message()
+        message.save()
 
     late_email = EmailMessageWithDiff(email_attrs[2])
+    late_email.diff_with_previously_stored_message()
     yield sure_convert, (late_email.processed_text.raw).should.be.equal(u'this is the first sentence of the third email.')
 
     # late_email.processed_text should eq diff between 2 and 1
@@ -37,6 +40,7 @@ def test_diffing_with_nothing_to_diff():
     flush_memory()
     #
     initial_email = EmailMessageWithDiff(email_attrs[0])
+    initial_email.diff_with_previously_stored_message()
     # processed_text.raw should eq email_attrs[0]["body"]
     yield sure_convert, (initial_email.processed_text.raw).should.be.equal(email_attrs[0]["body"])
 
@@ -46,6 +50,7 @@ def test_diff_body_only_in_processed_text():
     inserted_emails = []
     for message_hash in email_attrs:
         email_message = EmailMessageWithDiff(message_hash)
+        email_message.diff_with_previously_stored_message()
         email_message.save()
         inserted_emails.append(email_message)
 

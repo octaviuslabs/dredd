@@ -1,4 +1,5 @@
 from coordinator import Coordinator
+from event_scorer.email_message_scorer import EmailMessageScorer 
 import nltk
 import pickle
 from config import Configuration
@@ -58,12 +59,8 @@ class DreddDaemon(Daemon):
         super(DreddDaemon, self).stop()
 
     def _score_task(self, task):
-        task.processed_text.classify_questions(self.classifier_)
-        task.add_feature('question_count', len(task.processed_text.questions))
-        task.add_feature('non_question_count',  len(task.processed_text.non_questions))
-        score = task.calculate_score()
-        self.logging.info(str(score))
-        return task
+        return EmailMessageScorer(task, self.get_classifier())
+
 
     def get_classifier(self):
         try:

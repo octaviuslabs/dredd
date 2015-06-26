@@ -5,7 +5,7 @@ import time
 import logging
 from q import Q
 from config import Configuration
-from mem_store.email_message.email_message_with_diff import EmailMessageWithDiff
+from mem_store.email_message import EmailMessage
 from mem_store.init_status_item import InitStatusItem
 import traceback
 from s3_url import S3Url
@@ -69,7 +69,7 @@ class Coordinator(object):
             email_data = message["email"]
             lts_data = json.loads(raw_data)
             email_data.update(lts_data["email"])
-            message = EmailMessageWithDiff(email_data)
+            message = EmailMessage(email_data)
             self.logger.info("Built " + message.log_ident)
             return message
         self.logger.warn(task_type + " is not currently supported")

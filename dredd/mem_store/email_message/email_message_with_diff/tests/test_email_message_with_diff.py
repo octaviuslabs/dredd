@@ -60,3 +60,14 @@ def test_diff_body_only_in_processed_text():
     for email_message in inserted_emails[1:4]:
         # Make sure that processed_text differs from the raw body in cases of diffs
         yield sure_convert, (email_message.processed_text.raw).should_not.be.equal(email_message.body.raw)
+
+
+def test_load():
+    flush_memory()
+
+    email_message = EmailMessage(email_attrs[0])
+    email_message.save()
+    loaded_email_message = EmailMessageWithDiff.load(email_message.storage_key)
+
+    yield sure_convert, (loaded_email_message.subject).should.be.equal(email_message.subject)
+    yield sure_convert, (loaded_email_message.__class__).should.be.equal(EmailMessageWithDiff)

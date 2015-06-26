@@ -11,6 +11,15 @@ from text_set.message_body import MessageBody
 class EmailMessage(Base):
     DEFAULT_EMAIL_THREAD_ID='threadless'
 
+    @classmethod
+    def load(klass, key):
+        # WARNING: THIS IS HACKY BUT IT'S THE ONLY WAY WE CAN READ FROM THE STORE
+        dummy_email_message = Base()
+        previous_email_json = dummy_email_message.store().get(key)
+
+        # TODO: Figure out how to access the class object from a static method
+        return klass(json.loads(previous_email_json))
+
     def __init__(self, attrs):
         try:
             self.id_ = attrs.get("id", "")

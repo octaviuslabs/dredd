@@ -5,16 +5,6 @@ from text_set.message_body import MessageBody
 from mem_store.base import Base
 
 class EmailMessageWithDiff(EmailMessage):
-
-    @classmethod
-    def load(klass, key):
-        # WARNING: THIS IS HACKY BUT IT'S THE ONLY WAY WE CAN READ FROM THE STORE
-        dummy_email_message = Base()
-        previous_email_json = dummy_email_message.store().get(key)
-
-        # TODO: Figure out how to access the class object from a static method
-        return klass(json.loads(previous_email_json))
-
     def __init__(self, attrs):
         # Initialize
         super(EmailMessageWithDiff, self).__init__(attrs)

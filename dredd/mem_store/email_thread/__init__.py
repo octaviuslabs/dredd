@@ -50,7 +50,7 @@ class EmailThread(Base):
     def compute_score(self):
         email = self.emails[0]
         if self.has_newer(email.sent_at.to_f()):
-            self.logging.info("Keeing old score for " + self.log_ident )
+            self.logging.info("Keeping old score for " + self.log_ident )
             return False
         else:
             self.score = email.score

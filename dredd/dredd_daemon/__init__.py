@@ -13,6 +13,9 @@ import os
 import sys
 from daemon import Daemon
 
+class DaemonCycleError(Exception):
+    pass
+
 # Daemon pattern found http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
 class DreddDaemon(Daemon):
     config = Configuration()
@@ -41,23 +44,29 @@ class DreddDaemon(Daemon):
     def _run_cycle(self):
         try:
             self.heartbeat.send_heartbeat()
-            coordinator = Coordinator(self.config.q_name)
+            coordinator = self.coordinator()
             task = coordinator.get_task()
-            task = self._score_task(task)
-            if task.save():
-                coordinator.clean()
+            return self.process_task(task, coordinator)
         except NoMessage:
-            raise("Retrying...")
+            raise DaemonCycleError
         except:
             e = sys.exc_info()[0]
             self.logging.critical(e)
-            raise("Retrying...")
+            raise DaemonCycleError
+        return False
 
+    def coordinator(self):
+        return Coordinator(self.config.q_name)
+
+    def process_task(self, task, coordinator):
+        scored_task = self._score_task(task)
+        if scored_task.save():
+            return coordinator.clean()
+        return False
 
     def start(self):
         self.logging.info("Starting Dredd")
         super(DreddDaemon, self).start()
-
 
     def stop(self):
         self.logging.info("Stopping Dredd")

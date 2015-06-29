@@ -79,7 +79,7 @@ class Coordinator(object):
         try:
             return self.q_
         except:
-            self.q_ = Q({q_name=self.q_name})
+            self.q_ = Q({q_name: self.q_name})
             return self.q_
 
     def store(self):

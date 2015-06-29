@@ -10,30 +10,33 @@ class Q(object):
     config = Configuration()
     GET_VISIBILITY =60
 
-    def __init__(self, queue_name):
-        self.queue_name = queue_name
+    def __init__(self, attrs):
+        self.q_name = attrs.get("q_name", raise Exception("q_name Is Required"))
+        self.q_region = attrs.get("q_region", self.config.q_region)
+        self.aws_access_key = attrs.get("aws_access_key", self.config.aws_access_key)
+        self.aws_secret_access_key = attrs.get("aws_access_key", self.config.aws_secret_access_key)
 
     def client(self):
         try:
             return self.client_
         except:
             self.client_ = boto.sqs.connect_to_region(
-                    self.config.q_region,
-                    aws_access_key_id=self.config.aws_access_key,
-                    aws_secret_access_key=self.config.aws_secret_access_key)
+                    self.q_region,
+                    aws_access_key_id=self.aws_access_key,
+                    aws_secret_access_key=self.aws_secret_access_key)
             return self.client_
 
     def q(self):
         try:
             return self.q_
         except:
-            self.q_ = self.client().get_queue(self.queue_name)
+            self.q_ = self.client().get_queue(self.q_name)
             self.q_.set_message_class(DreddMessage)
             return self.q_
 
-    def fetch_messages(self):
+    def fetch_messages(self, num_messages=1):
         try:
-            messages = self.q().get_messages()
+            messages = self.q().get_messages(num_messages)
             if len(messages) > 0:
                 message_types = [ message.parsed_message().get("type", "no-type") for message in messages]
                 self.logging.info("Got " +  ".".join(message_types) + " messages" )

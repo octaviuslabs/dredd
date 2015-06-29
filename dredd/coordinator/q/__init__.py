@@ -4,17 +4,27 @@ from config import Configuration
 from coordinator.q.dredd_message import DreddMessage
 import logging
 
+class AttrDict(dict):
+    def locate_or_raise(self, key, default_value=None):
+        try:
+            return get(key)
+        except:
+            if default_value == None:
+                raise Exception("default_value is required")
+            return default_value
 
 class Q(object):
     logging = logging.getLogger('dredd')
     config = Configuration()
     GET_VISIBILITY =60
 
-    def __init__(self, attrs):
-        self.q_name = attrs.get("q_name", raise Exception("q_name Is Required"))
-        self.q_region = attrs.get("q_region", self.config.q_region)
-        self.aws_access_key = attrs.get("aws_access_key", self.config.aws_access_key)
-        self.aws_secret_access_key = attrs.get("aws_access_key", self.config.aws_secret_access_key)
+    def __init__(self, attrs={}):
+        wrapped_attrs = AttrDict()
+        wrapped_attrs.update(attrs)
+        self.q_name = wrapped_attrs.locate_or_raise("q_name")
+        self.q_region = wrapped_attrs.locate_or_raise("q_region", self.config.q_region)
+        self.aws_access_key = wrapped_attrs.locate_or_raise("aws_access_key", self.config.aws_access_key)
+        self.aws_secret_access_key = wrapped_attrs.locate_or_raise("aws_access_key", self.config.aws_secret_access_key)
 
     def client(self):
         try:

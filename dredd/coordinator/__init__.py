@@ -11,18 +11,12 @@ import traceback
 from s3_url import S3Url
 from boto.s3.key import Key
 from boto.s3.connection import S3Connection
+from coordinator.sqs_manager import SqSManager
+from coordinator.exceptions import NoMessage
 
-class NoMessage(Exception):
-    pass
-
-
-class Coordinator(object):
+class Coordinator(SqSManager):
     config = Configuration()
     logger = logging.getLogger('dredd')
-
-    def __init__(self, q_name):
-        self.q_name = q_name
-        self.retries = 0
 
     def get_task(self):
         messages = self.q().fetch_messages()

@@ -1,6 +1,5 @@
 from coordinator import Coordinator
 from event_scorer.email_message_scorer import EmailMessageScorer
-from coordinator import NoMessage
 import nltk
 import pickle
 from config import Configuration
@@ -11,6 +10,7 @@ import time
 import logging
 import os
 import sys
+import traceback
 from daemon import Daemon
 
 class DaemonCycleError(Exception):
@@ -33,27 +33,27 @@ class DreddDaemon(Daemon):
             self.logging.info("Dredd is running...")
             self.get_classifier()
             while True:
-                self._run_cycle()
+                self._run_retryable_cycle()
                 time.sleep(self.poll_interval)
-                # It should wait until now to kill on ctr c
+                #TODO: It should wait until now to kill on ctr c
         except Exception as e:
             self.logging.critical(e)
             self.stop()
 
-    @retry(wait_exponential_multiplier=1000, wait_exponential_max=30000)
     def _run_cycle(self):
+        self.heartbeat.send_heartbeat()
+        coordinator = self.coordinator()
+        task = coordinator.get_task()
+        return self.process_task(task, coordinator)
+
+    @retry(wait_exponential_multiplier=1000, wait_exponential_max=30000)
+    def _run_retryable_cycle(self):
         try:
-            self.heartbeat.send_heartbeat()
-            coordinator = self.coordinator()
-            task = coordinator.get_task()
-            return self.process_task(task, coordinator)
-        except NoMessage:
-            raise DaemonCycleError
+            return self._run_cycle()
         except:
-            e = sys.exc_info()[0]
-            self.logging.critical(e)
-            raise DaemonCycleError
-        return False
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            self.logging.critical(str(exc_type))
+            raise Exception("Retry")
 
     def coordinator(self):
         return Coordinator(self.config.q_name)

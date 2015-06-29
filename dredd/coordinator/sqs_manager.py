@@ -1,3 +1,5 @@
+from q import Q
+
 class SqSManager(object):
     def __init__(self, q_name):
         self.q_name = q_name
@@ -7,5 +9,5 @@ class SqSManager(object):
         try:
             return self.q_
         except:
-            self.q_ = Q({q_name: self.q_name})
+            self.q_ = Q(self.q_name)
             return self.q_

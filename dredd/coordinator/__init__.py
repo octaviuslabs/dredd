@@ -3,7 +3,6 @@ import urllib2
 import re
 import time
 import logging
-from q import Q
 from config import Configuration
 from mem_store.email_message import EmailMessage
 from mem_store.init_status_item import InitStatusItem
@@ -68,13 +67,6 @@ class Coordinator(SqSManager):
             return message
         self.logger.warn(task_type + " is not currently supported")
         return None
-
-    def q(self):
-        try:
-            return self.q_
-        except:
-            self.q_ = Q({q_name: self.q_name})
-            return self.q_
 
     def store(self):
         try:

@@ -6,7 +6,7 @@ class MultiTaskCoordinator(Coordinator):
     task_pairs = TaskStack()
 
     def clean(self, task_pair):
-        self.logger.info("Cleaning Message")
+        self.logger.info("Cleaning up")
         self.clean_internal_init_status(task_pair)
         return self.q().remove_message(task_pair.message)
 

@@ -2,6 +2,7 @@ import sure
 from nose.tools import assert_raises
 from nose.tools import raises
 from dredd_daemon import DreddDaemon
+from dredd_daemon.mixins.single_item_cycle_mixin import SingleItemCycleMixin
 from nose_focus import focus
 
 email_attrs = {
@@ -48,7 +49,7 @@ class MockObj:
     def get_task(self):
         return MockObj({"save": True})
 
-class DoubleDaemon(DreddDaemon):
+class DoubleDaemon(SingleItemCycleMixin, DreddDaemon):
     def _score_task(self, task):
         return task
 

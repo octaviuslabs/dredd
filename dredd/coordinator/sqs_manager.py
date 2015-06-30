@@ -11,3 +11,7 @@ class SqSManager(object):
         except:
             self.q_ = Q(self.q_name)
             return self.q_
+
+    def clean(self, message):
+        self.logger.info("Cleaning Message")
+        return self.q().delete_message(message)

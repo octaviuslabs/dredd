@@ -3,8 +3,9 @@ import json
 from config import Configuration
 from coordinator.q.dredd_message import DreddMessage
 import logging
+from coordinator.q.mixins.q_utilz_mixin import QutilzMixin
 
-class Q(object):
+class Q(QutilzMixin, object):
     logging = logging.getLogger('dredd')
     config = Configuration()
     GET_VISIBILITY =60
@@ -38,7 +39,7 @@ class Q(object):
             messages = self.q().get_messages(num_messages)
             if len(messages) > 0:
                 message_types = [ message.parsed_message().get("type", "no-type") for message in messages]
-                self.logging.info("Got " +  ".".join(message_types) + " messages" )
+                self.logging.info("Got messages")
             return messages
         except Exception as err:
             self.logging.critical(err)

@@ -1,4 +1,3 @@
-from coordinator import Coordinator
 from event_scorer.email_message_scorer import EmailMessageScorer
 import nltk
 import pickle
@@ -12,12 +11,11 @@ import os
 import sys
 import traceback
 from daemon import Daemon
-
-class DaemonCycleError(Exception):
-    pass
+from mixins.multi_item_cycle_mixin import MultiItemCycleMixin
+from exceptions import DaemonCycleError
 
 # Daemon pattern found http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
-class DreddDaemon(Daemon):
+class DreddDaemon(MultiItemCycleMixin, Daemon):
     config = Configuration()
     logging = logging.getLogger('dredd')
     classifier_filename = 'naivebays_1433295569.pickle'
@@ -33,6 +31,7 @@ class DreddDaemon(Daemon):
             self.logging.info("Dredd is running...")
             self.get_classifier()
             while True:
+                self.heartbeat.send_heartbeat()
                 self._run_retryable_cycle()
                 time.sleep(self.poll_interval)
                 #TODO: It should wait until now to kill on ctr c
@@ -40,29 +39,19 @@ class DreddDaemon(Daemon):
             self.logging.critical(e)
             self.stop()
 
-    def _run_cycle(self):
-        self.heartbeat.send_heartbeat()
-        coordinator = self.coordinator()
-        task = coordinator.get_task()
-        return self.process_task(task, coordinator)
-
     @retry(wait_exponential_multiplier=1000, wait_exponential_max=30000)
     def _run_retryable_cycle(self):
         try:
-            return self._run_cycle()
+            cycle_outcome = self._run_cycle()
+            if cycle_outcome:
+                self.logging.info("Cycle Complete")
+                return cycle_outcome
+            else:
+                raise
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             self.logging.critical(str(exc_type))
             raise Exception("Retry")
-
-    def coordinator(self):
-        return Coordinator(self.config.q_name)
-
-    def process_task(self, task, coordinator):
-        scored_task = self._score_task(task)
-        if scored_task.save():
-            return coordinator.clean()
-        return False
 
     def start(self):
         self.logging.info("Starting Dredd")
@@ -74,7 +63,6 @@ class DreddDaemon(Daemon):
 
     def _score_task(self, task):
         return EmailMessageScorer(task, self.get_classifier())
-
 
     def get_classifier(self):
         try:

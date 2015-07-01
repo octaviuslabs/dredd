@@ -15,8 +15,7 @@ class MultiItemCycleMixin(object):
         result = True
         for task_pair in task_stack:
             self.logging.info("Processing Task Pair")
-            if self.process_task(task_pair) and coordinator.clean(task_pair):
-                result = result and True
+            result = (result and self.process_task(task_pair) and coordinator.clean(task_pair))
         return result
 
     def coordinator(self):

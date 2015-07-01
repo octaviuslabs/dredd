@@ -73,7 +73,7 @@ def flush_memory():
 def teardown_func():
     redis.flushall()
 
-def get_recommendations():
+def get_recommendations(recommendation_key):
     return redis.zrangebyscore(recommendation_key, '-inf', '+inf', withscores=True)
 
 
@@ -126,13 +126,13 @@ def test_self_sender_value():
 def test_judge_self_sender():
     flush_memory()
 
-    recommendation_key = ":".join(['account', target_account_id, 'email_thread', 'judgement', 'self_sender'])
+    recommendation_key = ":".join(['account', target_account_id, 'judgement', 'email_thread', 'self_sender'])
 
     # First email is sent by self so has a verdict of 1
     email1 = EmailMessage(email_messages[0])
     test_subject1 = EmailMessageSimplePropertyScorer(email1)
     test_subject1.save()
-
+    
     yield sure_convert, (
         get_recommendations(recommendation_key)[0][1]).should.be.equal(1.0)
 
@@ -159,7 +159,7 @@ def test_self_sender_value():
 def test_judge_last_sent():
     flush_memory()
 
-    recommendation_key = ":".join(['account', target_account_id, 'email_thread', 'judgement', 'last_sent'])
+    recommendation_key = ":".join(['account', target_account_id, 'judgement', 'email_thread', 'last_sent'])
 
 
     # Normal insert order
@@ -179,7 +179,7 @@ def test_judge_last_sent():
 def test_judge_last_sent_abnormal_insert_order():
     flush_memory()
 
-    recommendation_key = ":".join(['account', target_account_id, 'email_thread', 'judgement', 'last_sent'])
+    recommendation_key = ":".join(['account', target_account_id, 'judgement', 'email_thread', 'last_sent'])
 
     # Abnormal insert order
     email1 = EmailMessage(email_messages[1])

@@ -19,6 +19,7 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - `AWS_SECRET_ACCESS_KEY` = Obvious
 - `AWS_Q_REGION` = The region that the queue is in
 - `AWS_S3_BUCKET_NAME` = Name of bucket to search for unprocessed entities (needed for primer but the config class currently requires that this variable is set)
+- 'Q_BATCH_SIZE' = The batch size that dredd should process on each q request (MAX 10)
 - `PUB_SUB_PREFIX` = topic and app prefix for pubsub (usually `dev` in development)
 - `PUB_SUB_TOPIC` = pubsub topic (historically `message_bodies`)
 

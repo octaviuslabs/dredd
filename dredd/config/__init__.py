@@ -15,6 +15,9 @@ class Configuration:
         self.aws_s3_bucket_name = self._locate_value("AWS_S3_BUCKET_NAME", attrs)
         self.pub_sub_prefix = self._locate_value('PUB_SUB_PREFIX', attrs)
         self.pub_sub_topic = self._locate_value('PUB_SUB_TOPIC', attrs)
+        self.q_batch_size = self._locate_value("Q_BATCH_SIZE", attrs)
+        if self.q_batch_size > 10:
+            self.q_batch_size = 10
 
     def _locate_value(self, key, attrs):
         try:

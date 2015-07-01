@@ -10,7 +10,6 @@ class MultiItemCycleMixin(object):
     def _run_cycle(self):
         coordinator = self.coordinator()
         task_stack = coordinator.get_tasks(self.config.q_batch_size)
-        self.log(task_stack)
 
         result = True
         for task_pair in task_stack:

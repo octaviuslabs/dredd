@@ -4,10 +4,8 @@ import logging
 from config import Configuration
 
 class Notifier(object):
-    topic_arns = {}
     logging = logging.getLogger('dredd')
     config = Configuration()
-
 
     def notifier_client(self):
         try:
@@ -22,7 +20,6 @@ class Notifier(object):
     def get_topic_arn(self, topic):
         full_topic_name = self.build_topic_name(topic)
         try:
-            self.logging.info(self.topic_arns[full_topic_name])
             return self.topic_arns[full_topic_name]
         except:
             raw_topics = self.notifier_client().get_all_topics()['ListTopicsResponse']['ListTopicsResult']['Topics']

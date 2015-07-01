@@ -63,8 +63,6 @@ email_messages = [{ # Sent by self, first item
     "body": 'no scoreable features'
 }]
 
-# recommendation_key = "account:account_id:judgement:email_thread:judgement_name"
-
 
 def sure_convert(statement):
     assert statement
@@ -75,8 +73,8 @@ def flush_memory():
 def teardown_func():
     redis.flushall()
 
-# def get_recommendations():
-#     return redis.zrangebyscore(recommendation_key, '-inf', '+inf', withscores=True)
+def get_recommendations():
+    return redis.zrangebyscore(recommendation_key, '-inf', '+inf', withscores=True)
 
 
 def test_is_last_message_in_thread():
@@ -128,20 +126,22 @@ def test_self_sender_value():
 def test_judge_self_sender():
     flush_memory()
 
+    recommendation_key = ":".join(['account', target_account_id, 'email_thread', 'judgement', 'self_sender'])
+
     # First email is sent by self so has a verdict of 1
     email1 = EmailMessage(email_messages[0])
     test_subject1 = EmailMessageSimplePropertyScorer(email1)
     test_subject1.save()
 
     yield sure_convert, (
-        ThreadRecommendation.get_recommendations(target_account_id, "self_sender")[0][1]).should.be.equal(1.0)
+        get_recommendations(recommendation_key)[0][1]).should.be.equal(1.0)
 
     # Second email is sent by other and verdict updates to 0
     email2 = EmailMessage(email_messages[1])
     test_subject2 = EmailMessageSimplePropertyScorer(email2)
     test_subject2.save()
 
-    yield sure_convert, (ThreadRecommendation.get_recommendations(target_account_id, "self_sender")[0][1]).should.be.equal(0.0)
+    yield sure_convert, (get_recommendations(recommendation_key)[0][1]).should.be.equal(0.0)
 
 
 def test_self_sender_value():
@@ -159,34 +159,39 @@ def test_self_sender_value():
 def test_judge_last_sent():
     flush_memory()
 
+    recommendation_key = ":".join(['account', target_account_id, 'email_thread', 'judgement', 'last_sent'])
+
+
     # Normal insert order
     email1 = EmailMessage(email_messages[0])
     test_subject1 = EmailMessageSimplePropertyScorer(email1)
     test_subject1.save()
-    recommendation = ThreadRecommendation.get_recommendations(target_account_id, "last_sent")
+    recommendation = get_recommendations(recommendation_key)
     yield sure_convert, (recommendation[0][1]).should.be.equal(test_subject1.sent_at_to_f())
 
     email2 = EmailMessage(email_messages[1])
     test_subject2 = EmailMessageSimplePropertyScorer(email2)
     test_subject2.save()
-    recommendation = ThreadRecommendation.get_recommendations(target_account_id, "last_sent")
+    recommendation = get_recommendations(recommendation_key)
     yield sure_convert, (recommendation[0][1]).should.be.equal(test_subject2.sent_at_to_f())
 
 
 def test_judge_last_sent_abnormal_insert_order():
     flush_memory()
 
+    recommendation_key = ":".join(['account', target_account_id, 'email_thread', 'judgement', 'last_sent'])
+
     # Abnormal insert order
     email1 = EmailMessage(email_messages[1])
     test_subject1 = EmailMessageSimplePropertyScorer(email1)
     test_subject1.save()
-    recommendation = ThreadRecommendation.get_recommendations(target_account_id, "last_sent")
+    recommendation = get_recommendations(recommendation_key)
     yield sure_convert, (recommendation[0][1]).should.be.equal(test_subject1.sent_at_to_f())
 
     email2 = EmailMessage(email_messages[0])
     test_subject2 = EmailMessageSimplePropertyScorer(email2)
     test_subject2.save()
-    recommendation = ThreadRecommendation.get_recommendations(target_account_id, "last_sent")
+    recommendation = get_recommendations(recommendation_key)
     yield sure_convert, (recommendation[0][1]).should.be.equal(test_subject1.sent_at_to_f())
 
 

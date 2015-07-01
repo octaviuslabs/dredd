@@ -87,7 +87,7 @@ email_messages = [{ # Expected score: 1
 }]
 
 contrived_scores = [1, 0, 2]
-recommendation_key = ":".join(['recommendations', target_account_id])
+recommendation_key = ":".join(['account', target_account_id, 'judgement', 'email_thread', 'question'])
 
 # Score 1: [0, 1, 2] :: results: 1, 0, 2
 # Score 2: [0, 2, 1] :: results: 1, 2, 2
@@ -131,6 +131,7 @@ def test_normal_run():
     for index in insert_order:
         email = EmailMessage(email_messages[index])
         email.score = contrived_scores[index]
+        email.score_calculated = True
         email.save()
         thread_recommendation = redis.zrangebyscore(recommendation_key, '-inf', '+inf', withscores=True)
         yield sure_convert, thread_recommendation.should.be.equal([
@@ -149,6 +150,7 @@ def test_abnormal_insert_order():
     for index in insert_order:
         email = EmailMessage(email_messages[index])
         email.score = contrived_scores[index]
+        email.score_calculated = True
         email.save()
         thread_recommendation = redis.zrangebyscore(recommendation_key, '-inf', '+inf', withscores=True)
         yield sure_convert, thread_recommendation.should.be.equal([

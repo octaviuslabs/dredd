@@ -42,14 +42,6 @@ class Q(object):
             self.logging.critical(err)
             return list()
 
-    def post_message(self, message):
-        try:
-            message = self.q().write(message)
-        except Exception as err:
-            self.logging.critical(err)
-            raise
-
-        return message
 
 # {
 #   "Type" : "Notification",

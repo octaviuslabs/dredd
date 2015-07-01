@@ -66,8 +66,6 @@ class EmailMessage(Base):
         self.logging.info("Scoring " + self.log_ident)
         if self.features['question_count'] > 0:
             self.increase_score(1)
-        if self.from_.id_ == self.account_contact.id_:
-            self.increase_score()
 
         self.score_calculated = True
         return self.score
@@ -83,7 +81,10 @@ class EmailMessage(Base):
             return False
         try:
             self.thread.push(self)
-            self.thread.recommend()
+
+            # Recommend the thread only if the email's score was calculated
+            if self.score_calculated == True:
+                self.thread.recommend()
             self.store().getset(self.storage_key, self.to_json())
             self.logging.info("Saved " + self.log_ident)
             return True

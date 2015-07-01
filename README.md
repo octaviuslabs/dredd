@@ -17,9 +17,10 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - `POLL_INTERVAL` = Interval To Poll The Server
 - `AWS_ACCESS_KEY_ID` = Obvious
 - `AWS_SECRET_ACCESS_KEY` = Obvious
-- `Q_TOWATCH` = The name of the queue dredd should be watching
 - `AWS_Q_REGION` = The region that the queue is in
 - `AWS_S3_BUCKET_NAME` = Name of bucket to search for unprocessed entities (needed for primer but the config class currently requires that this variable is set)
+- `PUB_SUB_PREFIX` = topic and app prefix for pubsub (usually `dev` in development)
+- `PUB_SUB_TOPIC` = pubsub topic (historically `message_bodies`)
 
 ## Setup
 ```
@@ -35,16 +36,59 @@ $ nosetests
 ```
 
 # Running
-To launch processing
+To launch processing, substitute `PROCESSING_TYPE` in the command line with a processing type
 ```
-$ python dredd judge start
+$ python dredd PROCESSING_TYPE start
 ```
+Processing Types Available
+- `questions`
+- `simple_properties`
+
 
 To initialize Dredd from no data (Dredd can also resume a failed initialization)
 ```
 $ python dredd prime start
 ```
 
+## Priming
+In some cases you'll need to initialize a part of or the entire network.
+
+Dredd uses a pub/sub model. Each individual Dredd process receives a message at least once and processes that message.
+
+In this example, a new message goes into a notifier and is broadcast to individual queues. In this way each application receives a message at least once.
+![Basic Pubsub](docs/img/pub_sub_basic.png)
+
+If `App1` is responsible for judging whether there are questions in the latest email in the thread and `App3` judges the urgency of language in the thread and you've tweaked `App3` to be better at it's job, you'll need to re-initialze `App3` using priming.
+
+If you attempt to prime `App3` without making special modifications to the data flow you will re-broadcast every single item to Apps 1-n, forcing all of those apps to re-iniaizlie. **Don't do that.**
+
+Instead, change the flow of data for the priming process such that old data flows only to `Queue 3`.
+![Only go to one queue](docs/img/pub_sub_one_queue.png)
+
+That's better.
+
+### Changing Pub/Sub in AWS
+Today we use AWS to handle PubSub activities. Here's how to broadcast to selected queues using AWS.
+
+**Make sure you have provisioned the correct queues in SQS using instructions at [ORP-API](https://github.com/octaviuslabs/orp-api)**
+
+1. In the SNS console click "Create new topic"
+![AWS SNS New Topic](docs/img/aws_new_topic.png)
+
+2. Give the topic a name (Prefix the name with `dev` or the appropriate environment for the work you're doing. This makes it easier for other developers and the app to know which data pipeline to use.) - for example `dev_djurek_work` **Remember: NO DASHES IN THE NAME**
+
+3. In the SQS console, right click on the queue you wish to subscribe to notifications and select `Subscribe Queue to SNS Topic`
+![SQS context menu](docs/img/aws_sqs_menu.png)
+
+4. Select the topic from the dropdown list and click `Subscribe`.
+
+5. Repeat steps 3 and 4 for every queue that receives messages
+
+6. Adjust the `PUB_SUB_TOPIC` configuration value to equal the SNS topic name you made (minus the prefix specified in `PUB_SUB_PREFIX`, e.g. `dev_djurek_work` is just `djurek_work` without the `dev_`)
+
+7. Run dredd prime
+
+8. Revert the `PUB_SUB_TOPIC` back to the topic to which you're really subscribing. (e.g. `message_bodies`)
 
 ## Building A Question Classifier
 The script used to train the classifier is in the root directory under “train_classifier”. This file will write to  “classified_output” a classifier, scored sample emails and the questions that were classified.

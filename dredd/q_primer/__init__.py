@@ -1,5 +1,5 @@
 from config import Configuration
-from coordinator.q import Q
+from coordinator.notifier import Notifier
 import logging
 from mem_store.init_status_item import InitStatusItem
 from boto.s3.connection import S3Connection
@@ -12,7 +12,6 @@ class QPrimer(object):
 
 
     def __init__(self):
-        self.q_name = self.config.q_name
         self.bucket = self.store().get_bucket(self.config.aws_s3_bucket_name)
 
     def prime(self):
@@ -63,7 +62,7 @@ class QPrimer(object):
         queue_message = DreddEmailMessage(
             self.config.aws_s3_bucket_name,
             email_path)
-        self.q().post_message(queue_message)
+        self.notifier().post_message(self.config.pub_sub_topic, queue_message)
 
     # Split an email path into the parts that make it up (i.e. account id,
     #   thread id, email id). Returns a hash.
@@ -75,12 +74,12 @@ class QPrimer(object):
             "email_id": split_path[5][:-5] # remove '.json' from the end of the string
         }
 
-    def q(self):
+    def notifier(self):
         try:
-            return self.q_
+            return self.notifier_
         except:
-            self.q_ = Q(self.q_name)
-            return self.q_
+            self.notifier_ = Notifier()
+            return self.notifier_
 
 
     def store(self):

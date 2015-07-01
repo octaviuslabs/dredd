@@ -1,0 +1,2 @@
+class DaemonCycleError(Exception):
+    pass

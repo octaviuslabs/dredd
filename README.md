@@ -20,6 +20,7 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - `Q_TOWATCH` = The name of the queue dredd should be watching
 - `AWS_Q_REGION` = The region that the queue is in
 - `AWS_S3_BUCKET_NAME` = Name of bucket to search for unprocessed entities (needed for primer but the config class currently requires that this variable is set)
+- 'Q_BATCH_SIZE' = The batch size that dredd should process on each q request (MAX 10)
 
 ## Setup
 ```

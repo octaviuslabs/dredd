@@ -5,9 +5,12 @@ class MultiItemCycleMixin(object):
     logging = logging.getLogger('dredd')
     config = Configuration()
 
+    def log(self, value):
+        self.logging.info(value)
     def _run_cycle(self):
         coordinator = self.coordinator()
         task_stack = coordinator.get_tasks(self.config.q_batch_size)
+
         result = True
         for task_pair in task_stack:
             self.logging.info("Processing Task Pair")
@@ -15,7 +18,7 @@ class MultiItemCycleMixin(object):
         return result
 
     def coordinator(self):
-        return MultiTaskCoordinator(self.config.q_name)
+        return MultiTaskCoordinator(self.get_q_name())
 
     def process_task(self, task_pair):
         scored_task = self._score_task(task_pair.task)

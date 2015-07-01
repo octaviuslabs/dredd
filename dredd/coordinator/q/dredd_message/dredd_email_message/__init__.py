@@ -18,12 +18,14 @@ class DreddEmailMessage(DreddMessage):
 
     def get_body(self):
         return json.dumps({
-            "Message": json.dumps({
-                "message": {
-                    "type": "email", 
-                    "email": {
-                        "url": self.url
-                    }
-                },
-            })
+            "Message": self.get_body_for_broadcast()
+        })
+
+    def get_body_for_broadcast(self):
+        return json.dumps({"message": {
+                "type": "email",
+                "email": {
+                    "url": self.url
+                }
+            },
         })

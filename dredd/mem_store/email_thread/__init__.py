@@ -24,7 +24,7 @@ class EmailThread(Base):
     def recommend(self):
         try:
             # Insert the score if a score has been set
-            recommendation = ThreadRecommendation(self.score, self.account_id, self.id_)
+            recommendation = ThreadRecommendation(self.score, self.account_id, self.id_, "question")
             recommendation.pop()
             recommendation.save()
             self.logging.info("Recommended " + self.log_ident )

@@ -4,6 +4,7 @@ from logging.handlers import TimedRotatingFileHandler
 from config import Configuration
 from dredd_daemon import DreddDaemon
 from dredd_primer_daemon import DreddPrimerDaemon
+from dredd_daemon.email_message_simple_properties_daemon import EmailMessageSimplePropertiesDaemon
 
 import sys
 import os
@@ -17,12 +18,14 @@ def main(log):
     if len(sys.argv) == 3:
         log.info("Launching daemon: %s" % sys.argv[1])
         daemon = None
-        if sys.argv[1] == 'judge':
+        if sys.argv[1] == 'questions':
             daemon = DreddDaemon(configuration.poll_interval)
         elif sys.argv[1] == 'prime':
             daemon = DreddPrimerDaemon()
+        elif sys.argv[1] == 'simple_properties':
+            daemon = EmailMessageSimplePropertiesDaemon(configuration.poll_interval)
         else:
-            print "Unknown daemon (use 'prime' to initialize or 'judge' to run)"
+            print "Unknown daemon (valid daemons: prime, questions, simple_properties)"
             sys.exit(2)
 
         launch_daemon(daemon, log)

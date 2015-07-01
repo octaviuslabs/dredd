@@ -11,7 +11,6 @@ redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 target_account_id = 'this-is-the-accoundid'
 target_thread_id = 'a-thread-of-email'
 
-recommendation_key = ":".join(['recommendations', target_account_id])
 
 email_messages = [{ # Expected score: 1
     "id": "this-be-my-id1",
@@ -90,6 +89,9 @@ email_messages = [{ # Expected score: 1
     "body": 'Hey man. Did you get a chance to see my pokemons? Let me show you my pokemons!'
 }]
 
+recommendation_key = ":".join(['account', target_account_id, 'judgement', 'email_thread', 'question'])
+
+
 def sure_convert(statement):
     assert statement
 
@@ -115,6 +117,8 @@ class TestSubject(EmailMessageScorer):
     def score_message(self, email_message):
         if self.override_score_message_value == None:
             return
+
+        self.event_email_message.score_calculated = True 
         email_message.score = self.override_score_message_value
         self.override_score_message_value = None
         return email_message.score

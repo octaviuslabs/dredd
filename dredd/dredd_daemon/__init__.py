@@ -19,9 +19,11 @@ class DreddDaemon(MultiItemCycleMixin, Daemon):
     config = Configuration()
     logging = logging.getLogger('dredd')
     classifier_filename = 'naivebays_1433295569.pickle'
+    pid_filename = '/tmp/dredd-questions.pid'
+    pub_sub_app_name = 'questions'
 
     def __init__(self, poll_interval):
-        super(DreddDaemon, self).__init__('/tmp/dredd.pid')
+        super(DreddDaemon, self).__init__(self.pid_filename)
         self.poll_interval = poll_interval
         self.daemon_location = os.path.abspath(__file__)
         self.heartbeat = Heartbeat()
@@ -63,6 +65,13 @@ class DreddDaemon(MultiItemCycleMixin, Daemon):
 
     def _score_task(self, task):
         return EmailMessageScorer(task, self.get_classifier())
+
+    def get_q_name(self):
+        return "%s_dredd_%s-%s_%s" % (
+            self.config.pub_sub_prefix,
+            self.pub_sub_app_name,
+            self.config.pub_sub_prefix,
+            self.config.pub_sub_topic)
 
     def get_classifier(self):
         try:

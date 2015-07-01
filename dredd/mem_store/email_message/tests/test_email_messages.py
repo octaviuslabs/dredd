@@ -62,6 +62,8 @@ email_attrs_from_self = {
     "body": "This is the first sentences of the second email. This is the body of the email. This is an inline sentence. This is the second sentence of the first email."
 }
 
+recommendation_key = ":".join(["account",  email_attrs["account_id"], "judgement", "email_thread", "question"])
+
 def sure_convert(statement):
     assert statement
 
@@ -113,19 +115,21 @@ def test_score_saving_email_from_self():
     email.calculate_score()
     email.save()
 
-    yield sure_convert, email.score.should.be.equal(1.0)
+    # This changed from 1.0 to 0.0 because email_message does not score itself
+    #   based on whether the account owner sent the email anymore.
+    yield sure_convert, email.score.should.be.equal(0.0)
 
 def test_saving():
     flush_memory()
     random_score = "%.4f"%(random.random()*100000)
     email = EmailMessage(email_attrs)
     email.score = random_score
+    email.score_calculated = True
     email.save()
 
     # Recommendation Save Test
     reco_listing = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
-    key = ":".join(["recommendations",  email_attrs["account_id"]])
-    yield sure_convert, (redis.zrangebyscore(key, random_score, random_score)).should.be.equal([reco_listing])
+    yield sure_convert, (redis.zrangebyscore(recommendation_key, random_score, random_score)).should.be.equal([reco_listing])
 
     # Thread Add Test
     key = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
@@ -147,20 +151,22 @@ def test_inserting_old_thread():
     email2_attrs["sent_at"] = "2015-03-01T21:22:48.000Z"
     email2 = EmailMessage(email2_attrs)
     email2.score = float(75)
+    email2.score_calculated = True
     email2.save()
 
     email1 = EmailMessage(email_attrs)
     email1.score = float(50)
+    email2.score_calculated = True
     email1.save()
-    key = ":".join(["recommendations",  email_attrs["account_id"]])
     reco_listing = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
-    yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(75))])
+    yield sure_convert, (redis.zrangebyscore(recommendation_key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(75))])
 
 def test_inserting_new_thread():
     flush_memory()
 
     email1 = EmailMessage(email_attrs)
     email1.score = float(50)
+    email1.score_calculated = True
     email1.save()
 
     email2_attrs = email_attrs.copy()
@@ -168,8 +174,8 @@ def test_inserting_new_thread():
     email2_attrs["sent_at"] = "2015-03-01T21:22:48.000Z"
     email2 = EmailMessage(email2_attrs)
     email2.score = float(2)
+    email2.score_calculated = True
     email2.save()
 
-    key = ":".join(["recommendations",  email_attrs["account_id"]])
     reco_listing = ":".join(["account", email_attrs["account_id"], "email_thread", email_attrs["thread_id"]])
-    yield sure_convert, (redis.zrangebyscore(key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(2))])
+    yield sure_convert, (redis.zrangebyscore(recommendation_key, "-inf", "+inf", withscores=True)).should.be.equal([(reco_listing, float(2))])

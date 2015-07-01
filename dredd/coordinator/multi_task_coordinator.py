@@ -3,7 +3,9 @@ from coordinator.task_stack import TaskStack
 from coordinator.task_pair import TaskPair
 
 class MultiTaskCoordinator(Coordinator):
-    task_pairs = TaskStack()
+    def __init__(self, q_name):
+        super(MultiTaskCoordinator, self).__init__(q_name)
+        self.task_pairs = TaskStack()
 
     def clean(self, task_pair):
         self.logger.info("Cleaning up")

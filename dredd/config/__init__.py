@@ -18,6 +18,7 @@ class Configuration:
         self.q_batch_size = self._locate_value("Q_BATCH_SIZE", attrs)
         if self.q_batch_size > 10:
             self.q_batch_size = 10
+        self.rollbar_api_token = self._locate_value("ROLLBAR_API_TOKEN", attrs)
 
     def _locate_value(self, key, attrs):
         try:
@@ -27,3 +28,20 @@ class Configuration:
 
     def _fire_error(self, message):
         raise Exception(message)
+
+    def rollbar_sizes_settings(self):
+        return {
+            'enabled': True, 
+            'sizes': {
+                'maxdict': 50,
+                'maxarray': 50,
+                'maxlist': 50,
+                'maxtuple': 10,
+                'maxset': 50,
+                'maxfrozenset': 50,
+                'maxdeque': 10,
+                'maxstring': 512,
+                'maxlong': 40,
+                'maxother': 512,
+            }
+        }

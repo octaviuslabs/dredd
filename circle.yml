@@ -15,4 +15,5 @@ machine:
     Q_BATCH_SIZE: 10
     AWS_S3_BUCKET_NAME: test_placeholder
     PUB_SUB_PREFIX: 'test'
-    PUB_SUB_TOPIC: 'test' 
+    PUB_SUB_TOPIC: 'test'
+    ROLLBAR_API_TOKEN: 'test'

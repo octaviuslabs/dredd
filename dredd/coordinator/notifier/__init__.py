@@ -37,7 +37,7 @@ class Notifier(object):
                 target_arn=self.get_topic_arn(topic),
                 message=message.get_body_for_broadcast())
         except Exception as err:
-            self.logging.critical(err)
+            self.logging.exception(err)
             raise
 
         return message

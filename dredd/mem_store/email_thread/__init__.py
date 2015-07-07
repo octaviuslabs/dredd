@@ -18,7 +18,7 @@ class EmailThread(Base):
             self.logging.info("Pushed email " + email.id_ + " onto " + self.log_ident )
             return True
         except Exception as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             return False
 
     def recommend(self):
@@ -34,7 +34,7 @@ class EmailThread(Base):
             self.logging.info("Did not recommend " + self.log_ident )
             return False
         except Exception as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             return False
 
     def has_newer(self, sent_at):

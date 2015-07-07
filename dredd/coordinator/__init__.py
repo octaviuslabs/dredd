@@ -52,8 +52,7 @@ class Coordinator(SqSManager):
             raw_data = key.get_contents_as_string()
             return self._serialize_task(message, raw_data)
         except Exception, err:
-            messags = "There was an error pulling task data from " + str(location) + "\n" + str(err)
-            self.logger.critical(messags)
+            self.logger.exception("Error pulling task data from S3")
             raise Exception(messags)
 
     def _serialize_task(self, message, raw_data):

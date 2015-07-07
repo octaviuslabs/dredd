@@ -42,7 +42,7 @@ class Q(QutilzMixin, object):
                 self.logging.info("Got messages")
             return messages
         except Exception as err:
-            self.logging.critical(err)
+            self.logging.exception(err)
             return list()
 
 

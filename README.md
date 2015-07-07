@@ -22,6 +22,7 @@ Dredd is vespers eyes and ears, it is always watching, always judging.
 - 'Q_BATCH_SIZE' = The batch size that dredd should process on each q request (MAX 10)
 - `PUB_SUB_PREFIX` = topic and app prefix for pubsub (usually `dev` in development)
 - `PUB_SUB_TOPIC` = pubsub topic (historically `message_bodies`)
+- `ROLLBAR_API_TOKEN` = API token for [Rollbar](https://rollbar.com/) error reporting 
 
 ## Setup
 ```

@@ -14,7 +14,7 @@ class Recommendation(Base):
             self.logging.info("Added " + self.log_ident)
             return True
         except Exception as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             return False
 
     def pop(self):
@@ -23,7 +23,7 @@ class Recommendation(Base):
             self.logging.info("Removed " + self.log_ident)
             return True
         except Exception as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             return False
 
     def value(self):

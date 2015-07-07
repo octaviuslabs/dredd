@@ -56,7 +56,7 @@ class DreddPrimerDaemon(Daemon):
             primer = QPrimer()
             primer.prime()
         except Exception as e:
-            self.logging.critical("Error attempting to prime: {0}".format(e))
+            self.logging.exception("Error attempting to prime: {0}".format(e))
 
         # Set the finish time in the store
         self.init_status.set_finished()

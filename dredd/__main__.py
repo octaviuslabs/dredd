@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 import logging
+import rollbar
+from rollbar.logger import RollbarHandler
 from logging.handlers import TimedRotatingFileHandler
 from config import Configuration
 from dredd_daemon import DreddDaemon
@@ -32,7 +34,7 @@ def main(log):
 
     	sys.exit(0)
     else:
-    	print "usage: %s prime|judge start|stop|restart" % sys.argv[0]
+    	print "usage: %s prime|questions|simple_properies start|stop|restart" % sys.argv[0]
     	sys.exit(2)
 
 def launch_daemon(daemon, log):
@@ -56,6 +58,7 @@ def assure_path_exists(path="~/dredd_logs"):
     return path
 
 if __name__ == "__main__":
+    # Log to rotating file
     logger = logging.getLogger('dredd')
     logger.setLevel(logging.INFO)
     log_file = assure_path_exists("~/dredd_logs") + "/current.log"
@@ -63,5 +66,12 @@ if __name__ == "__main__":
     log_format = logging.Formatter('%(levelname)s %(asctime)s: %(message)s')
     file_handeler.setFormatter(log_format)
     logger.addHandler(file_handeler)
+
+    # Log only critical errors to Rollbar
+    configuration = Configuration()
+    rollbar.init(configuration.rollbar_api_token, 'production', locals=configuration.rollbar_sizes_settings())
+    rollbar_handler = RollbarHandler()
+    rollbar_handler.setLevel(logging.ERROR)
+    logger.addHandler(rollbar_handler)
 
     main(logger)

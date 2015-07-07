@@ -48,7 +48,7 @@ class EmailMessage(Base):
             self.storage_key = ":".join(["account", self.account_id, "email",  self.id_])
             self.log_ident = "".join(["Email ", self.id_, " for account ", self.account_id])
         except Exception as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             return None
 
     def _valid_body(self, body):
@@ -89,7 +89,7 @@ class EmailMessage(Base):
             self.logging.info("Saved " + self.log_ident)
             return True
         except Exception as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             return False
 
     def to_dict(self):
@@ -128,5 +128,5 @@ class EmailMessage(Base):
             self.body
             return True
         except AttributeError as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             return False

@@ -38,7 +38,7 @@ class DreddDaemon(MultiItemCycleMixin, Daemon):
                 time.sleep(self.poll_interval)
                 #TODO: It should wait until now to kill on ctr c
         except Exception as e:
-            self.logging.critical(e)
+            self.logging.exception(e)
             self.stop()
 
     @retry(wait_exponential_multiplier=1000, wait_exponential_max=30000)
@@ -52,7 +52,7 @@ class DreddDaemon(MultiItemCycleMixin, Daemon):
                 raise
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
-            self.logging.critical(str(exc_type))
+            self.logging.exception(str(exc_type))
             raise Exception("Retry")
 
     def start(self):

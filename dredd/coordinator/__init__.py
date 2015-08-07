@@ -4,7 +4,7 @@ import re
 import time
 import logging
 from config import Configuration
-from mem_store.email_message import EmailMessage
+from mem_lts_store.email_message import EmailMessage
 from mem_store.init_status_item import InitStatusItem
 import traceback
 from s3_url import S3Url

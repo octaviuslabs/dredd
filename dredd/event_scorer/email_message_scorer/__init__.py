@@ -1,6 +1,6 @@
 from event_scorer import EventScorer
-from mem_store.email_message import EmailMessage
-from mem_store.email_message.email_message_with_diff import EmailMessageWithDiff
+from mem_lts_store.email_message import EmailMessage
+from mem_lts_store.email_message.email_message_with_diff import EmailMessageWithDiff
 import logging
 
 class EmailMessageScorer(EventScorer):
@@ -31,7 +31,7 @@ class EmailMessageScorer(EventScorer):
 
         # If the message has more than 1 email messages in front of it in the
         #   thread, calculations on that message will not change the score of
-        #   the thread, so there is no need to perform any calculations 
+        #   the thread, so there is no need to perform any calculations
 
         # Persist email itself in store
         return self.event_email_message.save()

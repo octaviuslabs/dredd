@@ -7,8 +7,6 @@ store = redis.StrictRedis(host=mem_store_config.mem_store_host, port=mem_store_c
 
 class Base(object):
     logging = logging.getLogger('dredd')
-    def __init__(self):
-        return
 
     def store(self):
         try:

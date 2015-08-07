@@ -1,13 +1,13 @@
-from mem_store.base import Base
+from model.email_thread import EmailThread as EmailThreadModel
+from mem_store.base import Base as MemStoreBase
 from mem_store.recommendation.thread_recommendation import ThreadRecommendation
 import logging
 
-class EmailThread(Base):
+class EmailThread(EmailThreadModel, MemStoreBase):
     def __init__(self, id_, account_id):
-        self.id_ = id_
-        self.account_id = account_id
+        super(EmailThread, self).__init__(id_, account_id)
+
         self.storage_key = ":".join(["account", self.account_id, "email_thread",  self.id_])
-        self.emails = list()
         self.log_ident = "".join(["EmailThread ", self.id_, " for account ", self.account_id])
 
     def push(self, email):
@@ -43,15 +43,5 @@ class EmailThread(Base):
     def get_items_after(self, sent_at):
         return self.store().zrangebyscore(self.storage_key, '(' + str(sent_at), "+inf")
 
-
     def get_items_before(self, sent_at):
         return self.store().zrevrangebyscore(self.storage_key, sent_at, 0.0)
-
-    def compute_score(self):
-        email = self.emails[0]
-        if self.has_newer(email.sent_at.to_f()):
-            self.logging.info("Keeping old score for " + self.log_ident )
-            return False
-        else:
-            self.score = email.score
-            return True

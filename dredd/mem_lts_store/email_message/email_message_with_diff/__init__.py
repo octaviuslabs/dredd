@@ -1,6 +1,6 @@
 import json
 from model.email_message.email_message_with_diff import EmailMessageWithDiff as EmailMessageWithDiffModel
-from mem_store.email_message import EmailMessage
+from mem_lts_store.email_message import EmailMessage
 
 class EmailMessageWithDiff(EmailMessage, EmailMessageWithDiffModel):
     def __init__(self, attrs):
